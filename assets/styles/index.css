@@ -1,1 +1,28 @@
+<<<<<<< HEAD
 @import"https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap";@import"https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap";*{font-family:"Montserrat",sans-serif}.container{width:82.5rem}@media(max-width: 90rem){.container{width:88.8vw}}@media(max-width: 48rem){.container{width:96vw}}.link{color:#156963;text-decoration:none}.header{background:#83bfbc}.header__container{display:flex;align-items:center;justify-content:space-between;margin:0 auto;padding:.25em}@media(max-width: 90rem){.header__container{padding:calc(.4em + -.15*(100vw - 20rem)/70)}}@media(max-width: 90rem){.header__logo{width:calc(3rem + 3*(100vw - 20rem)/70)}}.header__content{display:flex;align-items:center}.header__link{font-size:calc(10px + 4 * ((100vw - 320px) / 960));margin-right:4.3rem}@media(max-width: 90rem){.header__link{margin-right:calc(.6rem + 3.7*(100vw - 20rem)/70)}}.header__search{margin-right:2.25rem;width:2.4rem}@media(max-width: 90rem){.header__search{width:calc(1rem + 1.4*(100vw - 20rem)/70)}}@media(max-width: 64rem){.header__search{margin-right:.6vw}}@media(max-width: 35rem){.header__search{margin-right:3vw}}.header__account{margin-right:1.12rem;width:2.12rem}@media(max-width: 90rem){.header__account{width:calc(.95rem + 1.17*(100vw - 20rem)/70)}}@media(max-width: 64rem){.header__account{margin-right:1.25vw}}@media(max-width: 35rem){.header__btns{display:none}}.header__registration{background-color:#156963;color:#fff;border-radius:10px;text-align:center;border:none;padding:.8em;min-width:9.4rem;margin-right:.5rem;font-size:calc(10px + 4 * ((100vw - 320px) / 960))}@media(max-width: 90rem){.header__registration{background-color:#156963;color:#fff;border-radius:10px;text-align:center;border:none;padding:.8em;min-width:10.4vw;margin-right:1.1vw}}.header__area{background-color:#fff;color:#156963;border-radius:10px;text-align:center;border:none;padding:.8em;min-width:9.4rem;font-size:calc(10px + 4 * ((100vw - 320px) / 960))}@media(max-width: 90rem){.header__area{background-color:#fff;color:#156963;border-radius:10px;text-align:center;border:none;padding:.8em;min-width:10.4vw}}.footer{color:#156963;background:#eceef2;display:flex;justify-content:center;align-items:center;height:12.5rem}.footer__container{display:flex;align-items:center;justify-content:space-between;width:74rem}.footer__container>*:not(:last-child){margin-right:4.25rem}@media(max-width: 90rem){.footer__container{width:calc(94vw + -12*(100vw - 20rem)/70)}}.footer__logo{width:9.4rem}@media(max-width: 90rem){.footer__logo{width:calc(5rem + 4.4*(100vw - 20rem)/70)}}.footer__column{height:100%;display:flex;flex-direction:column;justify-content:space-between;max-width:17.3rem}.footer__column:nth-child(2){max-width:21rem}.footer__title{font-size:calc(14px + 9 * ((100vw - 320px) / 960));font-weight:600;margin-bottom:1.27rem}.footer__text{font-size:calc(10px + 6 * ((100vw - 320px) / 960))}.footer__text:not(:last-child){margin-bottom:.75rem}.nav-footer{font-size:calc(14px + 9 * ((100vw - 320px) / 960));display:flex;flex-direction:column;justify-content:space-between}/*# sourceMappingURL=index.css.map */
+=======
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-light.woff2") format("woff2"), url("../fonts/montserrat-light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}/*# sourceMappingURL=index.css.map */
+>>>>>>> 76771ba03694f374fd23a604362d1f442fb67c22
