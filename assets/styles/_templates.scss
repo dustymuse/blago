@@ -3,4 +3,199 @@
 
 //здесь хранятся шаблоны для часто используемых блоков, начиная с простых, вроде кнопки, и заканчивая комплексными такими как форма
 //перед новым блоком пишем его название и отделяем серией тире
-//блок----------------------------------------------------
+//здесь хранятся шаблоны для часто используемых блоков, начиная с простых, вроде кнопки, и заканчивая комплексными такими как форма
+//перед новым блоком пишем его название и отделяем серией тире
+//Шрифт для всего документа---------------------------------
+* {
+    font-family: $font;
+}
+
+//размер контента внутри секции-----------------------------
+.container {
+    width: 82.5rem;
+
+    @media (max-width: $l) {
+        width: 88.8vw;
+    }
+
+    @media (max-width: $s) {
+        width: 96vw;
+    }
+}
+
+//ссылки-----------------------------------------------------
+.link {
+    color: $text-main;
+    text-decoration: none;
+}
+
+
+
+
+
+
+//header-----------------------------------------------------
+.header {
+    background: $bg-primary-colored;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0.25em;
+
+        @media (max-width: $l) {
+            padding: calc(0.4em + (0.25 - 0.4) * ((100vw - 20rem)/ (90 - 20)));
+        }
+    }
+
+    //логотип
+    &__logo {
+        @media (max-width: $l) {
+            width: calc(3rem + (6 - 3) * ((100vw - 20rem)/ (90 - 20)));
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    //навигация
+    &__link {
+        @include adaptive-font (14, 10);
+        margin-right: 4.3rem;
+
+        @media (max-width: $l) {
+            margin-right: calc(0.6rem + (4.3 - 0.6) * ((100vw - 20rem)/ (90 - 20)));
+        }
+    }
+
+    //иконки
+    &__search {
+        margin-right: 2.25rem;
+        width: 2.4rem;
+
+        @media (max-width: $l) {
+            width: calc(1rem + (2.4 - 1) * ((100vw - 20rem)/ (90 - 20)));
+        }
+
+        @media (max-width: $m) {
+            margin-right: 0.6vw;
+        }
+
+        @media (max-width: $xs) {
+            margin-right: 3vw;
+        }
+    }
+
+    &__account {
+        margin-right: 1.12rem;
+        width: 2.12rem;
+
+        @media (max-width: $l) {
+            width: calc(0.95rem + (2.12 - 0.95) * ((100vw - 20rem)/ (90 - 20)));
+        }
+
+        @media (max-width: $m) {
+            margin-right: 1.25vw;
+        }
+    }
+
+    //кнопки
+    &__btns {
+        @media (max-width: $xs) {
+            display: none;
+        }
+    }
+
+    &__registration {
+        @include main-btn ($bg-main-colored, $text-light, 9.4rem);
+        margin-right: 0.5rem;
+
+        @media (max-width: $l) {
+            @include main-btn ($bg-main-colored, $text-light, 10.4vw);
+            margin-right: 1.1vw;
+        }
+
+        @include adaptive-font (14, 10);
+    }
+
+    &__area {
+        @include main-btn ($bg-primary-light, $text-main, 9.4rem);
+
+        @media (max-width: $l) {
+            @include main-btn ($bg-primary-light, $text-main, 10.4vw);
+        }
+
+        @include adaptive-font (14, 10);
+    }
+}
+
+//футер----------------------------------------
+
+.footer {
+    color: $text-main;
+    background: $bg-secondary-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12.5rem;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 74rem;
+
+        &>*:not(:last-child) {
+            margin-right: 4.25rem;
+        }
+
+        @media (max-width: $l) {
+            width: calc(94vw + (82 - 94) * ((100vw - 20rem)/ (90 - 20)));
+        }
+    }
+
+    &__logo {
+        width: 9.4rem;
+
+        @media (max-width: $l) {
+            width: calc(5rem + (9.4 - 5) * ((100vw - 20rem)/ (90 - 20)));
+        }
+    }
+
+    &__column {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 17.3rem;
+
+        &:nth-child(2) {
+            max-width: 21rem;
+        }
+    }
+
+    &__title {
+        @include adaptive-font (23, 14);
+        font-weight: 600;
+        margin-bottom: 1.27rem;
+    }
+
+    &__text {
+        @include adaptive-font (16, 10);
+
+        &:not(:last-child) {
+            margin-bottom: 0.75rem;
+        }
+    }
+}
+
+.nav-footer {
+    @include adaptive-font (23, 14);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

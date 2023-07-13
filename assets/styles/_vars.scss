@@ -1,81 +1,49 @@
 // Здесь хранятся основные переменные для цветов, шрифтов, размеров, брейкпоинтов и так далее
 
 // Цвета сайта
+$text-main: #156963;
 $text-dark: #000000;
-$text-colored: #156963;
 $text-light: #FFFFFF;
 
+$bg-main-colored: #156963;
 $bg-primary-colored: #83BFBC;
-$bg-secondary-colored: #156963;
 $bg-tertiary-colored: #6DA5A2;
 $bg-primary-light: #FFFFFF;
 $bg-secondary-light: #ECEEF2;
 
 // Шрифты
 $font: 'Montserrat', sans-serif;
+$maxWidth: 1280;
 
-// Размеры шрифтов
+$maxWidth: 1280;
 
-//16px-10px навигация хедер
-$font-nav-max: 1rem;
-$font-nav-min: 0.625rem;
+@mixin adaptive-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
 
-//14px-8px кнопки хедер
-$font-btn-s-max: 0.875rem;
-$font-btn-s-min: 0.5rem;
+//14-10
+//16-10
+//23-14
 
-//36px-24px заголовок страницы
-$font-title-max: 2.25rem;
-$font-title-min: 1.5rem;
 
-//28px-20px кнопки на первом блоке
-$font-btn-l-max: 1.75rem;
-$font-btn-l-min: 1.25rem;
 
-//24px-16px текст в сецкиях и на первом блоке
-$font-text-max: 1.5rem;
-$font-text-min: 1rem;
 
-//26px-18px подзаголовки в форме
-$font-form-subtitle-max: 1.625rem;
-$font-form-subtitle-min: 1.125rem;
 
-//20px-14px значения в форме
-$font-form-value-max: 1.25rem;
-$font-form-value-min: 0.875rem;
-
-//18px-12px уменьшенные значения в форме
-$font-form-value-s-max: 1.125rem;
-$font-form-value-s-min: 0.75rem;
-
-//68px-36px заголовки секций
-$font-title-xl-max: 4.25rem;
-$font-title-xl-min: 2.25rem;
-
-//32px-22px заголовки новостей
-$font-news-title-max: 2rem;
-$font-news-title-min: 1.375rem;
-
-//22px-14px текст новостей
-$font-news-max: 1.375rem;
-$font-news-min: 0.875rem;
-
-//30px-20px кнопка под новостями
-$font-btn-news-max: 1.875rem;
-$font-btn-news-min: 1.25rem;
-
-//23px-16px заголовок футера
-$font-title-footer-max: 1.4375rem;
-$font-title-footer-min: 1rem;
-
-//16px-10px текст футер
-$font-footer-max: 1rem;
-$font-footer-min: 0.625rem;
-
-//23px-16px навигация футера
-$font-nav-footer-max: 1.4375rem;
-$font-nav-footer-min: 1rem;
+//Кнопки
+@mixin main-btn ($bg-color, $color, $width) {
+    background-color: $bg-color;
+    color: $color;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    padding: 0.8em;
+    min-width: $width;
+}
 
 //брейкпоинты
-$l: 90em;
-$s: 48em;
+$l: 90rem; //1440
+$m: 64rem; //1024
+$s: 48rem; //768
+$xs: 35rem; //560
