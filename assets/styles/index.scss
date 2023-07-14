@@ -105,6 +105,16 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: $l) {
+            height: 43.75em;
+        }
+
+        @media (max-width: 51rem) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &__img {
@@ -112,21 +122,59 @@
         height: 29.5rem; //79% ot width
 
         @media (max-width: $l) {
-            width: calc(3rem + (37.4 - 3rem) * ((100vw - 20rem)/ (90 - 20)));
-            height: calc(3rem + (37.4 - 3rem) * ((100vw - 20rem)/ (90 - 20)));
+            width: calc(3rem + (37.4 - 3) * ((100vw - 20rem)/ (90 - 20)));
+            height: calc(2.37rem + (29.5 - 2.37) * ((100vw - 20rem)/ (90 - 20)));
         }
+
+        @media (max-width: 51rem) {
+            margin-bottom: calc(1rem + (2 - 1) * ((100vw - 20rem)/ (90 - 20)));
+            width: calc(9rem + (20 - 9) * ((100vw - 20rem)/ (90 - 20)));
+            height: calc(7.11rem + (15.8 - 7.11) * ((100vw - 20rem)/ (90 - 20)));
+            align-self: start;
+            position: relative;
+            right: -9vw;
+        }
+
     }
 
     &__title {
         margin-bottom: 2.25rem;
+
+        @media (max-width: 51rem) {
+            margin-bottom: calc(1rem + (2.25 - 1) * ((100vw - 20rem)/ (90 - 20)));
+        }
     }
 
     &__content {
         max-width: 35.4rem;
+
+        @media (max-width: $l) {
+            max-width: calc(19rem + (35.4 - 19) * ((100vw - 20rem)/ (90 - 20)));
+        }
+
+        @media (max-width: 60rem) {
+            max-width: calc(17rem + (35.4 - 17) * ((100vw - 20rem)/ (90 - 20)));
+        }
+
+        @media (max-width: 51rem) {
+            max-width: 80vw;
+        }
+
     }
 
     &__text {
         @include text-24 ($text-dark, 2.5rem);
-        margin-bottom: 2.25rem;
+
+        &:not(:last-child) {
+            margin-bottom: 2.25rem;
+
+            @media (max-width: 51rem) {
+                margin-bottom: calc(1rem + (2.25 - 1) * ((100vw - 20rem)/ (90 - 20)));
+            }
+        }
+
+        @media (max-width: $l) {
+            line-height: calc(1.5rem + (1.5 - 1) * ((100vw - 20rem)/ (90 - 20)));
+        }
     }
 }
