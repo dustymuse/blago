@@ -228,6 +228,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 12.5rem;
+    @include adaptive-font (16, 8);
 
     @media (max-width: $m) {
         height: 11rem;
@@ -262,7 +263,7 @@ body {
         width: 9.4rem;
 
         @media (max-width: $l) {
-            width: calc(5rem + (9.4 - 5) * ((100vw - 20rem)/ (90 - 20)));
+            width: 9em;
         }
 
         @media (max-width: 58rem) {
@@ -352,7 +353,7 @@ body {
         }
 
         @media (max-width: 75rem) {
-            margin-bottom: calc(0.4rem + (1.27 - 0.4) * ((100vw - 20rem)/ (90 - 20)));
+            margin-bottom: 0.88em;
         }
     }
 
@@ -381,6 +382,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+//подключение шрифтов-----------------------------------
 
 @font-face {
     font-family: 'Montserrat';
