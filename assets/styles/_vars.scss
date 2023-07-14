@@ -53,11 +53,12 @@ $maxWidth: 1440;
 @mixin main-btn ($bg-color, $color, $width) {
     background-color: $bg-color;
     color: $color;
+    width: $width;
     border-radius: 10px;
     text-align: center;
     border: none;
-    padding: 0.8em;
-    width: $width;
+    padding: 1em;
+    font-weight: 500;
 }
 
 //брейкпоинты
