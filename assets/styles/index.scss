@@ -1,3 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 @import './vars';
 @import './templates';
+
+//первая секция (кратко about)----------------------------------------
+.bg-first-section {
+    background-color: #83BFBC;
+}
+
+.main-about {
+    background: url(../images/design/index__main-about-bg.png) no-repeat;
+    background-position: start;
+    background-size: contain;
+    margin: 0 auto;
+    width: 90rem;
+    height: 49.3rem;
+
+    @media (max-width:$l) {
+        width: 100vw;
+        background-size: cover;
+        height: calc(28rem + (49.3 - 28) * ((100vw - 20rem)/ (90 - 20)));
+    }
+
+    @media (max-width: $m) {
+        justify-content: center;
+    }
+
+    @media (max-width: 44rem) {
+        background-position-x: calc(-7rem + (15 + 7) * ((100vw - 20rem)/ (90 - 20)));
+    }
+
+    &__black-bg {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        .main-about__container {
+            opacity: 1;
+        }
+
+        @media (max-width: $m) {
+            display: flex;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        @media (max-width: $s) {
+            background: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    &__container {
+        width: 36rem;
+        margin-right: 3.2rem;
+
+
+        @media (max-width: $m) {
+            width: 79vw;
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+
+        @media (max-width: $m) {
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: $xs) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__text {
+        @include text-24 ($text-light, 1.8rem);
+        margin-bottom: 2rem;
+
+        @media (max-width: $l) {
+            line-height: calc(1.1rem + (2 - 1.1) * ((100vw - 20rem)/ (90 - 20)));
+        }
+
+        @media (max-width: $xs) {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__btns {
+        @media (max-width: $xs) {
+            padding-top: 0.5rem;
+        }
+    }
+}
+
+//форма пожертвований-----------------------------
+//подробно о компании-----------------------------
+.detail-about {
+    background-color: $bg-secondary-light;
+
+    &__container {
+        height: 55.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__img {
+        width: 37.4rem;
+        height: 29.5rem; //79% ot width
+
+        @media (max-width: $l) {
+            width: calc(3rem + (37.4 - 3rem) * ((100vw - 20rem)/ (90 - 20)));
+            height: calc(3rem + (37.4 - 3rem) * ((100vw - 20rem)/ (90 - 20)));
+        }
+    }
+
+    &__title {
+        margin-bottom: 2.25rem;
+    }
+
+    &__content {
+        max-width: 35.4rem;
+    }
+
+    &__text {
+        @include text-24 ($text-dark, 2.5rem);
+        margin-bottom: 2.25rem;
+    }
+}

@@ -1,4 +1,11 @@
-// Здесь хранятся основные переменные для цветов, шрифтов, размеров, брейкпоинтов и так далее
+//14-10
+//16-10
+//23-14
+//24
+//28
+//36-16
+
+
 
 // Цвета сайта
 $text-main: #156963;
@@ -10,12 +17,12 @@ $bg-primary-colored: #83BFBC;
 $bg-tertiary-colored: #6DA5A2;
 $bg-primary-light: #FFFFFF;
 $bg-secondary-light: #ECEEF2;
+$bg-black: #000000;
 
 // Шрифты
 $font: 'Montserrat', sans-serif;
-$maxWidth: 1280;
-$maxWidth: 1280;
 
+//адаптивный размер шрифта
 $maxWidth: 1440;
 
 @mixin adaptive-font($pcSize, $mobSize) {
@@ -31,10 +38,15 @@ $maxWidth: 1440;
     }
 }
 
-//14-10
-//16-10
-//23-14
+@mixin text-24 ($color, $line-height) {
+    color: $color;
+    line-height: $line-height;
+    font-size: 1.5rem;
 
+    @media (max-width: $l) {
+        @include adaptive-font(24, 15);
+    }
+}
 
 
 
@@ -47,7 +59,7 @@ $maxWidth: 1440;
     text-align: center;
     border: none;
     padding: 0.8em;
-    min-width: $width;
+    width: $width;
 }
 
 //брейкпоинты

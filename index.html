@@ -13,17 +13,18 @@
 <body>
     <!-- header -->
     <header class="header">
+        <!-- размеры контейнера -->
         <div class="header__container container">
-            <div>
-                <img src="./assets/images/icons/header__logo.png" alt="Логотип центра Хаер (благо)"
-                    class="header__logo">
-            </div>
+            <!-- лого -->
+            <img src="./assets/images/icons/header__logo.png" alt="Логотип центра Хаер (благо)" class="header__logo">
             <div class="header__content">
+                <!-- навигация -->
                 <nav class="header__nav">
                     <a href="#" class="header__link link">Главная</a>
                     <a href="#" class="header__link link">Новости</a>
                     <a href="#" class="header__link link">О компании</a>
                 </nav>
+                <!-- кнопки -->
                 <img src="./assets/images/icons/header__search.png" alt="Поиск по сайту" class="header__search">
                 <img src="./assets/images/icons/header__account.png" alt="Личный кабинет" class="header__account">
                 <div class="header__btns">
@@ -34,18 +35,70 @@
         </div>
     </header>
     <!-- вступительная секция о нас -->
-    <section class="main-about">
-        <div class="main-about__container container">
-            <h1 class="main-about__title main-title">Центр помощи «Хаер» -
-                единый портал для НКО и заявок о помощи в Набережных Челнах</h1>
-            <p class="main-about__text text">На нашем портале вы можете разместить свою заявку на помощь, а
-                зарегистрированные НКО имеют возможность откликнуться и предложить свою поддержку.</p>
-            <p class="main-about__text text">Центр помощи "Хаер" создает дружественное сообщество, где любой
-                пользователь может получить необходимую помощь от надежных некоммерческих организаций. </p>
-            <main-about__btns class="btns">
-                <button class="btns__help help">Подать заявку на помощь</button>
-                <button class="btns__nko nko-account"></button>
-            </main-about__btns>
+    <section>
+        <div class="bg-first-section">
+            <div class="main-about">
+                <div class="main-about__black-bg">
+                    <div class="main-about__container">
+                        <h1 class="main-about__title main-title">Центр помощи «Хаер» -
+                            единый портал для НКО и заявок о помощи в Набережных Челнах</h1>
+                        <p class="main-about__text text">На нашем портале вы можете разместить свою заявку на помощь, а
+                            зарегистрированные НКО имеют возможность откликнуться и предложить свою поддержку.</p>
+                        <p class="main-about__text text">Центр помощи "Хаер" создает дружественное сообщество, где любой
+                            пользователь может получить необходимую помощь от надежных некоммерческих организаций. </p>
+                        <main-about__btns class="main-about__btns btns">
+                            <button class="btns__help help">Подать заявку на помощь</button>
+                            <button class="btns__nko nko-account">Вход для НКО</button>
+                        </main-about__btns>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Форма пожертвования -->
+    <!-- <section class="form">
+        <div class="form__payment payment">
+            <h3 class="payment__topic third-title">Поддержать центр «Хаер»</h3>
+            <div class="payment__regularity-btns">
+                <button class="payment__monthly btn-light">Ежемесячно</button>
+                <button class="payment__one-time btn-mint">Разово</button>
+            </div>
+            <div class="payment_text">
+                <hr>
+                <p class="payment_title">Сумма пожертвования</p>
+                <hr>
+            </div>
+            <div class="sum-btns">
+                <button class="btn-light"></button>
+                <button class="btn-light"></button>
+                <button class="btn-light"></button>
+            </div>
+            <div class="payment_text">
+                <hr>
+                <p class="payment_title">Платёжная информация</p>
+                <hr>
+            </div>
+            <div class="payment-content btn-light"></div>
+            <div class=""></div>
+            <div class=""></div>
+            <button></button>
+        </div>
+    </section> -->
+    <section class="detail-about">
+        <div class="detail-about__container container">
+            <img src="./assets/images/design/template__hands-heart.png" alt="Несём поддержку и любовь в массы"
+                class="detail-about__img">
+            <div class="detail-about__content">
+                <h2 class="detail-about__title second-title">О компании</h2>
+                <p class="detail-about__text">Центр помощи "Хаер" - это единое место, где некоммерческие организации
+                    (НКО) и
+                    жители Набережных Челнов могут объединиться для оказания помощи и поддержки. Наш центр предоставляет
+                    простой и удобный способ подать заявку на помощь, а также возможность для НКО зарегистрироваться и
+                    откликнуться на эти заявки.</p>
+                <p class="detail-about__text">Мы верим в силу солидарности и взаимопомощи, поэтому целью центра "Хаер"
+                    является создание дружественного сообщества, где каждый человек может найти помощь в трудные моменты
+                    жизни.</p>
+            </div>
         </div>
     </section>
 
@@ -53,9 +106,13 @@
 
 
 
+    <!-- футер -->
     <footer class="footer">
+        <!-- размер контейнера -->
         <div class="footer__container">
+            <!-- лого -->
             <img src="./assets/images/icons/footer__logo.png" alt="Логотип центра Хаер (благо)" class="footer__logo">
+            <!-- основные колонки  -->
             <div class="footer__column">
                 <p class="footer__title">Контактная информация:</p>
                 <p class="footer__text">+7 (927) 434-05-67</p>
