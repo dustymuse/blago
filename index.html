@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-
+<!--остановилась на 210 строчке + надо сделать другой адаптив контенту внутри формы после перестраивания-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
         <!-- размеры контейнера -->
         <div class="header__container container">
             <!-- лого -->
-            <img src="./assets/images/icons/header__logo.png" alt="Логотип центра Хаер (благо)" class="header__logo">
+            <img src="./assets/images/icons/header__logo.png" alt="center logo" class="header__logo">
             <div class="header__content">
                 <!-- навигация -->
                 <nav class="header__nav">
@@ -25,8 +25,8 @@
                     <a href="#" class="header__link link">О компании</a>
                 </nav>
                 <!-- кнопки -->
-                <img src="./assets/images/icons/header__search.png" alt="Поиск по сайту" class="header__search">
-                <img src="./assets/images/icons/header__account.png" alt="Личный кабинет" class="header__account">
+                <img src="./assets/images/icons/header__search.png" alt="site search" class="header__search">
+                <img src="./assets/images/icons/header__account.png" alt="personal area" class="header__account">
                 <div class="header__btns">
                     <button class="header__registration">Регистрация</button>
                     <button class="header__area">Вход</button>
@@ -36,9 +36,12 @@
     </header>
     <!-- вступительная секция о нас -->
     <section class="main-about">
+        <!--Главная картинка на фоне-->
         <div class="main-about__bg">
             <div class="main-about__content">
+                <!--Чёрный фон на плантшеной и мобильной версии-->
                 <div class="main-about__black-bg">
+                    <!--Текст блока-->
                     <div class="main-about__container">
                         <h1 class="main-about__title main-title">Центр помощи «Хаер» -
                             единый портал для НКО и заявок о помощи в Набережных Челнах</h1>
@@ -46,6 +49,7 @@
                             зарегистрированные НКО имеют возможность откликнуться и предложить свою поддержку.</p>
                         <p class="main-about__text text">Центр помощи "Хаер" создает дружественное сообщество, где любой
                             пользователь может получить необходимую помощь от надежных некоммерческих организаций. </p>
+                        <!--Кнопки заявки на помощь и вход для НКО-->
                         <main-about__btns class="main-about__btns btns">
                             <button class="btns__help help">Подать заявку на помощь</button>
                             <button class="btns__nko nko-account">Вход для НКО</button>
@@ -57,33 +61,50 @@
     </section>
     <!-- Форма пожертвования -->
     <section class="section-payment">
-        <div class="section-payment__form form">
-            <h3 class="form__title third-title">Поддержать центр «Хаер»</h3>
-            <div class="form__regularity-btns">
-                <button class="payment__monthly btn-mint">Ежемесячно</button>
-                <button class="payment__one-time btn-light">Разово</button>
+        <!--Сама форма-->
+        <div class="section-payment__form donation-form centering-between">
+            <!--Контент формы-->
+            <div class="donation-form__container">
+                <h3 class="donation-form__title third-title">Поддержать центр «Хаер»</h3>
+                <div class="donation-form__regularity-btns centering-between">
+                    <button class="payment__monthly btn-mint">Ежемесячно</button>
+                    <button class="payment__one-time btn-light">Разово</button>
+                </div>
+                <div class="payment_text centering-between">
+                    <hr>
+                    <p class="payment_title">Сумма пожертвования</p>
+                    <hr>
+                </div>
+                <div class="sum-btns centering-between">
+                    <button class="btn-light">100 руб</button>
+                    <button class="btn-light">300 руб</button>
+                    <button class="btn-light">Другая Сумма</button>
+                </div>
+                <div class="payment_text centering-between">
+                    <hr>
+                    <p class="payment_title">Платёжная информация</p>
+                    <hr>
+                </div>
+                <button class="types-of-payment btn-light">
+                    <div class="types-of-payment__icons">
+                        <img src="./assets/images/icons/donation-form__card.png" alt="pay by card"
+                            class="types-of-payment__img">
+                        <img src="./assets/images/icons/donation-form__mobile.png" alt="pay by mobile"
+                            class="types-of-payment__img">
+                        <img src="./assets/images/icons/donation-form__online.png" alt="pay online"
+                            class="types-of-payment__img">
+                    </div>
+                    <p class="types-of-payment__text">Выбрать платёжную систему</p>
+                </button>
+                <!--Инпуты-->
             </div>
-            <div class="payment_text">
-                <hr>
-                <p class="payment_title">Сумма пожертвования</p>
-                <hr>
-            </div>
-            <div class="sum-btns">
-                <button class="btn-light"></button>
-                <button class="btn-light"></button>
-                <button class="btn-light"></button>
-            </div>
-            <div class="payment_text">
-                <hr>
-                <p class="payment_title">Платёжная информация</p>
-                <hr>
-            </div>
-            <!--до кнопки платёжной информации-->
         </div>
     </section>
+
+    <!--Подробно о компании-->
     <section class="detail-about">
         <div class="detail-about__container container">
-            <img src="./assets/images/design/template__hands-heart.png" alt="Несём поддержку и любовь в массы"
+            <img src="./assets/images/design/template__hands-heart.png" alt="we bring real help, support and love"
                 class="detail-about__img">
             <div class="detail-about__content">
                 <h2 class="detail-about__title second-title">О компании</h2>
@@ -117,7 +138,7 @@
         <!-- размер контейнера -->
         <div class="footer__container">
             <!-- лого -->
-            <img src="./assets/images/icons/footer__logo.png" alt="Логотип центра Хаер (благо)" class="footer__logo">
+            <img src="./assets/images/icons/footer__logo.png" alt="center logo" class="footer__logo">
             <!-- основные колонки  -->
             <div class="footer__column">
                 <p class="footer__title link">Контактная информация:</p>

@@ -24,6 +24,13 @@ body {
     }
 }
 
+//центрирование по краям----------------------------------
+.centering-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 //заголовки------------------------------------------------
 // h1
 .main-title {
@@ -161,7 +168,7 @@ body {
 }
 
 //форма пожертвования----------------------------------------
-.form {
+.donation-form {
     background: $bg-secondary-light;
     border: 1px solid;
     width: 46.5rem;
@@ -173,23 +180,52 @@ body {
     @include adaptive-font (26, 10);
 
     @media (max-width: $l) {
-        width: 28.6em;
+        width: 31em;
     }
+
+    @media (max-width: $m) {
+        width: 95vw;
+    }
+
+    @media (max-width: $s) {
+        width: 100vw;
+        border: none;
+    }
+
+    hr {
+        @include hr;
+    }
+
+    &__container {
+        width: 37rem;
+
+        @media (max-width: $l) {
+            width: 22.7em;
+        }
+
+        @media (max-width: $m) {
+            width: 96%;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 1.88rem;
+    }
+
+    &__regularity-btns {
+        width: 100%;
+        margin-bottom: 0.88rem;
+
+        @media (max-width: $l) {
+            margin-bottom: 0.58em;
+        }
+    }
+
+
 }
 
-.form>* {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-//кнопки регулярности пожертвований
-.form__regularity-btns {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
+//Кнопки регулярности пожертвований
 .payment__monthly {
     @include mint-btn (17rem, 5rem);
     font-size: 1.75rem;
@@ -210,16 +246,12 @@ body {
     }
 }
 
-//позиционирование полоски с заголовком
+//позиционирование полоски с мин-заголовками
 .payment_text {
     width: 100%;
-
-    hr {
-        @include hr;
-    }
 }
 
-//заголовки
+//мини-заголовки
 .payment_title {
     font-size: 1.625rem;
     font-weight: 400;
@@ -230,6 +262,12 @@ body {
     }
 }
 
+//кнопки с суммой пожертвования
+.sum-btns {
+    width: 100%;
+    margin-bottom: 0.12rem;
+}
+
 .sum-btns>* {
     font-size: 1.25rem;
     @include light-btn (10.9rem, 3.75rem);
@@ -237,6 +275,31 @@ body {
     @media (max-width: $l) {
         @include adaptive-font (20, 8);
         @include light-btn (8.72em, 3em);
+    }
+}
+
+//Кнопка выбора платёжной системы
+.types-of-payment {
+    @include light-btn (100%, 5rem);
+    margin-bottom: 0.81rem;
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img {
+        width: 9.4375rem;
+        height: 2.625rem;
+    }
+
+    &__img:not(:last-child) {
+        margin-right: 0.5rem;
+    }
+
+    &__text {
+        font-size: 1.125rem;
     }
 }
 
