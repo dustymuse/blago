@@ -3,47 +3,41 @@
 @import './templates';
 
 //первая секция (кратко about)----------------------------------------
-.bg-first-section {
-    background-color: #83BFBC;
-}
-
+//цветной фон, если макет больше 1440
 .main-about {
-    background: url(../images/design/index__main-about-bg.png) no-repeat;
-    background-position: start;
-    background-size: contain;
-    margin: 0 auto;
-    width: 90rem;
-    height: 49.3rem;
-
-    @media (max-width:$l) {
-        width: 100vw;
-        background-size: cover;
-        height: calc(28rem + (49.3 - 28) * ((100vw - 20rem)/ (90 - 20)));
+    &__bg {
+        background-color: #83BFBC;
     }
 
-    @media (max-width: $m) {
-        justify-content: center;
+    //основная картинка
+    &__content {
+        background: url(../images/design/index__main-about-bg.png) no-repeat;
+        background-position: start;
+        background-size: contain;
+        width: 90rem;
+        height: 49.3rem;
+        margin: 0 auto;
+        @include adaptive-font(24, 15);
+
+        @media (max-width:$l) {
+            width: 100vw;
+            background-size: cover;
+            height: 32.8em;
+        }
+
+        // рассчитать формулу!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        @media (max-width: $s) {
+            background-position-x: calc(-29vw + (-40 + 29)) * ((100vw - 20rem)/ (90 - 20));
+        }
+
     }
 
-    @media (max-width: 44rem) {
-        background-position-x: calc(-7rem + (15 + 7) * ((100vw - 20rem)/ (90 - 20)));
-    }
-
+    //чёрный фон для контрастности на планшетах
     &__black-bg {
         width: 100%;
         height: 100%;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: end;
-
-        .main-about__container {
-            opacity: 1;
-        }
 
         @media (max-width: $m) {
-            display: flex;
-            align-items: center;
             background: rgba(0, 0, 0, 0.5);
         }
 
@@ -53,13 +47,18 @@
     }
 
     &__container {
+        //исправить центрирование!!!!!!!!!!!!!!!!!!!!!!!!!! Почему-то не даёт!!!!!
         width: 36rem;
-        margin-right: 3.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
 
         @media (max-width: $m) {
             width: 79vw;
             margin: 0 auto;
+
         }
     }
 
@@ -75,12 +74,13 @@
         }
     }
 
+    //позиционирование основного текста
     &__text {
         @include text-24 ($text-light, 1.8rem);
-        margin-bottom: 2rem;
+        margin-bottom: 1.5em;
 
         @media (max-width: $l) {
-            line-height: calc(1.1rem + (2 - 1.1) * ((100vw - 20rem)/ (90 - 20)));
+            line-height: 1.5em;
         }
 
         @media (max-width: $xs) {
@@ -95,6 +95,8 @@
     }
 }
 
+
+
 //форма пожертвований-----------------------------
 //подробно о компании-----------------------------
 .detail-about {
@@ -105,6 +107,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include text-24 ($text-dark, 2.5rem);
 
         @media (max-width: $l) {
             height: 43.75em;
@@ -122,14 +125,14 @@
         height: 29.5rem; //79% ot width
 
         @media (max-width: $l) {
-            width: calc(3rem + (37.4 - 3) * ((100vw - 20rem)/ (90 - 20)));
-            height: calc(2.37rem + (29.5 - 2.37) * ((100vw - 20rem)/ (90 - 20)));
+            width: 25em;
+            height: 19.6em;
         }
 
         @media (max-width: 51rem) {
-            margin-bottom: calc(1rem + (2 - 1) * ((100vw - 20rem)/ (90 - 20)));
-            width: calc(9rem + (20 - 9) * ((100vw - 20rem)/ (90 - 20)));
-            height: calc(7.11rem + (15.8 - 7.11) * ((100vw - 20rem)/ (90 - 20)));
+            margin-bottom: 1.3em;
+            width: 13.3em;
+            height: 10.5em;
             align-self: start;
             position: relative;
             right: -9vw;
@@ -141,7 +144,7 @@
         margin-bottom: 2.25rem;
 
         @media (max-width: 51rem) {
-            margin-bottom: calc(1rem + (2.25 - 1) * ((100vw - 20rem)/ (90 - 20)));
+            margin-bottom: 1.5em;
         }
     }
 
@@ -149,17 +152,12 @@
         max-width: 35.4rem;
 
         @media (max-width: $l) {
-            max-width: calc(19rem + (35.4 - 19) * ((100vw - 20rem)/ (90 - 20)));
-        }
-
-        @media (max-width: 60rem) {
-            max-width: calc(17rem + (35.4 - 17) * ((100vw - 20rem)/ (90 - 20)));
+            max-width: 23.6em;
         }
 
         @media (max-width: 51rem) {
             max-width: 80vw;
         }
-
     }
 
     &__text {
@@ -169,12 +167,12 @@
             margin-bottom: 2.25rem;
 
             @media (max-width: 51rem) {
-                margin-bottom: calc(1rem + (2.25 - 1) * ((100vw - 20rem)/ (90 - 20)));
+                margin-bottom: 1.5em;
             }
         }
 
         @media (max-width: $l) {
-            line-height: calc(1.5rem + (1.5 - 1) * ((100vw - 20rem)/ (90 - 20)));
+            line-height: 1em;
         }
     }
 }

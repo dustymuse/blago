@@ -192,6 +192,7 @@ body {
         @include adaptive-font (14, 9);
         @include main-btn ($bg-main-colored, $text-light, 9.4rem);
         margin-right: 0.5rem;
+        padding: 0.5rem;
 
         @media (max-width: $l) {
             @include main-btn ($bg-main-colored, $text-light, 9.4em);
