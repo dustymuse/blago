@@ -17,18 +17,14 @@
         width: 90rem;
         height: 49.3rem;
         margin: 0 auto;
-        @include adaptive-font(24, 15);
+        font-size: 1.5rem;
 
         @media (max-width:$l) {
             width: 100vw;
             background-size: cover;
             height: 32.8em;
+            //исправить положение детей на бэкграунду!!!!!!!!!
         }
-
-        // рассчитать формулу!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // @media (max-width: $s) {
-        //     background-position-x: calc(-29vw + (-40 + 29)) * ((100vw - 20rem)/ (90 - 20));
-        // }
     }
 
     //чёрный фон для контрастности на планшетах
@@ -38,6 +34,8 @@
         height: 100%;
         margin: 0 auto;
         display: flex;
+        justify-content: end;
+        align-items: center;
 
         @media (max-width: $m) {
             background: rgba(0, 0, 0, 0.5);
@@ -47,18 +45,18 @@
         }
 
         @media (max-width: $s) {
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.7);
         }
     }
 
     // весь контент текст
     &__container {
         width: 36rem;
+        margin-right: 3.19rem;
 
         @media (max-width: $m) {
             width: 79vw;
             margin: 0 auto;
-
         }
     }
 
@@ -95,9 +93,12 @@
     }
 }
 
-
-
 //форма пожертвований-----------------------------
+.section-payment__form {
+    margin: 0 auto;
+}
+
+
 //подробно о компании-----------------------------
 //фон
 .detail-about {
@@ -112,7 +113,6 @@
 
         @media (max-width: $l) {
             @include text-24 ($text-dark, 2.5rem);
-            //изменить !!!!!!!!!!!!
             height: 30em;
         }
 
