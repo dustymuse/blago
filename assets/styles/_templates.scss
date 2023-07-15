@@ -9,6 +9,7 @@ body {
     font-family: $font;
 }
 
+
 //размер контента внутри секции-----------------------------
 .container {
     width: 82.5rem;
@@ -58,6 +59,7 @@ body {
         @include adaptive-font (36, 16);
     }
 }
+
 //шрифты----------------------------------------------------
 @mixin text-24 ($color, $line-height) {
     color: $color;
@@ -68,6 +70,7 @@ body {
         @include adaptive-font(24, 15);
     }
 }
+
 //ссылки-----------------------------------------------------
 .link {
     color: $text-main;
@@ -76,6 +79,20 @@ body {
 
 
 //Кнопки-----------------------------------------------------
+
+//cтандартная кнопка
+@mixin main-btn ($bg-color, $color, $width) {
+    background-color: $bg-color;
+    color: $color;
+    width: $width;
+    border-radius: 10px;
+    border: none;
+    padding: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    line-height: 1em;
+}
+
 //кнопки заявка о помощи и входа для нко
 .btns {
     width: 36rem;
@@ -108,22 +125,40 @@ body {
     }
 }
 
-//cтандартная кнопка
-@mixin main-btn ($bg-color, $color, $width) {
-    background-color: $bg-color;
-    color: $color;
+
+//мятная кнопка
+@mixin mint-btn ($width, $height) {
     width: $width;
-    border-radius: 10px;
+    height: $height;
+    background-color: $bg-primary-colored;
+    color: $text-light;
+    border-radius: 0.625rem;
     border: none;
-    padding: 1em;
     font-weight: 500;
     cursor: pointer;
 }
 
-//мятная кнопка 
-
 //белая кнопка из формы пожертвования
+@mixin light-btn ($width, $height) {
+    width: $width;
+    height: $height;
+    background-color: $bg-primary-light;
+    color: $text-main;
+    border-radius: 0.625rem;
+    border: 0.5px black dashed;
+    font-weight: 500;
+    cursor: pointer;
+}
 
+//линия
+@mixin hr {
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid #000;
+    flex-grow: 1;
+}
 
 //форма пожертвования----------------------------------------
 .form {
@@ -131,8 +166,81 @@ body {
     border: 1px solid;
     width: 46.5rem;
     height: 56.56rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include adaptive-font (26, 10);
 
+    @media (max-width: $l) {
+        width: 28.6em;
+    }
 }
+
+.form>* {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//кнопки регулярности пожертвований
+.form__regularity-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment__monthly {
+    @include mint-btn (17rem, 5rem);
+    font-size: 1.75rem;
+
+    @media (max-width: $l) {
+        @include adaptive-font (28, 12);
+        @include mint-btn (9.7em, 2.85em);
+    }
+}
+
+.payment__one-time {
+    font-size: 1.75rem;
+    @include light-btn (17rem, 5rem);
+
+    @media (max-width: $l) {
+        @include adaptive-font (28, 12);
+        @include light-btn (9.7em, 2.85em);
+    }
+}
+
+//позиционирование полоски с заголовком
+.payment_text {
+    width: 100%;
+
+    hr {
+        @include hr;
+    }
+}
+
+//заголовки
+.payment_title {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin: 1rem;
+
+    @media (max-width: $l) {
+        @include adaptive-font (26, 10);
+    }
+}
+
+.sum-btns>* {
+    font-size: 1.25rem;
+    @include light-btn (10.9rem, 3.75rem);
+
+    @media (max-width: $l) {
+        @include adaptive-font (20, 8);
+        @include light-btn (8.72em, 3em);
+    }
+}
+
+
 
 //скролл-----------------------------------------
 @mixin scroll ($max-height) {
@@ -463,21 +571,6 @@ body {
     justify-content: space-between;
 }
 
-//адаптивность шрифта
-$maxWidth: 1440;
-
-@mixin adaptive-font($pcSize, $mobSize) {
-    $addSize: $pcSize - $mobSize;
-    $addMobSize: $addSize +$addSize * 0.7;
-
-    @media (max-width: 767px) {
-        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
-    }
-
-    @media (min-width: 767px) {
-        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
-    }
-}
 
 //подключение шрифтов-----------------------------------
 
