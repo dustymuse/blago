@@ -26,16 +26,20 @@
         }
 
         // рассчитать формулу!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        @media (max-width: $s) {
-            background-position-x: calc(-29vw + (-40 + 29)) * ((100vw - 20rem)/ (90 - 20));
-        }
-
+        // @media (max-width: $s) {
+        //     background-position-x: calc(-29vw + (-40 + 29)) * ((100vw - 20rem)/ (90 - 20));
+        // }
     }
 
     //чёрный фон для контрастности на планшетах
     &__black-bg {
         width: 100%;
         height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         @media (max-width: $m) {
             background: rgba(0, 0, 0, 0.5);
@@ -46,14 +50,9 @@
         }
     }
 
+    // весь контент текст
     &__container {
-        //исправить центрирование!!!!!!!!!!!!!!!!!!!!!!!!!! Почему-то не даёт!!!!!
         width: 36rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
 
         @media (max-width: $m) {
             width: 79vw;

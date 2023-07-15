@@ -90,7 +90,7 @@ body {
     background: $bg-primary-colored;
 
     &__container {
-        @include adaptive-font (16, 10);
+        font-size: 1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -98,6 +98,7 @@ body {
         padding: 0.25em;
 
         @media (max-width: $l) {
+            @include adaptive-font (16, 10);
             padding: 0.4em;
         }
     }
@@ -123,10 +124,6 @@ body {
     //навигация
     &__link {
         margin-right: 4.3rem;
-
-        // @media (max-width: $l) {
-        //     margin-right: 1em;
-        // }
 
         @media (max-width: $m) {
             margin-right: 1em;
@@ -189,12 +186,12 @@ body {
 
     //зарегистрироваться
     &__registration {
-        @include adaptive-font (14, 9);
+        font-size: 0.875rem;
         @include main-btn ($bg-main-colored, $text-light, 9.4rem);
         margin-right: 0.5rem;
-        padding: 0.5rem;
 
         @media (max-width: $l) {
+            @include adaptive-font (14, 9);
             @include main-btn ($bg-main-colored, $text-light, 9.4em);
             margin-right: 1.1vw;
         }
@@ -207,10 +204,11 @@ body {
 
     //войти в аккаунт
     &__area {
-        @include adaptive-font (14, 9);
+        font-size: 0.875rem;
         @include main-btn ($bg-primary-light, $text-main, 9.4rem);
 
         @media (max-width: $l) {
+            @include adaptive-font (14, 9);
             @include main-btn ($bg-primary-light, $text-main, 9.4em);
         }
 
@@ -229,7 +227,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 12.5rem;
-    @include adaptive-font (16, 8);
+    font-size: 1rem;
+
+    @media (max-width: $l) {
+        @include adaptive-font (16, 8);
+    }
 
     @media (max-width: $m) {
         height: 11rem;
