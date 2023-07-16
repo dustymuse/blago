@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <!--остановилась на 210 строчке + надо сделать другой адаптив контенту внутри формы после перестраивания-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,9 +71,9 @@
                     <button class="payment__monthly btn-mint">Ежемесячно</button>
                     <button class="payment__one-time btn-light">Разово</button>
                 </div>
-                <div class="payment_text centering-between">
+                <div class="payment__text centering-between">
                     <hr>
-                    <p class="payment_title">Сумма пожертвования</p>
+                    <p class="payment__title">Сумма пожертвования</p>
                     <hr>
                 </div>
                 <div class="sum-btns centering-between">
@@ -80,9 +81,9 @@
                     <button class="btn-light">300 руб</button>
                     <button class="btn-light">Другая Сумма</button>
                 </div>
-                <div class="payment_text centering-between">
+                <div class="payment__text centering-between">
                     <hr>
-                    <p class="payment_title">Платёжная информация</p>
+                    <p class="payment__title">Платёжная информация</p>
                     <hr>
                 </div>
                 <button class="types-of-payment btn-light">
@@ -96,7 +97,20 @@
                     </div>
                     <p class="types-of-payment__text">Выбрать платёжную систему</p>
                 </button>
-                <!--Инпуты-->
+                <input type="text" placeholder="Введите ваше ФИО" class="payment__input payment__input_text">
+                <input type="email" placeholder="Введите вашу почту" class="payment__input payment__input_text">
+                <div class="payment__checkbox">
+                    <input type="checkbox" id="payment-offer" class="payment__input">
+                    <label for="payment-offer">Я принимаю <a href="#" class="payment__link"><span>Договор
+                                оферты</span></a></label>
+                </div>
+                <div class="payment__checkbox">
+                    <input type="checkbox" id="personal-data" class="payment__input">
+                    <label for="personal-data">Я принимаю <a href="#" class="payment__link"><span>Согласие об
+                                использовании
+                                персональных
+                                данных</span></a></label>
+                </div>
             </div>
         </div>
     </section>

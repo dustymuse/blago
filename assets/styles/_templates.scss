@@ -168,6 +168,7 @@ body {
 }
 
 //форма пожертвования----------------------------------------
+//рамзеры формы
 .donation-form {
     background: $bg-secondary-light;
     border: 1px solid;
@@ -196,6 +197,7 @@ body {
         @include hr;
     }
 
+    //размеры контейнера внутри
     &__container {
         width: 37rem;
 
@@ -208,6 +210,7 @@ body {
         }
     }
 
+    //позиционирование блоков
     &__title {
         text-align: center;
         margin-bottom: 1.88rem;
@@ -247,12 +250,12 @@ body {
 }
 
 //позиционирование полоски с мин-заголовками
-.payment_text {
+.payment__text {
     width: 100%;
 }
 
 //мини-заголовки
-.payment_title {
+.payment__title {
     font-size: 1.625rem;
     font-weight: 400;
     margin: 1rem;
@@ -303,7 +306,61 @@ body {
     }
 }
 
+//оформление инпутов
+.payment__input {
+    border: 1px dashed $bg-black;
+    background-color: $bg-primary-light;
+    outline: none;
+    border-radius: 0.625rem;
 
+    &_text {
+        width: 100%;
+    }
+}
+
+//цвет плэйсхолдера
+::-webkit-input-placeholder {
+    color: $bg-black;
+}
+
+:-moz-placeholder {
+    color: $bg-black;
+}
+
+::-moz-placeholder {
+    color: $bg-black;
+}
+
+:-ms-input-placeholder {
+    color: $bg-black;
+}
+
+::placeholder {
+    color: $bg-black;
+}
+
+
+//оформление ссылок в инпутах
+.payment__link {
+    color: $text-dark;
+}
+
+.payment__link:hover {
+    cursor: pointer;
+}
+
+
+//оформление чекбоксов
+.payment__checkbox {
+    display: flex;
+    align-items: center;
+
+    .payment__input {
+        width: 20px;
+        height: 20px;
+        margin-right: 1rem;
+    }
+}
 
 //скролл-----------------------------------------
 @mixin scroll ($max-height) {
