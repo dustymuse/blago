@@ -1,2 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 @import './vars';
 @import './templates';
+
+//О компании//
+.about-company__container{
+    background-color: $bg-primary-light;
+    background-image: url(../../assets/images/design/about-us__bg-about-company.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 37rem;
+}
+
+.about-company__title{
+    font-size: $font-title-xl-max;
+    color: $text-light;
+    padding-top: 15rem;
+    padding-left: 45rem;
+}
+// О компании
+// Центр помощи
+.help-center{
+padding: 3rem 0;
+}
+.help-center__title{
+    font-size:$font-title-max;
+    font-weight: 600;
+    color: $bg-secondary-colored;
+    line-height: 5rem;
+    padding-bottom: 2.25rem;
+    text-align: center;
+}
+.help-center__text{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding-bottom: 2.5rem;
+    color: $text-dark;
+}
+//Центр помощи
+//Документы
+.documents{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    row-gap: 2.9rem;
+    padding-bottom: 3rem;
+}
+.documents__buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.documents__title{
+    font-size: $font-title-max;
+    color: $text-colored;
+    font-weight: 500;
+    padding-bottom: 2.25rem;
+}
+.documents__link{
+    font-size: $font-btn-l-max;
+}
+.doc-button-item{
+    @include mint-btn (24.375rem, 9.375rem);   
+}
+//Документы
+//Ваша помощь
+.your-help__container{
+    background-color: $bg-secondary-light;
+    height: 61.25rem;
+    display: flex;
+    column-gap: 4.5rem;
+    padding: 6.25rem 5rem 4.5rem 5rem;
+}
+.your-help__content{
+    flex-basis: 50%;
+    text-align: center;
+}
+.your-help__title{
+    font-size: $font-title-xl-max;
+    color: $text-colored;
+    font-weight: 500;
+}
+.your-help__pay-form{
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+//Ваша помощь
