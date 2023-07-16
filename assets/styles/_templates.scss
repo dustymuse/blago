@@ -24,7 +24,15 @@ body {
     }
 }
 
-//центрирование по краям----------------------------------
+//позиционирование-----------------------------------------
+//центрирование
+.centering-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//центрирование по краям
 .centering-between {
     display: flex;
     justify-content: space-between;
@@ -174,10 +182,7 @@ body {
     border: 1px solid;
     width: 46.5rem;
     height: 56.56rem;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     @include adaptive-font (26, 10);
 
     @media (max-width: $l) {
@@ -314,12 +319,6 @@ body {
     @media (max-width: $l) {
         @include light-btn (100%, 2.85em);
         margin-bottom: 0.6em;
-    }
-
-    &__icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     &__img {
@@ -703,9 +702,6 @@ body {
 .footer {
     color: $text-main;
     background: $bg-secondary-light;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 12.5rem;
     font-size: 1rem;
 

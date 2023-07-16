@@ -217,7 +217,6 @@
         }
     }
 
-
     //заголовок
     &__title {
         margin-bottom: 2.25rem;
@@ -248,4 +247,148 @@
             @include text-24 ($text-dark, 1.3em);
         }
     }
+}
+
+//новости---------------------------------------------
+.short-news {
+    &__container {
+        flex-direction: column;
+        @include adaptive-font (22, 14);
+        padding-top: 4rem;
+
+        @media (max-width: $l) {
+            padding-top: 2.13em;
+        }
+    }
+
+    //позиционирование новостей
+    &__block {
+        width: 100%;
+        margin-bottom: 3.56rem;
+
+        @media (max-width: $l) {
+            margin-bottom: 2.58em;
+        }
+    }
+
+    &__title {
+        margin-bottom: 4rem;
+
+        @media (max-width: $l) {
+            margin-top: 2.13em;
+        }
+    }
+
+}
+
+
+//дизайн блокa одной новости
+.short-novelty {
+    width: 25rem;
+    height: 52.1rem;
+
+    &__img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    &__main {
+        border-radius: 0 0 10px 10px;
+    }
+
+    @media (max-width: $l) {
+        width: 18em;
+        height: 37.8em;
+    }
+
+    &__img {
+        width: 100%;
+        height: 19.37rem;
+
+        @media (max-width: $l) {
+            height: 14em;
+        }
+    }
+
+    &__title-block {
+        height: 5.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        background: $bg-primary-colored;
+        margin-top: -1rem;
+
+        @media (max-width: $l) {
+            height: 4em;
+        }
+
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: $bg-primary-light;
+        padding-left: 1.19rem;
+        padding-top: 0.5rem;
+
+        @media (max-width: $l) {
+            @include adaptive-font (32, 20);
+            padding-left: 0.6em;
+            padding-top: 0.35em;
+        }
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: start;
+        background-color: $bg-secondary-light;
+        height: 26.3rem;
+        padding: 2rem 1.44rem 0 1.25rem;
+
+        @media (max-width: $l) {
+            padding: 1.45em 0.9em 0 1em;
+            height: 19.1rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.375rem;
+        line-height: 1.68rem;
+
+        @media (max-width: $l) {
+            @include adaptive-font (22, 16);
+            line-height: 1.22em;
+        }
+    }
+
+    &__btn {
+        @include light-btn (12.3rem, 5rem);
+        border: 1px $bg-main-colored dashed;
+        font-size: 1.375rem;
+        margin-bottom: 1.38rem;
+
+        @media (max-width: $l) {
+            @include adaptive-font (22, 16);
+            @include light-btn (8.9em, 3.6em);
+            margin-bottom: 1em;
+        }
+    }
+}
+
+//дизайн кнопки перехода на страницу новостей
+.short-news__btn {
+    @include mint-btn (17.5rem, 5rem);
+    margin-bottom: 4rem;
+    font-size: 1.875rem;
+
+    @media (max-width: $l) {
+        @include adaptive-font (30, 19);
+        @include mint-btn (32.8em, 2.6em);
+        margin-bottom: 2.13em;
+    }
+}
+
+.short-news__text-btn {
+    margin-right: 0.5rem;
+    font-weight: 400;
 }
