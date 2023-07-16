@@ -9,10 +9,16 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 37rem;
+
+    @media (max-width:$l) {
+        width: 100vw;
+        background-size: cover;
+        height: 32.8em;
+}
 }
 
 .about-company__title{
-    font-size: $font-title-xl-max;
+    font-size: 4.25rem;
     color: $text-light;
     padding-top: 15rem;
     padding-left: 45rem;
@@ -23,9 +29,9 @@
 padding: 3rem 0;
 }
 .help-center__title{
-    font-size:$font-title-max;
+    font-size: 2.25rem;
     font-weight: 600;
-    color: $bg-secondary-colored;
+    color: $text-main;
     line-height: 5rem;
     padding-bottom: 2.25rem;
     text-align: center;
@@ -42,7 +48,7 @@ padding: 3rem 0;
     text-align: center;
     display: grid;
     grid-template-rows: 1fr, 1fr;
-    row-gap: 2.9rem;
+    row-gap: 3rem;
     padding-bottom: 3rem;
 }
 .documents__buttons{
@@ -50,16 +56,16 @@ padding: 3rem 0;
     justify-content: space-between;
 }
 .documents__title{
-    font-size: $font-title-max;
-    color: $text-colored;
+    font-size: 2.25rem;
+    color: $text-main;
     font-weight: 500;
     padding-bottom: 2.25rem;
 }
 .documents__link{
-    font-size: $font-btn-l-max;
+    font-size: 1.75rem;
 }
 .doc-button-item{
-    @include mint-btn (24.375rem, 9.375rem);   
+    @include mint-btn (24rem, 9.25rem);   
 }
 //Документы
 //Ваша помощь
@@ -75,10 +81,18 @@ padding: 3rem 0;
     text-align: center;
 }
 .your-help__title{
-    font-size: $font-title-xl-max;
-    color: $text-colored;
+    font-size: 4.25rem;
+    color: $text-main;
     font-weight: 500;
+    padding-bottom: 2.25rem;
 }
+.your-help__image{
+    width: 30.2rem;
+}
+.your-help__img{
+    max-width: 100%;
+}
+
 .your-help__pay-form{
     width: 100%;
     height: 100%;
