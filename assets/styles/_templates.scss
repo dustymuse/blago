@@ -118,7 +118,7 @@ body {
     cursor: pointer;
 
     @media (max-width: $l) {
-        @include adaptive-font (28, 11);
+        @include adaptive-font (28, 12);
         height: 3.8em;
         width: 20.5em;
     }
@@ -434,7 +434,7 @@ body {
     line-height: 1.3em;
 
     @media (max-width: $l) {
-        @include adaptive-font (18, 11);
+        @include adaptive-font (18, 12);
         margin-bottom: 1.22em;
     }
 
@@ -706,7 +706,7 @@ body {
     font-size: 1rem;
 
     @media (max-width: $l) {
-        @include adaptive-font (16, 8);
+        @include adaptive-font (16, 10);
     }
 
     @media (max-width: $m) {
