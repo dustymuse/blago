@@ -63,7 +63,7 @@ body {
     font-weight: 500;
 
     @media (max-width: $l) {
-        @include adaptive-font (36, 16);
+        @include adaptive-font (36, 20);
     }
 }
 
@@ -167,8 +167,8 @@ body {
     flex-grow: 1;
 }
 
-//форма пожертвования----------------------------------------
-//рамзеры формы
+//форма пожертвования----------------------------------------------------
+//размеры формы
 .donation-form {
     background: $bg-secondary-light;
     border: 1px solid;
@@ -182,15 +182,16 @@ body {
 
     @media (max-width: $l) {
         width: 31em;
+        height: 34.8em;
     }
 
     @media (max-width: $m) {
-        width: 95vw;
+        border: none;
+        height: 40em;
     }
 
-    @media (max-width: $s) {
-        width: 100vw;
-        border: none;
+    @media (max-width: $xs) {
+        height: 45em;
     }
 
     hr {
@@ -206,7 +207,11 @@ body {
         }
 
         @media (max-width: $m) {
-            width: 96%;
+            width: 28em;
+        }
+
+        @media (max-width: $s) {
+            width: 29em;
         }
     }
 
@@ -214,6 +219,10 @@ body {
     &__title {
         text-align: center;
         margin-bottom: 1.88rem;
+
+        @media (max-width: $l) {
+            margin-bottom: 0.83em;
+        }
     }
 
     &__regularity-btns {
@@ -223,8 +232,11 @@ body {
         @media (max-width: $l) {
             margin-bottom: 0.58em;
         }
-    }
 
+        @media (max-width: $xs) {
+            margin-bottom: 0.4em;
+        }
+    }
 
 }
 
@@ -237,6 +249,10 @@ body {
         @include adaptive-font (28, 12);
         @include mint-btn (9.7em, 2.85em);
     }
+
+    @media (max-width: $m) {
+        @include mint-btn (11.5em, 2.85em);
+    }
 }
 
 .payment__one-time {
@@ -246,6 +262,10 @@ body {
     @media (max-width: $l) {
         @include adaptive-font (28, 12);
         @include light-btn (9.7em, 2.85em);
+    }
+
+    @media (max-width: $m) {
+        @include light-btn (11.5em, 2.85em);
     }
 }
 
@@ -261,7 +281,8 @@ body {
     margin: 1rem;
 
     @media (max-width: $l) {
-        @include adaptive-font (26, 10);
+        @include adaptive-font (26, 14);
+        margin: 0.61em;
     }
 }
 
@@ -276,8 +297,12 @@ body {
     @include light-btn (10.9rem, 3.75rem);
 
     @media (max-width: $l) {
-        @include adaptive-font (20, 8);
+        @include adaptive-font (20, 10);
         @include light-btn (8.72em, 3em);
+    }
+
+    @media (max-width: $m) {
+        @include light-btn (9em, 3em);
     }
 }
 
@@ -286,6 +311,11 @@ body {
     @include light-btn (100%, 5rem);
     margin-bottom: 0.81rem;
 
+    @media (max-width: $l) {
+        @include light-btn (100%, 2.85em);
+        margin-bottom: 0.6em;
+    }
+
     &__icons {
         display: flex;
         align-items: center;
@@ -293,56 +323,102 @@ body {
     }
 
     &__img {
-        width: 9.4375rem;
-        height: 2.625rem;
+        width: 9.44rem;
+        height: 2.6rem;
+
+        @media (max-width: $l) {
+            width: 5.8em;
+            height: 1.6em;
+        }
+
+        @media (max-width: $xs) {
+            display: none;
+        }
+
     }
 
     &__img:not(:last-child) {
         margin-right: 0.5rem;
+
+        @media (max-width: $l) {
+            margin-right: 0.3em;
+        }
+
+        @media (max-width: $m) {
+            margin-right: 0;
+        }
     }
 
     &__text {
         font-size: 1.125rem;
+
+        @media (max-width: $l) {
+            @include adaptive-font (18, 10);
+        }
+
+        @media (max-width: $xs) {
+            @include adaptive-font (18, 12);
+        }
     }
 }
 
 //оформление инпутов
 .payment__input {
-    border: 1px dashed $bg-black;
-    background-color: $bg-primary-light;
+    @include light-btn (100%, 3.75rem);
     outline: none;
-    border-radius: 0.625rem;
+    font-size: 1.25rem;
+
+    @media (max-width: $l) {
+        @include adaptive-font (20, 10);
+        @include light-btn (100%, 3em);
+    }
+
+    @media (max-width: $m) {
+        @include light-btn (100%, 3em);
+    }
 
     &_text {
-        width: 100%;
+        text-indent: 1.94rem;
+        margin-bottom: 0.9rem;
+
+        @media (max-width: $l) {
+            text-indent: 0.72em;
+        }
     }
+
+    &_first {
+        margin-bottom: 0.81rem;
+
+        @media (max-width: $l) {
+            margin-bottom: 0.6em;
+        }
+    }
+
 }
 
 //цвет плэйсхолдера
-::-webkit-input-placeholder {
-    color: $bg-black;
-}
-
-:-moz-placeholder {
-    color: $bg-black;
-}
-
-::-moz-placeholder {
-    color: $bg-black;
-}
-
-:-ms-input-placeholder {
-    color: $bg-black;
-}
-
+::-webkit-input-placeholder,
+:-moz-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
 ::placeholder {
-    color: $bg-black;
+    color: $text-dark;
+
+    @media (max-width: $xs) {
+        color: $text-main
+    }
 }
 
 
 //оформление ссылок в инпутах
 .payment__link {
     color: $text-dark;
+    text-decoration: none;
+
+    &_border {
+        border-bottom: 1px solid;
+    }
 }
 
 .payment__link:hover {
@@ -354,38 +430,137 @@ body {
 .payment__checkbox {
     display: flex;
     align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 1.38rem;
+    line-height: 1.3em;
 
-    .payment__input {
-        width: 20px;
-        height: 20px;
+    @media (max-width: $l) {
+        @include adaptive-font (18, 11);
+        margin-bottom: 1.22em;
+    }
+
+    &.payment__checkbox_first,
+    >.payment__document {
+        border: none;
+        margin-bottom: 0.3rem;
+
+        @media (max-width: $l) {
+            margin-bottom: 0.26em;
+        }
+    }
+
+    .payment__document {
+        width: 2.8rem;
+        height: 2.8rem;
         margin-right: 1rem;
+        position: relative;
+        outline: none;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-style: dashed;
+        border-width: 1px;
+        border-color: $bg-black;
+        background-color: $bg-primary-light;
+
+        @media (max-width: $l) {
+            width: 2em;
+            height: 2em;
+            margin-right: 0.8em;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-image: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:checked::before {
+            background-image: url('../images/icons/payment__check-mark.png');
+            background-size: 80% auto;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @media (max-width: $l) {
+                background-size: 70% auto;
+            }
+        }
     }
 }
+
+//итоговая кнопка пожертвовать
+.payment__donation {
+    @include mint-btn (100%, 5rem);
+    font-size: 2.25rem;
+
+    @media (max-width: $l) {
+        @include mint-btn (100%, 2em);
+        @include adaptive-font (36, 18);
+    }
+}
+
 
 //скролл-----------------------------------------
 @mixin scroll ($max-height) {
     max-height: $max-height;
     overflow: auto;
-    scrollbar-width: 0.25rem;
-    scrollbar-color: $bg-grey;
+    scrollbar-width: 1rem;
+    scrollbar-color: $bg-grey-light;
     padding-right: 1em;
+
+    @media (max-width: $m) {
+        scrollbar-width: 0.5rem;
+    }
+
+    @media (max-width: $s) {
+        scrollbar-width: 0.25rem;
+    }
 }
 
 .scroll::-webkit-scrollbar {
-    width: 0.25rem;
-    background-color: $bg-grey;
+    width: 1rem;
+    background-color: $bg-grey-light;
     border-radius: 1rem;
+
+    @media (max-width: $m) {
+        width: 0.5rem;
+    }
+
+    @media (max-width: $s) {
+        width: 0.25rem;
+        background-color: $bg-grey;
+
+    }
 }
 
 .scroll::-webkit-scrollbar-track {
-    background-color: $bg-grey;
+    background-color: $bg-grey-light;
     border-radius: 1rem;
     -webkit-box-shadow: 1rem;
+
+    @media (max-width: $s) {
+        background-color: $bg-grey;
+    }
 }
 
 .scroll::-webkit-scrollbar-thumb {
-    background-color: $bg-main-colored;
+    background-color: $bg-primary-colored;
     border-radius: 1rem;
+
+    @media (max-width: $m) {
+        background-color: $bg-main-colored;
+
+    }
 }
 
 

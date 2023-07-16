@@ -94,8 +94,35 @@
 }
 
 //форма пожертвований-----------------------------
-.section-payment__form {
-    margin: 0 auto;
+.section-payment {
+    @media (max-width: $m) {
+        background: $bg-secondary-light;
+    }
+
+    &__form {
+        margin: 2.9rem auto;
+        font-size: 1.625rem;
+
+        @media (max-width: $l) {
+            @include adaptive-font (26, 10);
+            margin: 1.8em auto;
+        }
+
+        @media (max-width: $m) {
+            margin: 0 auto;
+        }
+    }
+}
+
+.donation-form {
+    @media (max-width: $m) {
+        width: 95vw;
+    }
+
+    @media (max-width: $s) {
+        width: 100vw;
+        border: none;
+    }
 }
 
 

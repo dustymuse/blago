@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-<!--остановилась на 210 строчке + надо сделать другой адаптив контенту внутри формы после перестраивания-->
 
 <head>
     <meta charset="UTF-8">
@@ -68,7 +67,7 @@
             <div class="donation-form__container">
                 <h3 class="donation-form__title third-title">Поддержать центр «Хаер»</h3>
                 <div class="donation-form__regularity-btns centering-between">
-                    <button class="payment__monthly btn-mint">Ежемесячно</button>
+                    <button class="payment__monthly">Ежемесячно</button>
                     <button class="payment__one-time btn-light">Разово</button>
                 </div>
                 <div class="payment__text centering-between">
@@ -79,7 +78,7 @@
                 <div class="sum-btns centering-between">
                     <button class="btn-light">100 руб</button>
                     <button class="btn-light">300 руб</button>
-                    <button class="btn-light">Другая Сумма</button>
+                    <button class="btn-light">Другая cумма</button>
                 </div>
                 <div class="payment__text centering-between">
                     <hr>
@@ -97,24 +96,29 @@
                     </div>
                     <p class="types-of-payment__text">Выбрать платёжную систему</p>
                 </button>
-                <input type="text" placeholder="Введите ваше ФИО" class="payment__input payment__input_text">
+                <input type="text" placeholder="Введите ваше ФИО"
+                    class="payment__input payment__input_text payment__input_first">
                 <input type="email" placeholder="Введите вашу почту" class="payment__input payment__input_text">
-                <div class="payment__checkbox">
-                    <input type="checkbox" id="payment-offer" class="payment__input">
-                    <label for="payment-offer">Я принимаю <a href="#" class="payment__link"><span>Договор
+                <div class="payment__checkbox payment__checkbox_first">
+                    <input type="checkbox" id="payment-offer" class="payment__document">
+                    <label for="payment-offer">Я принимаю <a href="#" class="payment__link"><span
+                                class="payment__link_border">Договор
                                 оферты</span></a></label>
                 </div>
                 <div class="payment__checkbox">
-                    <input type="checkbox" id="personal-data" class="payment__input">
-                    <label for="personal-data">Я принимаю <a href="#" class="payment__link"><span>Согласие об
-                                использовании
+                    <input type="checkbox" id="personal-data" class="payment__document">
+                    <label for="personal-data">Я принимаю <a href="#" class="payment__link"><span
+                                class="payment__link_border">Согласие об
+                                использовании <br>
                                 персональных
                                 данных</span></a></label>
                 </div>
+                <button class="payment__donation">
+                    Пожертвовать
+                </button>
             </div>
         </div>
     </section>
-
     <!--Подробно о компании-->
     <section class="detail-about">
         <div class="detail-about__container container">
@@ -135,9 +139,10 @@
                         является создание дружественного сообщества, где каждый человек может найти помощь в трудные
                         моменты
                         жизни.</p>
-                    <p class="detail-about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minus
-                        atque saepe facere hic nostrum consequuntur laboriosam ex facilis itaque, quibusdam dolor
-                        exercitationem consectetur distinctio sapiente eum asperiores laudantium accusamus.</p>
+                    <p class="detail-about__text">Мы верим в силу солидарности и взаимопомощи, поэтому целью центра
+                        "Хаер" является создание дружественного сообщества, где каждый человек может найти помощь в
+                        трудные моменты жизни. Присоединяйтесь к нам, чтобы сделать благотворительность доступной и
+                        эффективной для всех жителей Набережных Челнов. Вместе мы можем изменить жизни к лучшему!</p>
                 </div>
             </div>
         </div>
