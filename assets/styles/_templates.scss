@@ -1,15 +1,21 @@
 @import './vars';
 
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
 }
 
+=======
+>>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
 body {
     font-family: $font;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
 //размер контента внутри секции-----------------------------
 .container {
     width: 82.5rem;
@@ -24,6 +30,7 @@ body {
     }
 }
 
+<<<<<<< HEAD
 //позиционирование-----------------------------------------
 //центрирование
 .centering-center {
@@ -39,6 +46,8 @@ body {
     align-items: center;
 }
 
+=======
+>>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
 //заголовки------------------------------------------------
 // h1
 .main-title {
@@ -64,6 +73,7 @@ body {
     }
 }
 
+<<<<<<< HEAD
 //h3
 .third-title {
     font-size: 2.25rem;
@@ -86,12 +96,15 @@ body {
     }
 }
 
+=======
+>>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
 //ссылки-----------------------------------------------------
 .link {
     color: $text-main;
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 
 //Кнопки-----------------------------------------------------
 
@@ -109,16 +122,25 @@ body {
 }
 
 //кнопки заявка о помощи и входа для нко
+=======
+//кнопки заявки о помощи и входа для нко---------------------
+>>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
 .btns {
     width: 36rem;
     display: flex;
     justify-content: space-between;
     height: 6.68rem;
     font-size: 1.75rem;
+<<<<<<< HEAD
     cursor: pointer;
 
     @media (max-width: $l) {
         @include adaptive-font (28, 12);
+=======
+
+    @media (max-width: $l) {
+        @include adaptive-font (28, 11);
+>>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
         height: 3.8em;
         width: 20.5em;
     }
@@ -140,6 +162,7 @@ body {
     }
 }
 
+<<<<<<< HEAD
 
 //мятная кнопка
 @mixin mint-btn ($width, $height) {
@@ -564,6 +587,8 @@ body {
 
 
 
+=======
+>>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
 //header-----------------------------------------------------
 .header {
     background: $bg-primary-colored;
@@ -702,11 +727,21 @@ body {
 .footer {
     color: $text-main;
     background: $bg-secondary-light;
+<<<<<<< HEAD
+=======
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
     height: 12.5rem;
     font-size: 1rem;
 
     @media (max-width: $l) {
+<<<<<<< HEAD
         @include adaptive-font (16, 10);
+=======
+        @include adaptive-font (16, 8);
+>>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
     }
 
     @media (max-width: $m) {
