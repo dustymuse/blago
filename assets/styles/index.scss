@@ -263,11 +263,22 @@
 
     //позиционирование новостей
     &__block {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         width: 100%;
-        margin-bottom: 4rem;
+        margin-bottom: 4.2rem;
 
         @media (max-width: $l) {
-            margin-bottom: 2.9em;
+            margin-bottom: 3em;
+        }
+
+        @media (max-width: $s) {
+            flex-direction: column;
+        }
+
+        @media (max-width: $xs) {
+            margin-bottom: 0;
         }
     }
 
@@ -279,6 +290,11 @@
         }
     }
 
+    .container {
+        @media (max-width: $l) {
+            width: 60.3em;
+        }
+    }
 }
 
 
@@ -293,8 +309,23 @@
 
 
     @media (max-width: $l) {
-        width: 18em;
-        height: 37.8em;
+        width: 17em;
+        height: 40.8em;
+    }
+
+    @media (max-width: $m) {
+        width: 20em;
+        height: 37em;
+    }
+
+    @media (max-width: $s) {
+        width: 25em;
+        height: 43em;
+    }
+
+    @media (max-width: $xs) {
+        width: 90vw;
+        height: 43em;
     }
 
     &__img {
@@ -303,6 +334,10 @@
 
         @media (max-width: $l) {
             height: 14em;
+        }
+
+        @media (max-width: $s) {
+            height: 16em;
         }
     }
 
@@ -316,6 +351,7 @@
 
         @media (max-width: $l) {
             height: 4em;
+            margin-top: -0.72em;
         }
 
     }
@@ -345,7 +381,15 @@
 
         @media (max-width: $l) {
             padding: 1.45em 1em;
-            height: 19.1em;
+            height: 20.6em;
+        }
+
+        @media (max-width: $m) {
+            height: 17em;
+        }
+
+        @media (max-width: $s) {
+            height: 18em;
         }
     }
 
@@ -354,7 +398,12 @@
         line-height: 1.68rem;
 
         @media (max-width: $l) {
-            @include adaptive-font (22, 16);
+            @include adaptive-font (22, 14);
+            line-height: 1.22em;
+        }
+
+        @media (max-width: $s) {
+            @include adaptive-font (28, 14);
             line-height: 1.22em;
         }
     }
@@ -367,6 +416,16 @@
         @media (max-width: $l) {
             @include adaptive-font (22, 16);
             @include light-btn (8.9em, 3.6em);
+        }
+    }
+
+    &__second {
+        @media (max-width: $m) {
+            display: none;
+        }
+
+        @media (max-width: $s) {
+            display: block;
         }
     }
 }
