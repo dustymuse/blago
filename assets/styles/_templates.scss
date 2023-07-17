@@ -415,3 +415,15 @@ body {
     font-style: normal;
     font-weight: 700;
 }
+
+//мятная кнопка
+@mixin mint-btn ($width, $height) {
+    width: $width;
+    height: $height;
+    background-color: $bg-primary-colored;
+    color: $text-light;
+    border-radius: 0.625rem;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}

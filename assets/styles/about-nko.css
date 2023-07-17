@@ -520,4 +520,78 @@ body {
   src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid;
+}
+
+.about-nko__container {
+  background-color: #FFFFFF;
+  background-image: url(../../assets/images/design/background_about-nko.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90rem;
+  height: 37rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.about-nko__content {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5em;
+  margin-right: 5rem;
+}
+
+.about-nko__title {
+  font-size: 4.25rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.about-nko__btn {
+  width: 17.5rem;
+  display: flex;
+  justify-content: space-between;
+  height: 6.68rem;
+  font-size: 1.75rem;
+}
+@media (max-width: 90rem) {
+  .about-nko__btn {
+    height: 3.8em;
+    width: 20.5em;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .about-nko__btn {
+    font-size: calc(11px + 28.9 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .about-nko__btn {
+    font-size: calc(11px + 17 * (100vw / 1440));
+  }
+}
+
+.help {
+  background-color: #83BFBC;
+  color: #FFFFFF;
+  width: 17.5rem;
+  border-radius: 10px;
+  border: none;
+  padding: 1em;
+  font-weight: 500;
+}
+@media (max-width: 90rem) {
+  .help {
+    width: 10em;
+  }
 }/*# sourceMappingURL=about-nko.css.map */

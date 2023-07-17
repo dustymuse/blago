@@ -1,0 +1,73 @@
+@import './vars';
+@import './templates';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid;
+    $font: 'Montserrat', sans-serif;
+}
+
+//Об НКО//
+.about-nko__container{
+    background-color: $bg-primary-light;
+    background-image: url(../../assets/images/design/background_about-nko.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90rem;
+    height: 37rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+//     @media (max-width:$l) {
+//         width: 100vw;
+//         background-size: cover;
+//         height: 38rem;
+//         display: flex;
+//         flex-direction: column;
+// }
+}
+
+.about-nko__content {
+    width:50% ;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5em;
+    margin-right: 5rem;
+}
+
+.about-nko__title {
+    font-size: 4.25rem;
+    color: $text-light;
+    text-align: center;
+}
+
+// кнопка help
+.about-nko__btn {
+    width: 17.5rem;
+    display: flex;
+    justify-content: space-between;
+    height: 6.68rem;
+    font-size: 1.75rem;
+
+    @media (max-width: $l) {
+        @include adaptive-font (28, 11);
+        height: 3.8em;
+        width: 20.5em;
+    }
+}
+.help {
+    @include main-btn ($bg-primary-colored, $text-light, 17.5rem);
+
+    @media (max-width: $l) {
+        width: 10em;
+    }
+}
+
+
