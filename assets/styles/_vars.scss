@@ -9,13 +9,9 @@ $bg-tertiary-colored: #6DA5A2;
 $bg-primary-light: #FFFFFF;
 $bg-secondary-light: #ECEEF2;
 $bg-black: #000000;
-<<<<<<< HEAD
-$bg-grey: #BEBEBE;
+<<<<<<< HEAD $bg-grey: #BEBEBE;
 $bg-grey-light: #DEDEDE;
-=======
->>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
-
-// Шрифты
+=======>>>>>>>34d19c36cf1cbdcbc873c9f19975ae5b467061ae // Шрифты
 $font: 'Montserrat', sans-serif;
 //значения мин шрифта, в зависимости от макс (не обязательные, использовала другой-написала сюда)
 //14-9
@@ -38,9 +34,7 @@ $font: 'Montserrat', sans-serif;
 //36-20
 //68-30
 
-<<<<<<< HEAD
-=======
-//адаптивный размер шрифта
+<<<<<<< HEAD======= //адаптивный размер шрифта
 $maxWidth: 1440;
 
 @mixin adaptive-font($pcSize, $mobSize) {
@@ -77,14 +71,12 @@ $maxWidth: 1440;
     padding: 1em;
     font-weight: 500;
 }
->>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
 
-//брейкпоинты
+>>>>>>>34d19c36cf1cbdcbc873c9f19975ae5b467061ae //брейкпоинты
 $l: 90rem; //1440
 $m: 64rem; //1024
 $s: 48rem; //768
-<<<<<<< HEAD
-$xs: 35rem; //560
+<<<<<<< HEAD $xs: 35rem; //560
 
 
 //адаптивность шрифта
@@ -102,6 +94,6 @@ $maxWidth: 1440;
         font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
     }
 }
-=======
-$xs: 35rem; //560
->>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
+
+=======$xs: 35rem; //560
+>>>>>>>34d19c36cf1cbdcbc873c9f19975ae5b467061ae

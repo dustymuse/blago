@@ -1,22 +1,16 @@
 @import './vars';
 
-<<<<<<< HEAD
-* {
+<<<<<<< HEAD * {
     margin: 0;
     padding: 0;
 }
 
-=======
->>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
-body {
+=======>>>>>>>34d19c36cf1cbdcbc873c9f19975ae5b467061ae body {
     font-family: $font;
 }
 
-<<<<<<< HEAD
+<<<<<<< HEAD=======>>>>>>>34d19c36cf1cbdcbc873c9f19975ae5b467061ae //размер контента внутри секции-----------------------------
 
-=======
->>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
-//размер контента внутри секции-----------------------------
 .container {
     width: 82.5rem;
     margin: 0 auto;
@@ -30,8 +24,8 @@ body {
     }
 }
 
-<<<<<<< HEAD
-//позиционирование-----------------------------------------
+<<<<<<< HEAD //позиционирование-----------------------------------------
+
 //центрирование
 .centering-center {
     display: flex;
@@ -46,9 +40,8 @@ body {
     align-items: center;
 }
 
-=======
->>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
-//заголовки------------------------------------------------
+=======>>>>>>>34d19c36cf1cbdcbc873c9f19975ae5b467061ae //заголовки------------------------------------------------
+
 // h1
 .main-title {
     font-size: 2.25rem;
@@ -73,8 +66,8 @@ body {
     }
 }
 
-<<<<<<< HEAD
-//h3
+<<<<<<< HEAD //h3
+
 .third-title {
     font-size: 2.25rem;
     color: $text-main;
@@ -96,17 +89,14 @@ body {
     }
 }
 
-=======
->>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
-//ссылки-----------------------------------------------------
+=======>>>>>>>34d19c36cf1cbdcbc873c9f19975ae5b467061ae //ссылки-----------------------------------------------------
+
 .link {
     color: $text-main;
     text-decoration: none;
 }
 
-<<<<<<< HEAD
-
-//Кнопки-----------------------------------------------------
+<<<<<<< HEAD //Кнопки-----------------------------------------------------
 
 //cтандартная кнопка
 @mixin main-btn ($bg-color, $color, $width) {
@@ -122,812 +112,801 @@ body {
 }
 
 //кнопки заявка о помощи и входа для нко
-=======
-//кнопки заявки о помощи и входа для нко---------------------
->>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
-.btns {
+======= //кнопки заявки о помощи и входа для нко---------------------
+
+>>>>>>>34d19c36cf1cbdcbc873c9f19975ae5b467061ae .btns {
     width: 36rem;
     display: flex;
     justify-content: space-between;
     height: 6.68rem;
     font-size: 1.75rem;
-<<<<<<< HEAD
-    cursor: pointer;
+    <<<<<<< HEAD cursor: pointer;
 
     @media (max-width: $l) {
         @include adaptive-font (28, 12);
-=======
 
-    @media (max-width: $l) {
-        @include adaptive-font (28, 11);
->>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
-        height: 3.8em;
-        width: 20.5em;
-    }
-}
-
-.help {
-    @include main-btn ($bg-main-colored, $text-light, 17.5rem);
-
-    @media (max-width: $l) {
-        width: 10em;
-    }
-}
-
-.nko-account {
-    @include main-btn ($bg-primary-light, $text-main, 17.5rem);
-
-    @media (max-width: $l) {
-        width: 10em;
-    }
-}
-
-<<<<<<< HEAD
-
-//мятная кнопка
-@mixin mint-btn ($width, $height) {
-    width: $width;
-    height: $height;
-    background-color: $bg-primary-colored;
-    color: $text-light;
-    border-radius: 0.625rem;
-    border: none;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-//белая кнопка из формы пожертвования
-@mixin light-btn ($width, $height) {
-    width: $width;
-    height: $height;
-    background-color: $bg-primary-light;
-    color: $text-main;
-    border-radius: 0.625rem;
-    border: 0.5px black dashed;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-//линия
-@mixin hr {
-    margin: 0;
-    padding: 0;
-    margin: 0 auto;
-    border: none;
-    border-top: 1px solid #000;
-    flex-grow: 1;
-}
-
-//форма пожертвования----------------------------------------------------
-//размеры формы
-.donation-form {
-    background: $bg-secondary-light;
-    border: 1px solid;
-    width: 46.5rem;
-    height: 56.56rem;
-    flex-direction: column;
-    @include adaptive-font (26, 10);
-
-    @media (max-width: $l) {
-        width: 31em;
-        height: 34.8em;
+        =======@media (max-width: $l) {
+            @include adaptive-font (28, 11);
+            >>>>>>>34d19c36cf1cbdcbc873c9f19975ae5b467061ae height: 3.8em;
+            width: 20.5em;
+        }
     }
 
-    @media (max-width: $m) {
+    .help {
+        @include main-btn ($bg-main-colored, $text-light, 17.5rem);
+
+        @media (max-width: $l) {
+            width: 10em;
+        }
+    }
+
+    .nko-account {
+        @include main-btn ($bg-primary-light, $text-main, 17.5rem);
+
+        @media (max-width: $l) {
+            width: 10em;
+        }
+    }
+
+    <<<<<<< HEAD //мятная кнопка
+
+    @mixin mint-btn ($width, $height) {
+        width: $width;
+        height: $height;
+        background-color: $bg-primary-colored;
+        color: $text-light;
+        border-radius: 0.625rem;
         border: none;
-        height: 40em;
+        font-weight: 500;
+        cursor: pointer;
     }
 
-    @media (max-width: $xs) {
-        height: 45em;
+    //белая кнопка из формы пожертвования
+    @mixin light-btn ($width, $height) {
+        width: $width;
+        height: $height;
+        background-color: $bg-primary-light;
+        color: $text-main;
+        border-radius: 0.625rem;
+        border: 0.5px black dashed;
+        font-weight: 500;
+        cursor: pointer;
     }
 
-    hr {
-        @include hr;
+    //линия
+    @mixin hr {
+        margin: 0;
+        padding: 0;
+        margin: 0 auto;
+        border: none;
+        border-top: 1px solid #000;
+        flex-grow: 1;
     }
 
-    //размеры контейнера внутри
-    &__container {
-        width: 37rem;
+    //форма пожертвования----------------------------------------------------
+    //размеры формы
+    .donation-form {
+        background: $bg-secondary-light;
+        border: 1px solid;
+        width: 46.5rem;
+        height: 56.56rem;
+        flex-direction: column;
+        @include adaptive-font (26, 10);
 
         @media (max-width: $l) {
-            width: 22.7em;
+            width: 31em;
+            height: 34.8em;
         }
 
         @media (max-width: $m) {
-            width: 28em;
+            border: none;
+            height: 40em;
         }
 
-        @media (max-width: $s) {
-            width: 29em;
+        @media (max-width: $xs) {
+            height: 45em;
         }
+
+        hr {
+            @include hr;
+        }
+
+        //размеры контейнера внутри
+        &__container {
+            width: 37rem;
+
+            @media (max-width: $l) {
+                width: 22.7em;
+            }
+
+            @media (max-width: $m) {
+                width: 28em;
+            }
+
+            @media (max-width: $s) {
+                width: 29em;
+            }
+        }
+
+        //позиционирование блоков
+        &__title {
+            text-align: center;
+            margin-bottom: 1.88rem;
+
+            @media (max-width: $l) {
+                margin-bottom: 0.83em;
+            }
+        }
+
+        &__regularity-btns {
+            width: 100%;
+            margin-bottom: 0.88rem;
+
+            @media (max-width: $l) {
+                margin-bottom: 0.58em;
+            }
+
+            @media (max-width: $xs) {
+                margin-bottom: 0.4em;
+            }
+        }
+
     }
 
-    //позиционирование блоков
-    &__title {
-        text-align: center;
-        margin-bottom: 1.88rem;
+    //Кнопки регулярности пожертвований
+    .payment__monthly {
+        @include mint-btn (17rem, 5rem);
+        font-size: 1.75rem;
 
         @media (max-width: $l) {
-            margin-bottom: 0.83em;
+            @include adaptive-font (28, 12);
+            @include mint-btn (9.7em, 2.85em);
+        }
+
+        @media (max-width: $m) {
+            @include mint-btn (11.5em, 2.85em);
         }
     }
 
-    &__regularity-btns {
+    .payment__one-time {
+        font-size: 1.75rem;
+        @include light-btn (17rem, 5rem);
+
+        @media (max-width: $l) {
+            @include adaptive-font (28, 12);
+            @include light-btn (9.7em, 2.85em);
+        }
+
+        @media (max-width: $m) {
+            @include light-btn (11.5em, 2.85em);
+        }
+    }
+
+    //позиционирование полоски с мин-заголовками
+    .payment__text {
         width: 100%;
-        margin-bottom: 0.88rem;
+    }
+
+    //мини-заголовки
+    .payment__title {
+        font-size: 1.625rem;
+        font-weight: 400;
+        margin: 1rem;
 
         @media (max-width: $l) {
-            margin-bottom: 0.58em;
-        }
-
-        @media (max-width: $xs) {
-            margin-bottom: 0.4em;
+            @include adaptive-font (26, 14);
+            margin: 0.61em;
         }
     }
 
-}
-
-//Кнопки регулярности пожертвований
-.payment__monthly {
-    @include mint-btn (17rem, 5rem);
-    font-size: 1.75rem;
-
-    @media (max-width: $l) {
-        @include adaptive-font (28, 12);
-        @include mint-btn (9.7em, 2.85em);
+    //кнопки с суммой пожертвования
+    .sum-btns {
+        width: 100%;
+        margin-bottom: 0.12rem;
     }
 
-    @media (max-width: $m) {
-        @include mint-btn (11.5em, 2.85em);
-    }
-}
-
-.payment__one-time {
-    font-size: 1.75rem;
-    @include light-btn (17rem, 5rem);
-
-    @media (max-width: $l) {
-        @include adaptive-font (28, 12);
-        @include light-btn (9.7em, 2.85em);
-    }
-
-    @media (max-width: $m) {
-        @include light-btn (11.5em, 2.85em);
-    }
-}
-
-//позиционирование полоски с мин-заголовками
-.payment__text {
-    width: 100%;
-}
-
-//мини-заголовки
-.payment__title {
-    font-size: 1.625rem;
-    font-weight: 400;
-    margin: 1rem;
-
-    @media (max-width: $l) {
-        @include adaptive-font (26, 14);
-        margin: 0.61em;
-    }
-}
-
-//кнопки с суммой пожертвования
-.sum-btns {
-    width: 100%;
-    margin-bottom: 0.12rem;
-}
-
-.sum-btns>* {
-    font-size: 1.25rem;
-    @include light-btn (10.9rem, 3.75rem);
-
-    @media (max-width: $l) {
-        @include adaptive-font (20, 10);
-        @include light-btn (8.72em, 3em);
-    }
-
-    @media (max-width: $m) {
-        @include light-btn (9em, 3em);
-    }
-}
-
-//Кнопка выбора платёжной системы
-.types-of-payment {
-    @include light-btn (100%, 5rem);
-    margin-bottom: 0.81rem;
-
-    @media (max-width: $l) {
-        @include light-btn (100%, 2.85em);
-        margin-bottom: 0.6em;
-    }
-
-    &__img {
-        width: 9.44rem;
-        height: 2.6rem;
+    .sum-btns>* {
+        font-size: 1.25rem;
+        @include light-btn (10.9rem, 3.75rem);
 
         @media (max-width: $l) {
-            width: 5.8em;
-            height: 1.6em;
-        }
-
-        @media (max-width: $xs) {
-            display: none;
-        }
-
-    }
-
-    &__img:not(:last-child) {
-        margin-right: 0.5rem;
-
-        @media (max-width: $l) {
-            margin-right: 0.3em;
+            @include adaptive-font (20, 10);
+            @include light-btn (8.72em, 3em);
         }
 
         @media (max-width: $m) {
-            margin-right: 0;
+            @include light-btn (9em, 3em);
         }
     }
 
-    &__text {
-        font-size: 1.125rem;
-
-        @media (max-width: $l) {
-            @include adaptive-font (18, 10);
-        }
-
-        @media (max-width: $xs) {
-            @include adaptive-font (18, 12);
-        }
-    }
-}
-
-//оформление инпутов
-.payment__input {
-    @include light-btn (100%, 3.75rem);
-    outline: none;
-    font-size: 1.25rem;
-
-    @media (max-width: $l) {
-        @include adaptive-font (20, 10);
-        @include light-btn (100%, 3em);
-    }
-
-    @media (max-width: $m) {
-        @include light-btn (100%, 3em);
-    }
-
-    &_text {
-        text-indent: 1.94rem;
-        margin-bottom: 0.9rem;
-
-        @media (max-width: $l) {
-            text-indent: 0.72em;
-        }
-    }
-
-    &_first {
+    //Кнопка выбора платёжной системы
+    .types-of-payment {
+        @include light-btn (100%, 5rem);
         margin-bottom: 0.81rem;
 
         @media (max-width: $l) {
+            @include light-btn (100%, 2.85em);
             margin-bottom: 0.6em;
         }
-    }
 
-}
-
-//цвет плэйсхолдера
-::-webkit-input-placeholder,
-:-moz-placeholder,
-:-moz-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder,
-::placeholder {
-    color: $text-dark;
-
-    @media (max-width: $xs) {
-        color: $text-main
-    }
-}
-
-
-//оформление ссылок в инпутах
-.payment__link {
-    color: $text-dark;
-    text-decoration: none;
-
-    &_border {
-        border-bottom: 1px solid;
-    }
-}
-
-.payment__link:hover {
-    cursor: pointer;
-}
-
-
-//оформление чекбоксов
-.payment__checkbox {
-    display: flex;
-    align-items: center;
-    font-size: 1.125rem;
-    margin-bottom: 1.38rem;
-    line-height: 1.3em;
-
-    @media (max-width: $l) {
-        @include adaptive-font (18, 12);
-        margin-bottom: 1.22em;
-    }
-
-    &.payment__checkbox_first,
-    >.payment__document {
-        border: none;
-        margin-bottom: 0.3rem;
-
-        @media (max-width: $l) {
-            margin-bottom: 0.26em;
-        }
-    }
-
-    .payment__document {
-        width: 2.8rem;
-        height: 2.8rem;
-        margin-right: 1rem;
-        position: relative;
-        outline: none;
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        border-style: dashed;
-        border-width: 1px;
-        border-color: $bg-black;
-        background-color: $bg-primary-light;
-
-        @media (max-width: $l) {
-            width: 2em;
-            height: 2em;
-            margin-right: 0.8em;
-        }
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            background-image: none;
-        }
-
-        &:hover {
-            cursor: pointer;
-        }
-
-        &:checked::before {
-            background-image: url('../images/icons/payment__check-mark.png');
-            background-size: 80% auto;
-            background-repeat: no-repeat;
-            background-position: center;
+        &__img {
+            width: 9.44rem;
+            height: 2.6rem;
 
             @media (max-width: $l) {
-                background-size: 70% auto;
+                width: 5.8em;
+                height: 1.6em;
+            }
+
+            @media (max-width: $xs) {
+                display: none;
+            }
+
+        }
+
+        &__img:not(:last-child) {
+            margin-right: 0.5rem;
+
+            @media (max-width: $l) {
+                margin-right: 0.3em;
+            }
+
+            @media (max-width: $m) {
+                margin-right: 0;
+            }
+        }
+
+        &__text {
+            font-size: 1.125rem;
+
+            @media (max-width: $l) {
+                @include adaptive-font (18, 10);
+            }
+
+            @media (max-width: $xs) {
+                @include adaptive-font (18, 12);
             }
         }
     }
-}
 
-//итоговая кнопка пожертвовать
-.payment__donation {
-    @include mint-btn (100%, 5rem);
-    font-size: 2.25rem;
-
-    @media (max-width: $l) {
-        @include mint-btn (100%, 2em);
-        @include adaptive-font (36, 18);
-    }
-}
-
-
-//скролл-----------------------------------------
-@mixin scroll ($max-height) {
-    max-height: $max-height;
-    overflow: auto;
-    scrollbar-width: 1rem;
-    scrollbar-color: $bg-grey-light;
-    padding-right: 1em;
-
-    @media (max-width: $m) {
-        scrollbar-width: 0.5rem;
-    }
-
-    @media (max-width: $s) {
-        scrollbar-width: 0.25rem;
-    }
-}
-
-.scroll::-webkit-scrollbar {
-    width: 1rem;
-    background-color: $bg-grey-light;
-    border-radius: 1rem;
-
-    @media (max-width: $m) {
-        width: 0.5rem;
-    }
-
-    @media (max-width: $s) {
-        width: 0.25rem;
-        background-color: $bg-grey;
-
-    }
-}
-
-.scroll::-webkit-scrollbar-track {
-    background-color: $bg-grey-light;
-    border-radius: 1rem;
-    -webkit-box-shadow: 1rem;
-
-    @media (max-width: $s) {
-        background-color: $bg-grey;
-    }
-}
-
-.scroll::-webkit-scrollbar-thumb {
-    background-color: $bg-primary-colored;
-    border-radius: 1rem;
-
-    @media (max-width: $m) {
-        background-color: $bg-main-colored;
-
-    }
-}
-
-
-
-=======
->>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
-//header-----------------------------------------------------
-.header {
-    background: $bg-primary-colored;
-
-    &__container {
-        font-size: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0 auto;
-        padding: 0.25em;
+    //оформление инпутов
+    .payment__input {
+        @include light-btn (100%, 3.75rem);
+        outline: none;
+        font-size: 1.25rem;
 
         @media (max-width: $l) {
-            @include adaptive-font (16, 10);
-            padding: 0.4em;
-        }
-    }
-
-    //логотип
-    &__logo {
-        width: 6rem;
-
-        @media (max-width: $l) {
-            width: 6em;
-        }
-
-        @media (max-width: $xs) {
-            width: 5em;
-        }
-    }
-
-    &__content {
-        display: flex;
-        align-items: center;
-    }
-
-    //навигация
-    &__link {
-        margin-right: 4.3rem;
-
-        @media (max-width: $m) {
-            margin-right: 1em;
-        }
-
-        @media (max-width: $s) {
-            margin-right: 0.4em;
-        }
-
-        @media (max-width: $xs) {
-            margin-right: 1em;
-        }
-    }
-
-    //иконки
-    &__search {
-        margin-right: 2.25rem;
-        width: 2.4rem;
-
-        @media (max-width: $l) {
-            width: 2.4em;
+            @include adaptive-font (20, 10);
+            @include light-btn (100%, 3em);
         }
 
         @media (max-width: $m) {
-            margin-right: 0.6vw;
+            @include light-btn (100%, 3em);
         }
 
-        @media (max-width: $s) {
-            width: 2em;
+        &_text {
+            text-indent: 1.94rem;
+            margin-bottom: 0.9rem;
+
+            @media (max-width: $l) {
+                text-indent: 0.72em;
+            }
         }
+
+        &_first {
+            margin-bottom: 0.81rem;
+
+            @media (max-width: $l) {
+                margin-bottom: 0.6em;
+            }
+        }
+
+    }
+
+    //цвет плэйсхолдера
+    ::-webkit-input-placeholder,
+    :-moz-placeholder,
+    :-moz-placeholder,
+    ::-moz-placeholder,
+    :-ms-input-placeholder,
+    ::placeholder {
+        color: $text-dark;
 
         @media (max-width: $xs) {
-            margin-right: 3vw;
+            color: $text-main
         }
     }
 
-    &__account {
-        margin-right: 1.12rem;
-        width: 2.12rem;
 
-        @media (max-width: $l) {
-            width: 2.12em;
-        }
+    //оформление ссылок в инпутах
+    .payment__link {
+        color: $text-dark;
+        text-decoration: none;
 
-        @media (max-width: $m) {
-            margin-right: 1.25vw;
-        }
-
-        @media (max-width: $s) {
-            width: 1.5em;
+        &_border {
+            border-bottom: 1px solid;
         }
     }
 
-    //кнопки
-    &__btns {
-        @media (max-width: $xs) {
-            display: none;
-        }
+    .payment__link:hover {
+        cursor: pointer;
     }
 
-    //зарегистрироваться
-    &__registration {
-        font-size: 0.875rem;
-        @include main-btn ($bg-main-colored, $text-light, 9.4rem);
-        margin-right: 0.5rem;
 
-        @media (max-width: $l) {
-            @include adaptive-font (14, 9);
-            @include main-btn ($bg-main-colored, $text-light, 9.4em);
-            margin-right: 1.1vw;
-        }
-
-        @media (max-width: $s) {
-            @include main-btn ($bg-main-colored, $text-light, 9em);
-        }
-
-    }
-
-    //войти в аккаунт
-    &__area {
-        font-size: 0.875rem;
-        @include main-btn ($bg-primary-light, $text-main, 9.4rem);
-
-        @media (max-width: $l) {
-            @include adaptive-font (14, 9);
-            @include main-btn ($bg-primary-light, $text-main, 9.4em);
-        }
-
-        @media (max-width: $s) {
-            @include main-btn ($bg-primary-light, $text-main, 9em);
-        }
-    }
-}
-
-//футер--------------------------------------------------
-
-.footer {
-    color: $text-main;
-    background: $bg-secondary-light;
-<<<<<<< HEAD
-=======
-    display: flex;
-    justify-content: center;
-    align-items: center;
->>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
-    height: 12.5rem;
-    font-size: 1rem;
-
-    @media (max-width: $l) {
-<<<<<<< HEAD
-        @include adaptive-font (16, 10);
-=======
-        @include adaptive-font (16, 8);
->>>>>>> 34d19c36cf1cbdcbc873c9f19975ae5b467061ae
-    }
-
-    @media (max-width: $m) {
-        height: 11rem;
-    }
-
-    @media (max-width: $s) {
-        height: 9rem;
-    }
-
-    @media (max-width: $xs) {
-        height: 8rem;
-    }
-
-    //контейнер футера
-    &__container {
+    //оформление чекбоксов
+    .payment__checkbox {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 73.5rem;
+        font-size: 1.125rem;
+        margin-bottom: 1.38rem;
+        line-height: 1.3em;
 
         @media (max-width: $l) {
-            width: 82vw;
+            @include adaptive-font (18, 12);
+            margin-bottom: 1.22em;
         }
 
-        @media (max-width: 75rem) {
-            width: 94vw;
-        }
-    }
+        &.payment__checkbox_first,
+        >.payment__document {
+            border: none;
+            margin-bottom: 0.3rem;
 
-    //лого
-    &__logo {
-        width: 9.4rem;
-
-        @media (max-width: $l) {
-            width: 9em;
+            @media (max-width: $l) {
+                margin-bottom: 0.26em;
+            }
         }
 
-        @media (max-width: 58rem) {
+        .payment__document {
+            width: 2.8rem;
+            height: 2.8rem;
             margin-right: 1rem;
-        }
+            position: relative;
+            outline: none;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            border-style: dashed;
+            border-width: 1px;
+            border-color: $bg-black;
+            background-color: $bg-primary-light;
 
-        @media (max-width: $s) {
-            display: none;
+            @media (max-width: $l) {
+                width: 2em;
+                height: 2em;
+                margin-right: 0.8em;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                background-image: none;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:checked::before {
+                background-image: url('../images/icons/payment__check-mark.png');
+                background-size: 80% auto;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                @media (max-width: $l) {
+                    background-size: 70% auto;
+                }
+            }
         }
     }
 
-    //расположение текста футера
-    &__column {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        max-width: 17.3rem;
-        min-height: 9.4rem;
+    //итоговая кнопка пожертвовать
+    .payment__donation {
+        @include mint-btn (100%, 5rem);
+        font-size: 2.25rem;
+
+        @media (max-width: $l) {
+            @include mint-btn (100%, 2em);
+            @include adaptive-font (36, 18);
+        }
+    }
+
+
+    //скролл-----------------------------------------
+    @mixin scroll ($max-height) {
+        max-height: $max-height;
+        overflow: auto;
+        scrollbar-width: 1rem;
+        scrollbar-color: $bg-grey-light;
+        padding-right: 1em;
 
         @media (max-width: $m) {
-            min-height: 8.5rem;
-        }
-
-        @media (max-width: 75rem) {
-            max-width: 25vw;
+            scrollbar-width: 0.5rem;
         }
 
         @media (max-width: $s) {
-            min-height: 7rem;
-            max-width: 30vw;
+            scrollbar-width: 0.25rem;
+        }
+    }
+
+    .scroll::-webkit-scrollbar {
+        width: 1rem;
+        background-color: $bg-grey-light;
+        border-radius: 1rem;
+
+        @media (max-width: $m) {
+            width: 0.5rem;
+        }
+
+        @media (max-width: $s) {
+            width: 0.25rem;
+            background-color: $bg-grey;
+
+        }
+    }
+
+    .scroll::-webkit-scrollbar-track {
+        background-color: $bg-grey-light;
+        border-radius: 1rem;
+        -webkit-box-shadow: 1rem;
+
+        @media (max-width: $s) {
+            background-color: $bg-grey;
+        }
+    }
+
+    .scroll::-webkit-scrollbar-thumb {
+        background-color: $bg-primary-colored;
+        border-radius: 1rem;
+
+        @media (max-width: $m) {
+            background-color: $bg-main-colored;
+
+        }
+    }
+
+
+
+    =======>>>>>>>34d19c36cf1cbdcbc873c9f19975ae5b467061ae //header-----------------------------------------------------
+
+    .header {
+        background: $bg-primary-colored;
+
+        &__container {
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 0.25em;
+
+            @media (max-width: $l) {
+                @include adaptive-font (16, 10);
+                padding: 0.4em;
+            }
+        }
+
+        //логотип
+        &__logo {
+            width: 6rem;
+
+            @media (max-width: $l) {
+                width: 6em;
+            }
+
+            @media (max-width: $xs) {
+                width: 5em;
+            }
+        }
+
+        &__content {
+            display: flex;
+            align-items: center;
+        }
+
+        //навигация
+        &__link {
+            margin-right: 4.3rem;
+
+            @media (max-width: $m) {
+                margin-right: 1em;
+            }
+
+            @media (max-width: $s) {
+                margin-right: 0.4em;
+            }
+
+            @media (max-width: $xs) {
+                margin-right: 1em;
+            }
+        }
+
+        //иконки
+        &__search {
+            margin-right: 2.25rem;
+            width: 2.4rem;
+
+            @media (max-width: $l) {
+                width: 2.4em;
+            }
+
+            @media (max-width: $m) {
+                margin-right: 0.6vw;
+            }
+
+            @media (max-width: $s) {
+                width: 2em;
+            }
+
+            @media (max-width: $xs) {
+                margin-right: 3vw;
+            }
+        }
+
+        &__account {
+            margin-right: 1.12rem;
+            width: 2.12rem;
+
+            @media (max-width: $l) {
+                width: 2.12em;
+            }
+
+            @media (max-width: $m) {
+                margin-right: 1.25vw;
+            }
+
+            @media (max-width: $s) {
+                width: 1.5em;
+            }
+        }
+
+        //кнопки
+        &__btns {
+            @media (max-width: $xs) {
+                display: none;
+            }
+        }
+
+        //зарегистрироваться
+        &__registration {
+            font-size: 0.875rem;
+            @include main-btn ($bg-main-colored, $text-light, 9.4rem);
+            margin-right: 0.5rem;
+
+            @media (max-width: $l) {
+                @include adaptive-font (14, 9);
+                @include main-btn ($bg-main-colored, $text-light, 9.4em);
+                margin-right: 1.1vw;
+            }
+
+            @media (max-width: $s) {
+                @include main-btn ($bg-main-colored, $text-light, 9em);
+            }
+
+        }
+
+        //войти в аккаунт
+        &__area {
+            font-size: 0.875rem;
+            @include main-btn ($bg-primary-light, $text-main, 9.4rem);
+
+            @media (max-width: $l) {
+                @include adaptive-font (14, 9);
+                @include main-btn ($bg-primary-light, $text-main, 9.4em);
+            }
+
+            @media (max-width: $s) {
+                @include main-btn ($bg-primary-light, $text-main, 9em);
+            }
+        }
+    }
+
+    //футер--------------------------------------------------
+
+    .footer {
+        color: $text-main;
+        background: $bg-secondary-light;
+        <<<<<<< HEAD=======display: flex;
+        justify-content: center;
+        align-items: center;
+        >>>>>>>34d19c36cf1cbdcbc873c9f19975ae5b467061ae height: 12.5rem;
+        font-size: 1rem;
+
+        @media (max-width: $l) {
+            <<<<<<< HEAD @include adaptive-font (16, 10);
+            =======@include adaptive-font (16, 8);
+            >>>>>>>34d19c36cf1cbdcbc873c9f19975ae5b467061ae
+        }
+
+        @media (max-width: $m) {
+            height: 11rem;
+        }
+
+        @media (max-width: $s) {
+            height: 9rem;
         }
 
         @media (max-width: $xs) {
-            min-height: 6rem;
+            height: 8rem;
         }
 
-        &:nth-child(2) {
-            max-width: 21rem;
+        //контейнер футера
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 73.5rem;
+
+            @media (max-width: $l) {
+                width: 82vw;
+            }
+
+            @media (max-width: 75rem) {
+                width: 94vw;
+            }
+        }
+
+        //лого
+        &__logo {
+            width: 9.4rem;
+
+            @media (max-width: $l) {
+                width: 9em;
+            }
+
+            @media (max-width: 58rem) {
+                margin-right: 1rem;
+            }
+
+            @media (max-width: $s) {
+                display: none;
+            }
+        }
+
+        //расположение текста футера
+        &__column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 17.3rem;
+            min-height: 9.4rem;
+
+            @media (max-width: $m) {
+                min-height: 8.5rem;
+            }
 
             @media (max-width: 75rem) {
                 max-width: 25vw;
             }
 
             @media (max-width: $s) {
-                margin-right: 1rem;
+                min-height: 7rem;
                 max-width: 30vw;
             }
-        }
 
-        &:nth-child(3) {
             @media (max-width: $xs) {
-                justify-content: start;
+                min-height: 6rem;
             }
 
-            .footer__title {
+            &:nth-child(2) {
+                max-width: 21rem;
 
-                @media (max-width: $m) {
-                    margin-bottom: 1.3rem;
+                @media (max-width: 75rem) {
+                    max-width: 25vw;
                 }
 
+                @media (max-width: $s) {
+                    margin-right: 1rem;
+                    max-width: 30vw;
+                }
+            }
+
+            &:nth-child(3) {
                 @media (max-width: $xs) {
-                    margin-bottom: 1rem;
+                    justify-content: start;
+                }
+
+                .footer__title {
+
+                    @media (max-width: $m) {
+                        margin-bottom: 1.3rem;
+                    }
+
+                    @media (max-width: $xs) {
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                .footer__text:not(:last-child) {
+                    margin-bottom: 0.4rem;
                 }
             }
 
-            .footer__text:not(:last-child) {
-                margin-bottom: 0.4rem;
+            &:not(:last-child) {
+                @media (max-width: $s) {
+                    margin-right: 1rem;
+                }
+            }
+
+        }
+
+        //размеры текста в футере
+        &__title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.27rem;
+
+            @media (max-width: $l) {
+                @include adaptive-font (23, 12);
+            }
+
+            @media (max-width: 75rem) {
+                margin-bottom: 0.88em;
             }
         }
 
-        &:not(:last-child) {
-            @media (max-width: $s) {
-                margin-right: 1rem;
+        &__text {
+            font-size: 1rem;
+
+            @media (max-width: $l) {
+                @include adaptive-font (16, 8);
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 0.75em;
             }
         }
-
     }
 
-    //размеры текста в футере
-    &__title {
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-bottom: 1.27rem;
+    //навигация футера
+    .nav-footer {
+        font-size: 1.4rem;
 
         @media (max-width: $l) {
-            @include adaptive-font (23, 12);
+            @include adaptive-font (23, 14);
         }
 
-        @media (max-width: 75rem) {
-            margin-bottom: 0.88em;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    &__text {
-        font-size: 1rem;
 
-        @media (max-width: $l) {
-            @include adaptive-font (16, 8);
-        }
+    //подключение шрифтов-----------------------------------
 
-        &:not(:last-child) {
-            margin-bottom: 0.75em;
-        }
-    }
-}
-
-//навигация футера
-.nav-footer {
-    font-size: 1.4rem;
-
-    @media (max-width: $l) {
-        @include adaptive-font (23, 14);
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('../fonts/montserrat-regular.woff2') format('woff2'),
+            url('../fonts/montserrat-regular.woff') format('woff');
+        font-style: normal;
+        font-weight: 400;
     }
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('../fonts/montserrat-light.woff2') format('woff2'),
+            url('../fonts/montserrat-light.woff') format('woff');
+        font-style: normal;
+        font-weight: 300;
+    }
 
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('../fonts/montserrat-medium.woff2') format('woff2'),
+            url('../fonts/montserrat-medium.woff') format('woff');
+        font-style: normal;
+        font-weight: 500;
+    }
 
-//подключение шрифтов-----------------------------------
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/montserrat-regular.woff2') format('woff2'),
-        url('../fonts/montserrat-regular.woff') format('woff');
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/montserrat-light.woff2') format('woff2'),
-        url('../fonts/montserrat-light.woff') format('woff');
-    font-style: normal;
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/montserrat-medium.woff2') format('woff2'),
-        url('../fonts/montserrat-medium.woff') format('woff');
-    font-style: normal;
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/montserrat-bold.woff2') format('woff2'),
-        url('../fonts/montserrat-bold.woff') format('woff');
-    font-style: normal;
-    font-weight: 700;
-}
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('../fonts/montserrat-bold.woff2') format('woff2'),
+            url('../fonts/montserrat-bold.woff') format('woff');
+        font-style: normal;
+        font-weight: 700;
+    }
