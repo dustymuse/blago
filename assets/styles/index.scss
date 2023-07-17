@@ -257,17 +257,17 @@
         padding-top: 4rem;
 
         @media (max-width: $l) {
-            padding-top: 2.13em;
+            padding-top: 2.9em;
         }
     }
 
     //позиционирование новостей
     &__block {
         width: 100%;
-        margin-bottom: 3.56rem;
+        margin-bottom: 4rem;
 
         @media (max-width: $l) {
-            margin-bottom: 2.58em;
+            margin-bottom: 2.9em;
         }
     }
 
@@ -275,7 +275,7 @@
         margin-bottom: 4rem;
 
         @media (max-width: $l) {
-            margin-top: 2.13em;
+            margin-bottom: 0.94em;
         }
     }
 
@@ -284,16 +284,13 @@
 
 //дизайн блокa одной новости
 .short-novelty {
-    width: 25rem;
-    height: 52.1rem;
+    width: 25.8rem;
+    height: 54.1rem;
 
     &__img {
         border-radius: 10px 10px 0 0;
     }
 
-    &__main {
-        border-radius: 0 0 10px 10px;
-    }
 
     @media (max-width: $l) {
         width: 18em;
@@ -343,11 +340,12 @@
         text-align: start;
         background-color: $bg-secondary-light;
         height: 26.3rem;
-        padding: 2rem 1.44rem 0 1.25rem;
+        border-radius: 0 0 10px 10px;
+        padding: 2rem 1.44rem;
 
         @media (max-width: $l) {
-            padding: 1.45em 0.9em 0 1em;
-            height: 19.1rem;
+            padding: 1.45em 1em;
+            height: 19.1em;
         }
     }
 
@@ -365,12 +363,10 @@
         @include light-btn (12.3rem, 5rem);
         border: 1px $bg-main-colored dashed;
         font-size: 1.375rem;
-        margin-bottom: 1.38rem;
 
         @media (max-width: $l) {
             @include adaptive-font (22, 16);
             @include light-btn (8.9em, 3.6em);
-            margin-bottom: 1em;
         }
     }
 }
@@ -383,7 +379,7 @@
 
     @media (max-width: $l) {
         @include adaptive-font (30, 19);
-        @include mint-btn (32.8em, 2.6em);
+        @include mint-btn (9.3em, 2.6em);
         margin-bottom: 2.13em;
     }
 }
