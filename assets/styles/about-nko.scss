@@ -163,7 +163,7 @@
     padding-bottom: 4rem;
     @media (max-width:$m) {
         padding-bottom: 2rem;
-
+    }
     &__container {
     max-width: 60rem;
     display: flex;
@@ -172,7 +172,6 @@
     align-items: center;
     @media (max-width: $l) {
         max-width: 80vw;
-        
     }
 }
     &__title {
@@ -205,7 +204,7 @@
 }
 }
 }
-}
+
 // <!-- Отчеты о проделанной работе -->
 
 //Документы
@@ -259,7 +258,32 @@
 }
 }
 }
+
 //Документы
 
+// Соцсети
+.social__container {
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    row-gap: 3rem;
+    padding-bottom: 4rem;
+    justify-content: center;
+}
+.social__title{
+    display: flex;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: $text-main;
+    font-weight: 500;
+}
+.social__icons {
+    display: flex;
+    list-style: none;
+    padding-left: 5rem;
+  }
 
-
+  .social__icon-link{
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+    }
