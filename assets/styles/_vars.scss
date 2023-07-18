@@ -65,7 +65,7 @@ $maxWidth: 1440;
 @mixin main-btn ($bg-color, $color, $width) {
     background-color: $bg-color;
     color: $color;
-    width: $width;
+    width: $width;;
     border-radius: 10px;
     border: none;
     padding: 1em;
@@ -84,7 +84,7 @@ $maxWidth: 1440;
 
 @mixin adaptive-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
-    $addMobSize: $addSize +$addSize * 0.7;
+    $addMobSize: $addSize + $addSize * 0.7;
 
     @media (max-width: 767px) {
         font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
