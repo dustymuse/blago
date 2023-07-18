@@ -167,7 +167,7 @@ body {
     background-color: $bg-primary-light;
     color: $text-main;
     border-radius: 0.625rem;
-    border: 0.5px black dashed;
+    border-style: dotted;
     font-weight: 500;
     cursor: pointer;
 }
@@ -515,6 +515,58 @@ body {
     }
 }
 
+// Блок Документы с кнопками с адаптивом---------------------------
+
+.documents{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    row-gap: 3rem;
+    padding-bottom: 4rem;
+
+    &__buttons{
+    display: flex;
+    justify-content: space-between;
+        @media (max-width:$m) {
+        gap: 1rem;
+        }
+        @media (max-width:$s) {
+        flex-direction: column;
+        gap: 1.5rem;
+        }
+    }
+    &__title{
+    font-size: 2.25rem;
+    color: $text-main;
+    font-weight: 500;
+    margin-bottom: 3rem;
+        @media (max-width: $l) {
+        @include adaptive-font (36, 20);
+        text-align: center;
+        }
+        @media (max-width:$m) {
+        margin-bottom: 2rem;
+        }
+        @media (max-width:$s) {
+        margin-bottom: 1.5rem;
+        }
+    }
+    &__link{
+    font-size: 1.75rem;
+        @media (max-width: $l) {
+        @include adaptive-font (28, 14);
+        text-align: center;
+        }
+    }
+    .doc-button-item{
+        @include mint-btn (24rem, 8rem);
+        @media (max-width: $l) {
+            @include adaptive-font (28, 14);
+            height: 4em;
+            width: 12em;
+        }
+    }
+}
 
 //скролл-----------------------------------------
 @mixin scroll ($max-height) {

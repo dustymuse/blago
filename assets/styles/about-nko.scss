@@ -17,9 +17,9 @@
     font-size: 1.75rem;
 
     @media (max-width: $l) {
-        @include adaptive-font (28, 11);
-        height: 3.8em;
-        width: 10em;
+        @include adaptive-font (28, 14);
+        height: 4em;
+        width: 12em;
 }
 }
 // кнопка help
@@ -30,7 +30,7 @@
     background-image: url(../../assets/images/design/background_about-nko.png);
     background-position: center;
     background-size: cover;
-    width: 90rem;
+    width: 100vw;
     height: 40rem;
     display: flex;
     justify-content: flex-end;
@@ -40,17 +40,19 @@
 
     @media (max-width:$m) {
         width: 100vw;
-        height: 35rem;
+        height: 30rem;
 }
 @media (max-width:$s) {
     width: 100vw;
     height: 25rem;
     background-position: right;
+    margin-bottom: 3rem;
 }
 @media (max-width:$xs) {
     width: 100vw;
-    height: 18rem;
+    height: 20rem;
     justify-content: center;
+    margin-bottom: 1.5rem;
 }
 }
 
@@ -64,7 +66,7 @@
     align-items: flex-end;
     gap: 5em;
     padding-right: 5rem;
-
+    
     @media (max-width:$xs) {
         width: 90%;
         justify-content: center;
@@ -83,60 +85,84 @@
         @media (max-width: $l) {
             @include adaptive-font (68, 26);
 }
-
 }
 }
 // <!-- Название НКО -->
 
 // <!-- Описание НКО -->
 .nko-page{
-    margin-bottom: 3rem;
+    padding-bottom: 4rem;
+    @media (max-width:$m) {
+        padding-bottom: 3rem;
+        @media (max-width:$xs) {
+            padding-bottom: 1rem;
+         }
+     }
 
 &__container{
     max-width: 72rem;
     text-align: justify;
+    @media (max-width: $l) {
+        max-width: 80vw;
+        
+    }
 }
-
-
 &__title{
     font-size: 2.25rem;
     font-weight: 600;
     color: $text-main;
     line-height: 5rem;
-    padding-bottom: 2.25rem;
+    margin-bottom: 3rem;
     text-align: center;
+
+    @media (max-width: $l) {
+        @include adaptive-font (36, 18);
+        
+    }
+     @media (max-width:$m) {
+        line-height: 3rem;
+        margin-bottom: 2rem;
+    }
+     @media (max-width:$s) {
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
+     }
 }
 &__ogrn {
     font-size: 1.75rem;
-    padding-bottom: 2.5rem;
+    margin-bottom: 3rem;
     color: $text-main;
     text-align: center;
+    @media (max-width:$m) {
+        font-size: 0.7rem;
+        margin-bottom: 2rem;
 
+     }
 }
+
 &__text{
     font-size: 1.5rem;
     line-height: 2.5rem;
-    padding-bottom: 2.5rem;
+    margin-bottom: 3rem;
     color: $text-dark;
-}
-// //позиционирование основного текста
-// &__text {
-//     @include text-24 ($text-light, 1.8rem);
-//     // margin-bottom: 1.5em;
 
-//     @media (max-width: $l) {
-//         // line-height: 1.5em;
-//     }
+    @include text-24 ($text-dark, 1.8rem);
+    margin-bottom: 2em;
 
-//     @media (max-width: $xs) {
-//         // margin-bottom: 0.5rem;
-//     }
-// }
+    @media (max-width: $l) {
+        line-height: 1.5em;
+    }
+
+    @media (max-width: $xs) {
+        margin-bottom: 1.5rem;
+    }
 }
-// <!-- Описание НКО -->
-// <!-- Отчеты о проделанной работе -->
+}
+
 .reports-nko {
-    margin-bottom: 5rem;
+    padding-bottom: 4rem;
+    @media (max-width:$m) {
+        padding-bottom: 2rem;
 
     &__container {
     max-width: 60rem;
@@ -144,12 +170,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: $l) {
+        max-width: 80vw;
+        
+    }
 }
     &__title {
         font-size: 2.25rem;
         font-weight: 500;
         color: $text-main;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
+        @media (max-width: $l) {
+            @include adaptive-font (36, 20);
+            text-align: center;
+        }
+         @media (max-width:$m) {
+            margin-bottom: 2rem;
+        }
+         @media (max-width:$s) {
+            margin-bottom: 1.5rem;
+         }
     }
     
     &__item {
@@ -157,65 +197,69 @@
     height:  6.25rem;
     border-style: dotted;
     font-size: 1.75rem;
+    
+    @media (max-width: $l) {
+        @include adaptive-font (28, 14);
+        height: 4em;
+        width: 12em;
+}
+}
 }
 }
 // <!-- Отчеты о проделанной работе -->
 
-// Центр помощи
 //Документы
-// .documents{
-//     text-align: center;
-//     display: grid;
-//     grid-template-rows: 1fr, 1fr;
-//     row-gap: 3rem;
-//     padding-bottom: 3rem;
-// }
-// .documents__buttons{
-//     display: flex;
-//     justify-content: space-between;
-// }
-// .documents__title{
-//     font-size: 2.25rem;
-//     color: $text-main;
-//     font-weight: 500;
-//     padding-bottom: 2.25rem;
-// }
-// .documents__link{
-//     font-size: 1.75rem;
-// }
-// .doc-button-item{
-//     @include mint-btn (24rem, 9.25rem);   
-// }
-//Документы
-//Ваша помощь
-// .your-help__container{
-//     background-color: $bg-secondary-light;
-//     height: 61.25rem;
-//     display: flex;
-//     column-gap: 4.5rem;
-//     padding: 6.25rem 5rem 4.5rem 5rem;
-// }
-// .your-help__content{
-//     flex-basis: 50%;
-//     text-align: center;
-// }
-// .your-help__title{
-//     font-size: 4.25rem;
-//     color: $text-main;
-//     font-weight: 500;
-//     padding-bottom: 2.25rem;
-// }
-// .your-help__image{
-//     width: 30.2rem;
-// }
-// .your-help__img{
-//     max-width: 100%;
-// }
+.documents{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    row-gap: 3rem;
+    padding-bottom: 4rem;
 
-// .your-help__pay-form{
-//     width: 100%;
-//     height: 100%;
-//     background-color: aquamarine;
-// }
-//Ваша помощь
+&__buttons{
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:$m) {
+        gap: 1rem;
+    }
+    @media (max-width:$s) {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+&__title{
+    font-size: 2.25rem;
+    color: $text-main;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    @media (max-width: $l) {
+        @include adaptive-font (36, 20);
+        text-align: center;
+    }
+     @media (max-width:$m) {
+        margin-bottom: 2rem;
+    }
+     @media (max-width:$s) {
+        margin-bottom: 1.5rem;
+     }
+}
+&__link{
+    font-size: 1.75rem;
+    @media (max-width: $l) {
+        @include adaptive-font (28, 14);
+        text-align: center;
+    }
+}
+.doc-button-item{
+    @include mint-btn (24rem, 8rem);
+    @media (max-width: $l) {
+        @include adaptive-font (28, 14);
+        height: 4em;
+        width: 12em;
+}
+}
+}
+//Документы
+
+
 
