@@ -706,21 +706,6 @@ body {
   row-gap: 3rem;
   padding-bottom: 4rem;
 }
-.documents__buttons {
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 64rem) {
-  .documents__buttons {
-    gap: 1rem;
-  }
-}
-@media (max-width: 48rem) {
-  .documents__buttons {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-}
 .documents__title {
   font-size: 2.25rem;
   color: #156963;
@@ -750,6 +735,21 @@ body {
 @media (max-width: 48rem) {
   .documents__title {
     margin-bottom: 1.5rem;
+  }
+}
+.documents__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 64rem) {
+  .documents__buttons {
+    gap: 1rem;
+  }
+}
+@media (max-width: 48rem) {
+  .documents__buttons {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 .documents__link {

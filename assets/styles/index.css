@@ -707,21 +707,6 @@ body {
   row-gap: 3rem;
   padding-bottom: 4rem;
 }
-.documents__buttons {
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 64rem) {
-  .documents__buttons {
-    gap: 1rem;
-  }
-}
-@media (max-width: 48rem) {
-  .documents__buttons {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-}
 .documents__title {
   font-size: 2.25rem;
   color: #156963;
@@ -751,6 +736,21 @@ body {
 @media (max-width: 48rem) {
   .documents__title {
     margin-bottom: 1.5rem;
+  }
+}
+.documents__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 64rem) {
+  .documents__buttons {
+    gap: 1rem;
+  }
+}
+@media (max-width: 48rem) {
+  .documents__buttons {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 .documents__link {
@@ -1265,52 +1265,60 @@ body {
   font-style: normal;
   font-weight: 700;
 }
-.main-about__bg {
-  background-color: #83BFBC;
+* {
+  box-sizing: border-box;
 }
-.main-about__content {
-  background: url(../images/design/index__main-about-bg.png) no-repeat;
-  background-position: start;
-  background-size: contain;
-  width: 90rem;
-  height: 49.3rem;
-  margin: 0 auto;
-  font-size: 1.5rem;
+
+.main-about__container {
+  background-color: #FFFFFF;
+  background-image: url(../../assets/images/design/index__main-about-bg.png);
+  background-position: center top;
+  background-size: cover;
+  width: 100vw;
+  height: 60rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 5rem;
 }
 @media (max-width: 90rem) {
-  .main-about__content {
+  .main-about__container {
     width: 100vw;
-    background-size: cover;
-    height: 32.8em;
+    background-image: linear-gradient(to top, rgba(10, 10, 10, 0.6), rgba(11, 11, 11, 0.6)), url(../../assets/images/design/index__main-about-bg.png);
+    background-position: left top;
+    height: 50rem;
   }
-}
-.main-about__black-bg {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-@media (max-width: 64rem) {
-  .main-about__black-bg {
-    background: rgba(0, 0, 0, 0.5);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (max-width: 48rem) {
-  .main-about__black-bg {
-    background: rgba(0, 0, 0, 0.7);
-  }
-}
-.main-about__container {
-  width: 36rem;
-  margin-right: 3.19rem;
 }
 @media (max-width: 64rem) {
   .main-about__container {
+    width: 100vw;
+    background-position: left top;
+    height: 40rem;
+  }
+}
+@media (max-width: 48rem) {
+  .main-about__container {
+    width: 100vw;
+    height: 38rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 35rem) {
+  .main-about__container {
+    width: 100vw;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    height: 32rem;
+  }
+}
+.main-about__content {
+  width: 36rem;
+  margin-right: 3.19rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 64rem) {
+  .main-about__content {
     width: 79vw;
     margin: 0 auto;
   }
@@ -1354,9 +1362,48 @@ body {
     margin-bottom: 0.5rem;
   }
 }
+@media (max-width: 64rem) {
+  .main-about__btns {
+    align-self: center;
+  }
+}
 @media (max-width: 35rem) {
   .main-about__btns {
-    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
+.main-about .help {
+  background-color: #156963;
+  color: #FFFFFF;
+  width: 17.5rem;
+  border-radius: 10px;
+  border: none;
+  padding: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1em;
+}
+@media (max-width: 90rem) {
+  .main-about .help {
+    width: 10em;
+    display: flex;
+    align-items: center;
+  }
+}
+.main-about .nko-account {
+  background-color: #FFFFFF;
+  color: #156963;
+  width: 17.5rem;
+  border-radius: 10px;
+  border: none;
+  padding: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1em;
+}
+@media (max-width: 90rem) {
+  .main-about .nko-account {
+    width: 10em;
   }
 }
 
@@ -1649,7 +1696,7 @@ body {
 }
 
 .short-novelty {
-  width: 25.8rem;
+  max-width: 25.8rem;
   height: 54.1rem;
 }
 .short-novelty__img {
@@ -1680,18 +1727,8 @@ body {
   }
 }
 .short-novelty__img {
-  width: 100%;
-  height: 19.37rem;
-}
-@media (max-width: 90rem) {
-  .short-novelty__img {
-    height: 14em;
-  }
-}
-@media (max-width: 48rem) {
-  .short-novelty__img {
-    height: 16em;
-  }
+  max-width: 100%;
+  max-height: 19.37rem;
 }
 .short-novelty__title-block {
   height: 5.6rem;
