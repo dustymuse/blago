@@ -9,8 +9,8 @@ body {
     font-family: $font;
 }
 
-
 //размер контента внутри секции-----------------------------
+
 .container {
     width: 82.5rem;
     margin: 0 auto;
@@ -24,7 +24,16 @@ body {
     }
 }
 
-//центрирование по краям----------------------------------
+//позиционирование-----------------------------------------
+
+//центрирование
+.centering-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//центрирование по краям
 .centering-between {
     display: flex;
     justify-content: space-between;
@@ -32,6 +41,7 @@ body {
 }
 
 //заголовки------------------------------------------------
+
 // h1
 .main-title {
     font-size: 2.25rem;
@@ -57,6 +67,7 @@ body {
 }
 
 //h3
+
 .third-title {
     font-size: 2.25rem;
     color: $text-main;
@@ -79,11 +90,11 @@ body {
 }
 
 //ссылки-----------------------------------------------------
+
 .link {
     color: $text-main;
     text-decoration: none;
 }
-
 
 //Кнопки-----------------------------------------------------
 
@@ -110,9 +121,13 @@ body {
     cursor: pointer;
 
     @media (max-width: $l) {
-        @include adaptive-font (28, 11);
-        height: 3.8em;
-        width: 20.5em;
+        @include adaptive-font (28, 12);
+
+        @media (max-width: $l) {
+            @include adaptive-font (28, 11);
+            height: 3.8em;
+            width: 20.5em;
+        }
     }
 }
 
@@ -132,8 +147,8 @@ body {
     }
 }
 
-
 //мятная кнопка
+
 @mixin mint-btn ($width, $height) {
     width: $width;
     height: $height;
@@ -174,10 +189,7 @@ body {
     border: 1px solid;
     width: 46.5rem;
     height: 56.56rem;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     @include adaptive-font (26, 10);
 
     @media (max-width: $l) {
@@ -316,12 +328,6 @@ body {
         margin-bottom: 0.6em;
     }
 
-    &__icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
     &__img {
         width: 9.44rem;
         height: 2.6rem;
@@ -435,7 +441,7 @@ body {
     line-height: 1.3em;
 
     @media (max-width: $l) {
-        @include adaptive-font (18, 11);
+        @include adaptive-font (18, 12);
         margin-bottom: 1.22em;
     }
 
@@ -564,8 +570,8 @@ body {
 }
 
 
-
 //header-----------------------------------------------------
+
 .header {
     background: $bg-primary-colored;
 
@@ -710,6 +716,7 @@ body {
     font-size: 1rem;
 
     @media (max-width: $l) {
+        @include adaptive-font (16, 10);
         @include adaptive-font (16, 8);
     }
 
