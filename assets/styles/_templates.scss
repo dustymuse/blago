@@ -717,7 +717,6 @@ body {
 
     @media (max-width: $l) {
         @include adaptive-font (16, 10);
-        @include adaptive-font (16, 8);
     }
 
     @media (max-width: $m) {
