@@ -1045,63 +1045,49 @@ body {
 }
 
 .footer {
-  color: #156963;
   background: #ECEEF2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 12.5rem;
+}
+.footer__container {
   font-size: 1rem;
+  color: #156963;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12.5rem;
 }
 @media (max-width: 90rem) and (max-width: 767px) {
-  .footer {
+  .footer__container {
     font-size: calc(10px + 10.2 * ((100vw - 320px) / 1440));
   }
 }
 @media (max-width: 90rem) and (min-width: 767px) {
-  .footer {
+  .footer__container {
     font-size: calc(10px + 6 * (100vw / 1440));
   }
 }
 @media (max-width: 90rem) and (max-width: 767px) {
-  .footer {
+  .footer__container {
     font-size: calc(8px + 13.6 * ((100vw - 320px) / 1440));
   }
 }
 @media (max-width: 90rem) and (min-width: 767px) {
-  .footer {
+  .footer__container {
     font-size: calc(8px + 8 * (100vw / 1440));
   }
 }
 @media (max-width: 64rem) {
-  .footer {
+  .footer__container {
     height: 11rem;
   }
 }
 @media (max-width: 48rem) {
-  .footer {
+  .footer__container {
     height: 9rem;
   }
 }
 @media (max-width: 35rem) {
-  .footer {
+  .footer__container {
     height: 8rem;
-  }
-}
-.footer__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 73.5rem;
-}
-@media (max-width: 90rem) {
-  .footer__container {
-    width: 82vw;
-  }
-}
-@media (max-width: 75rem) {
-  .footer__container {
-    width: 94vw;
   }
 }
 .footer__logo {

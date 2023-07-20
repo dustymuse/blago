@@ -758,45 +758,40 @@ body {
 //футер--------------------------------------------------
 
 .footer {
-    color: $text-main;
     background: $bg-secondary-light;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 12.5rem;
-    font-size: 1rem;
-
-    @media (max-width: $l) {
-        @include adaptive-font (16, 10);
-        @include adaptive-font (16, 8);
-    }
-
-    @media (max-width: $m) {
-        height: 11rem;
-    }
-
-    @media (max-width: $s) {
-        height: 9rem;
-    }
-
-    @media (max-width: $xs) {
-        height: 8rem;
-    }
 
     //контейнер футера
     &__container {
+        font-size: 1rem;
+        color: $text-main;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 73.5rem;
-
+        height: 12.5rem;
         @media (max-width: $l) {
-            width: 82vw;
+            @include adaptive-font (16, 10);
+            @include adaptive-font (16, 8);
+        }
+    
+        @media (max-width: $m) {
+            height: 11rem;
+        }
+    
+        @media (max-width: $s) {
+            height: 9rem;
+        }
+    
+        @media (max-width: $xs) {
+            height: 8rem;
         }
 
-        @media (max-width: 75rem) {
-            width: 94vw;
-        }
+        // @media (max-width: $l) {
+        //     width: 82vw;
+        // }
+
+        // @media (max-width: 75rem) {
+        //     width: 94vw;
+        // }
     }
 
     //лого
