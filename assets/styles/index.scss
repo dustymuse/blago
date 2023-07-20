@@ -1,2 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 @import './vars';
 @import './templates';
+
+//первая секция (кратко about)----------------------------------------
+//цветной фон, если макет больше 1440
+.main-about {
+    &__bg {
+        background-color: #83BFBC;
+    }
+
+    //основная картинка
+    &__content {
+        background: url(../images/design/index__main-about-bg.png) no-repeat;
+        background-position: start;
+        background-size: contain;
+        width: 90rem;
+        height: 49.3rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+
+        @media (max-width:$l) {
+            width: 100vw;
+            background-size: cover;
+            height: 32.8em;
+            //исправить положение детей на бэкграунду!!!!!!!!!
+        }
+    }
+
+    //чёрный фон для контрастности на планшетах
+    //позиционирование контента
+    &__black-bg {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        @media (max-width: $m) {
+            background: rgba(0, 0, 0, 0.5);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: $s) {
+            background: rgba(0, 0, 0, 0.7);
+        }
+    }
+
+    // весь контент текст
+    &__container {
+        width: 36rem;
+        margin-right: 3.19rem;
+
+        @media (max-width: $m) {
+            width: 79vw;
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+
+        @media (max-width: $m) {
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: $xs) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    //позиционирование основного текста
+    &__text {
+        @include text-24 ($text-light, 1.8rem);
+        margin-bottom: 1.5em;
+
+        @media (max-width: $l) {
+            line-height: 1.5em;
+        }
+
+        @media (max-width: $xs) {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__btns {
+        @media (max-width: $xs) {
+            padding-top: 0.5rem;
+        }
+    }
+}
+
+//форма пожертвований-----------------------------
+.section-payment {
+    @media (max-width: $m) {
+        background: $bg-secondary-light;
+    }
+
+    &__form {
+        margin: 2.9rem auto;
+        font-size: 1.625rem;
+
+        @media (max-width: $l) {
+            @include adaptive-font (26, 10);
+            margin: 1.8em auto;
+        }
+
+        @media (max-width: $m) {
+            margin: 0 auto;
+        }
+    }
+}
+
+.donation-form {
+    @media (max-width: $m) {
+        width: 95vw;
+    }
+
+    @media (max-width: $s) {
+        width: 100vw;
+        border: none;
+    }
+}
+
+
+//подробно о компании-----------------------------
+//фон
+.detail-about {
+    background-color: $bg-secondary-light;
+
+    &__container {
+        height: 55.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.5rem;
+
+        @media (max-width: $l) {
+            @include text-24 ($text-dark, 2.5rem);
+            height: 30em;
+        }
+
+        @media (max-width: 51rem) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 41em;
+        }
+
+        @media (max-width: $xs) {
+            height: 38em;
+        }
+    }
+
+    //основная картинка
+    &__img {
+        width: 37.4rem;
+        height: 29.5rem; //79% ot width
+
+        @media (max-width: $l) {
+            width: 22em;
+            height: 17.38em;
+        }
+
+        @media (max-width: $m) {
+            width: 17em;
+            height: 13.43em;
+        }
+
+        @media (max-width: 51rem) {
+            margin-bottom: 1.3em;
+            width: 15em;
+            height: 11.85em;
+            align-self: start;
+            position: relative;
+            right: -9vw;
+        }
+
+        @media (max-width: $xs) {
+            margin-bottom: 0.8em;
+        }
+    }
+
+    //позиционирование текста
+    &__content {
+        max-width: 35.4rem;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $l) {
+            flex-shrink: 1;
+            padding-left: 3em;
+        }
+
+        @media (max-width: $m) {
+            padding-left: 2em;
+        }
+
+        @media (max-width: 51rem) {
+            max-width: 80vw;
+        }
+    }
+
+    // включение скролла
+    &__scroll {
+        @include scroll(37.1rem);
+
+        @media (max-width: $l) {
+            @include scroll(20em);
+        }
+
+        @media (max-width: $m) {
+            @include scroll(18em);
+        }
+    }
+
+    //заголовок
+    &__title {
+        margin-bottom: 2.25rem;
+
+        @media (max-width: 51rem) {
+            margin-bottom: 0.5em;
+        }
+
+        @media (max-width: $xs) {
+            margin-bottom: 0.25em;
+        }
+    }
+
+    //сам текст
+    &__text {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+
+        &:not(:last-child) {
+            margin-bottom: 2.25rem;
+
+            @media (max-width: 51rem) {
+                margin-bottom: 1em;
+            }
+        }
+
+        @media (max-width: $l) {
+            @include text-24 ($text-dark, 1.3em);
+        }
+    }
+}
+
+//новости---------------------------------------------
+.short-news {
+    &__container {
+        flex-direction: column;
+        @include adaptive-font (22, 14);
+        padding-top: 4rem;
+
+        @media (max-width: $l) {
+            padding-top: 2.9em;
+        }
+    }
+
+    //позиционирование новостей
+    &__block {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 4.2rem;
+
+        @media (max-width: $l) {
+            margin-bottom: 3em;
+        }
+
+        @media (max-width: $s) {
+            flex-direction: column;
+        }
+
+        @media (max-width: $xs) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 4rem;
+
+        @media (max-width: $l) {
+            margin-bottom: 0.94em;
+        }
+    }
+
+    .container {
+        @media (max-width: $l) {
+            width: 60.3em;
+        }
+    }
+}
+
+
+//дизайн блокa одной новости
+.short-novelty {
+    width: 25.8rem;
+    height: 54.1rem;
+
+    &__img {
+        border-radius: 10px 10px 0 0;
+    }
+
+
+    @media (max-width: $l) {
+        width: 17em;
+        height: 40.8em;
+    }
+
+    @media (max-width: $m) {
+        width: 20em;
+        height: 37em;
+    }
+
+    @media (max-width: $s) {
+        width: 25em;
+        height: 43em;
+    }
+
+    @media (max-width: $xs) {
+        width: 90vw;
+        height: 43em;
+    }
+
+    &__img {
+        width: 100%;
+        height: 19.37rem;
+
+        @media (max-width: $l) {
+            height: 14em;
+        }
+
+        @media (max-width: $s) {
+            height: 16em;
+        }
+    }
+
+    &__title-block {
+        height: 5.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        background: $bg-primary-colored;
+        margin-top: -1rem;
+
+        @media (max-width: $l) {
+            height: 4em;
+            margin-top: -0.72em;
+        }
+
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: $bg-primary-light;
+        padding-left: 1.19rem;
+        padding-top: 0.5rem;
+
+        @media (max-width: $l) {
+            @include adaptive-font (32, 20);
+            padding-left: 0.6em;
+            padding-top: 0.35em;
+        }
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: start;
+        background-color: $bg-secondary-light;
+        height: 26.3rem;
+        border-radius: 0 0 10px 10px;
+        padding: 2rem 1.44rem;
+
+        @media (max-width: $l) {
+            padding: 1.45em 1em;
+            height: 20.6em;
+        }
+
+        @media (max-width: $m) {
+            height: 17em;
+        }
+
+        @media (max-width: $s) {
+            height: 18em;
+        }
+    }
+
+    &__text {
+        font-size: 1.375rem;
+        line-height: 1.68rem;
+
+        @media (max-width: $l) {
+            @include adaptive-font (22, 14);
+            line-height: 1.22em;
+        }
+
+        @media (max-width: $s) {
+            @include adaptive-font (28, 14);
+            line-height: 1.22em;
+        }
+    }
+
+    &__btn {
+        @include light-btn (12.3rem, 5rem);
+        border: 1px $bg-main-colored dashed;
+        font-size: 1.375rem;
+
+        @media (max-width: $l) {
+            @include adaptive-font (22, 16);
+            @include light-btn (8.9em, 3.6em);
+        }
+    }
+
+    &__second {
+        @media (max-width: $m) {
+            display: none;
+        }
+
+        @media (max-width: $s) {
+            display: block;
+        }
+    }
+}
+
+//дизайн кнопки перехода на страницу новостей
+.short-news__btn {
+    @include mint-btn (17.5rem, 5rem);
+    margin-bottom: 4rem;
+    font-size: 1.875rem;
+
+    @media (max-width: $l) {
+        @include adaptive-font (30, 19);
+        @include mint-btn (9.3em, 2.6em);
+        margin-bottom: 2.13em;
+    }
+}
+
+.short-news__text-btn {
+    margin-right: 0.5rem;
+    font-weight: 400;
+}
