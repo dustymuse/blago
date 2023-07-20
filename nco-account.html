@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +8,124 @@
     <link rel="stylesheet" href="./assets/styles/nco-account.css">
     <title>Личный кабинет НКО</title>
 </head>
-
 <body>
-
+<!-- <header></header>   -->
+<main class="nko-account">
+    <div class="nko-account__header-container container">
+        <h2 class="nko__title">Некоммерческая организация</h2>
+        <button class="nko__button" type="submit">Изменить пароль</button>
+    </div> 
+    <div class="nko-account__company-data container">
+        <h3 class="company-data__title">Данные компании</h3>
+        <div class="company-data__info-line">
+            <p class="info-line__border-text">ФИО руководителя организации</p>
+            <form class="info-line__input-text">
+                <input type="text">
+            </form>
+            <button class="info-line__btn" type="submit">Редактировать</button>
+        </div>
+        <div class="company-data__info-line">
+            <p class="info-line__border-text">Юридический адрес организации</p>
+            <form class="info-line__input-text">
+                <input type="text">
+            </form>
+            <button class="info-line__btn" type="submit">Редактировать</button>
+        </div>
+        <div class="company-data__info-line">
+            <p class="info-line__border-text">Свидетельство регистрации НКО</p>
+            <fieldset>
+            <form class="info-line__input-text">
+                <input type="file">
+            </form>
+        </fieldset>
+            <button class="info-line__btn" type="submit">Редактировать</button>
+        </div>
+        <div class="company-data__info-line">
+            <p class="info-line__border-text">Свидетельство о постановке на учет в налоговом органе</p>
+            <fieldset>
+            <form class="info-line__input-text">
+                <input type="file">
+            </form>
+        </fieldset>
+            <button class="info-line__btn" type="submit">Редактировать</button>
+        </div>
+        <div class="company-data__info-line">
+            <p class="info-line__border-text">Устав</p>
+            <fieldset>
+            <form class="info-line__input-text">
+                <input type="file">
+            </form>
+        </fieldset>
+            <button class="info-line__btn" type="submit">Редактировать</button>
+        </div>
+    </div>
+    <div class="nko-account__company-reports container">
+        <h3 class="company-reports__title">Отчеты компании</h3>
+        <div class="company-reports__info-line">
+            <form class="info-line__input-text">
+                <input type="text" placeholder="Отчёт о проделанной работе">
+            </form>
+            <button class="info-line__dowbload-btn"><img src="./assets/images/icons/download-icon.png" alt="download" class="download-btn-image"></button>
+            <button class="info-line__btn" type="submit">Отправить</button>
+        </div>
+        <div class="company-reports__info-line">
+            <form class="info-line__input-text">
+                <input type="text" placeholder="Отчёт о количестве благополучателей">
+            </form>
+            <button class="info-line__dowbload-btn"><img src="./assets/images/icons/download-icon.png" alt="download" class="download-btn-image"></button>
+            <button class="info-line__btn" type="submit">Отправить</button>
+        </div>
+        <div class="company-reports__info-line">
+            <form class="info-line__input-text">
+                <input type="text" placeholder="Новости">
+            </form>
+            <button class="info-line__dowbload-btn"><img src="./assets/images/icons/download-icon.png" alt="download" class="download-btn-image"></button>
+            <button class="info-line__btn" type="submit">Отправить</button>
+        </div>
+    </div>  
+    <div class="nko-account__user-applications container">
+        <h3 class="user-applications__title">Заявки пользователей</h3>
+        <div class="user-applications__info-line">
+            <p class="info-line__border-text">Еда</p>
+            <div class="info-line__card-text">
+                <p>Смитов И.И. смитовии@mail.ru     +79000000000</p>
+                <p>Уважаемая благотворительная организация,
+                обращаюсь к вам с просьбой о помощи в предоставлении пищевых продуктов для меня и моей семьи. В настоящее время мы находимся в тяжелой жизненной ситуации. Надеемся насколько возможно скорее получить ответ от вас и надеемся, что вы рассмотрите нашу просьбу и предоставите нам необходимую помощь.
+                С уважением,
+                Смитов И.И.</p>
+            </div>
+            <button class="info-line__btn" type="submit">Принять</button>
+        </div>
+        <div class="user-applications__info-line">
+            <p class="info-line__border-text">Одежда</p>
+            <div class="info-line__card-text">
+                <p>Иванова А.А.     +79000000000</p>
+                <p>Добрый день! Обращаюсь к вам с просьбой о помощи. В предоставлении пищевых продуктов для меня и моей семьи. В настоящее время мы находимся в тяжелой жизненной ситуации. Надеемся насколько возможно скорее получить ответ от вас и надеемся, что вы рассмотрите нашу просьбу и предоставите нам необходимую помощь.
+                С уважением,
+                Иванова А.А.</p></div>
+            <button class="info-line__btn" type="submit">Принять</button>
+        </div>
+    </div>  
+    <div class="nko-account__user-qwestions container">
+        <h3 class="user-qwestions__title">Вопросы пользователей</h3>
+        <div class="user-qwestions__info-line">
+            <div class="info-line__qwestion-text">
+                <p class="qwestion-text__user">Пользователь</p>
+                <textarea readonly class="qwestion-text__qwestion" name="message" cols="30" rows="5">Здравствуйте! Как я могу получить помощь от вашей организации? В каких областях вы оказываете поддержку? </textarea>
+            </div>
+            <textarea class="answer-wrap__area" name="message" cols="30" rows="5"></textarea>
+            <button class="info-line__btn" type="submit">Ответить</button>
+        </div>
+        <div class="user-qwestions__info-line">
+            <div class="info-line__qwestion-text">
+                <p>Пользователь</p>
+                <textarea readonly name="message" cols="30" rows="5">Добрый день! Подскажите, пожалуйста, как можно стать добровольцем в вашей отганизации? Может у вас можно пройти стажировку?</textarea>
+            </div>
+            <textarea name="message" cols="30" rows="5"></textarea>
+            <button class="info-line__btn" type="submit">Ответить</button>
+        </div>
+    </div>
+</main> 
+<!-- <footer></footer> -->
 </body>
-
 </html>
