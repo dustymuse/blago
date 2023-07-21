@@ -1,2 +1,10 @@
 @import './vars';
 @import './templates';
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+.name-container{
+    width: 79.44em; 
+    background-color: $bg-secondary-light;
+}

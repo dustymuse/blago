@@ -11,7 +11,58 @@
 </head>
 
 <body>
-
+<!-- основное содержание страницы -->
+<main>
+    <div class="nko-personal-account">
+    <div class="nko-account__name-container container">
+        <h2 class="nko__title">Иванов Иван Иванович</h2>
+        <button class="nko__button" type="submit">Изменить пароль</button>
+    </div> 
+    <div class="nko-account__company-data container">
+        <h4 class="company-data__title">Данные пользователя</h4>
+        <div class="company-data__info-line">
+            <p class="info-line__border-text">Фамилия Имя Отчество</p>
+            <form class="info-line__input-text">
+                <input type="text">
+            </form>
+            <button class="info-line__btn" type="submit">Редактировать</button>
+        </div>
+        <div class="company-data__info-line">
+            <p class="info-line__border-text">Адрес электронной почты</p>
+            <form class="info-line__input-text">
+                <input type="email">
+            </form>
+            <button class="info-line__btn" type="submit">Редактировать</button>
+        </div>
+        <div class="company-data__info-line">
+            <p class="info-line__border-text">Номер телефона</p>
+           
+            <form class="info-line__input-text">
+                <input type="tel">
+            </form>
+      
+            <button class="info-line__btn" type="submit">Редактировать</button>
+        </div>
+        
+    </div>
+     
+    
+    <div class="nko-account__user-qwestions container">
+        <h4 class="user-qwestions__title">Задать вопрос</h4>
+        <div class="user-qwestions__info-line">
+            
+            <textarea class="answer-wrap__area" name="message" cols="30" rows="5"></textarea>
+            <button class="info-line__btn" type="submit">Ответить</button>
+        </div>
+        <h4 class="user-qwestions__title">Оставить отзыв</h4>
+        <div class="user-qwestions__info-line">
+            
+            <textarea name="message" cols="30" rows="5"></textarea>
+            <button class="info-line__btn" type="submit">Ответить</button>
+        </div>
+    </div>
+</div>
+</main> 
 </body>
 
 </html>

@@ -9,14 +9,38 @@
     <title>Личный кабинет НКО</title>
 </head>
 <body>
-<!-- <header></header>   -->
-<main class="nko-account">
-    <div class="nko-account__header-container container">
+<!-- header для ЛК измененный -->
+    <header class="header">
+        <!-- размеры контейнера -->
+        <div class="header__container container">
+            <!-- лого -->
+            <img src="./assets/images/icons/header__logo.png" alt="center logo" class="header__logo">
+            <div class="header__content">
+                <!-- навигация -->
+                <nav class="header__nav">
+                    <a href="./index.html" class="header__link link">Главная</a>
+                    <a href="./news.html" class="header__link link">Новости</a>
+                    <a href="./about-us.html" class="header__link link">О компании</a>
+                </nav>
+                <!-- кнопки -->
+                <img src="./assets/images/icons/header__search.png" alt="site search" class="header__search">
+                    <div class="header__btns">
+                    <img src="./assets/images/icons/header__account.png" alt="personal area" class="header__account">
+                    <button class="header__area">Выход</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- основное содержание страницы -->
+<main>
+    <div class="nko-personal-account">
+    <div class="nko-account__name-container container">
         <h2 class="nko__title">Некоммерческая организация</h2>
         <button class="nko__button" type="submit">Изменить пароль</button>
     </div> 
     <div class="nko-account__company-data container">
-        <h3 class="company-data__title">Данные компании</h3>
+        <h4 class="company-data__title">Данные компании</h4>
         <div class="company-data__info-line">
             <p class="info-line__border-text">ФИО руководителя организации</p>
             <form class="info-line__input-text">
@@ -60,7 +84,7 @@
         </div>
     </div>
     <div class="nko-account__company-reports container">
-        <h3 class="company-reports__title">Отчеты компании</h3>
+        <h4 class="company-reports__title">Отчеты компании</h4>
         <div class="company-reports__info-line">
             <form class="info-line__input-text">
                 <input type="text" placeholder="Отчёт о проделанной работе">
@@ -84,7 +108,7 @@
         </div>
     </div>  
     <div class="nko-account__user-applications container">
-        <h3 class="user-applications__title">Заявки пользователей</h3>
+        <h4 class="user-applications__title">Заявки пользователей</h4>
         <div class="user-applications__info-line">
             <p class="info-line__border-text">Еда</p>
             <div class="info-line__card-text">
@@ -107,7 +131,7 @@
         </div>
     </div>  
     <div class="nko-account__user-qwestions container">
-        <h3 class="user-qwestions__title">Вопросы пользователей</h3>
+        <h4 class="user-qwestions__title">Вопросы пользователей</h4>
         <div class="user-qwestions__info-line">
             <div class="info-line__qwestion-text">
                 <p class="qwestion-text__user">Пользователь</p>
@@ -125,6 +149,7 @@
             <button class="info-line__btn" type="submit">Ответить</button>
         </div>
     </div>
+</div>
 </main> 
 <!-- <footer></footer> -->
 </body>
