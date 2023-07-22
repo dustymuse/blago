@@ -515,6 +515,24 @@ body {
     }
 }
 
+// Заготовки блоков с адаптивом (class=".second-title")
+.title{
+    font-size: 2.25rem;
+    color: $text-main;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    @media (max-width: $l) {
+    @include adaptive-font (36, 20);
+        text-align: center;
+    }
+    @media (max-width:$m) {
+        margin-bottom: 2rem;
+    }
+    @media (max-width:$s) {
+        margin-bottom: 1.5rem;
+    }
+}
+
 // Блок Документы с кнопками с адаптивом---------------------------
 
 .documents{
@@ -523,48 +541,52 @@ body {
     grid-template-rows: 1fr, 1fr;
     row-gap: 3rem;
     padding-bottom: 4rem;
+
 &__title{
     font-size: 2.25rem;
     color: $text-main;
     font-weight: 500;
     margin-bottom: 3rem;
-        @media (max-width: $l) {
-        @include adaptive-font (36, 20);
+    @media (max-width: $l) {
+    @include adaptive-font (36, 20);
         text-align: center;
-        }
-        @media (max-width:$m) {
-        margin-bottom: 2rem;
-        }
-        @media (max-width:$s) {
-        margin-bottom: 1.5rem;
-        }
     }
-    &__buttons{
+    @media (max-width:$m) {
+        margin-bottom: 2rem;
+    }
+    @media (max-width:$s) {
+        margin-bottom: 1.5rem;
+    }
+}
+&__buttons{
     display: flex;
     justify-content: space-between;
-        @media (max-width:$m) {
-        gap: 1rem;
-        }
-        @media (max-width:$s) {
-        flex-direction: column;
-        gap: 1.5rem;
-        }
+    @media (max-width:$m) {
+            gap: 1rem;
     }
-    &__link{
+    @media (max-width:$s) {
+            flex-direction: column;
+            gap: 1.5rem;
+    }
+}
+&__link{
     font-size: 1.75rem;
-        @media (max-width: $l) {
-        @include adaptive-font (28, 14);
+    @media (max-width: $l) {
+    @include adaptive-font (28, 14);
         text-align: center;
-        }
     }
-    .doc-button-item{
-        @include mint-btn (24rem, 8rem);
-        @media (max-width: $l) {
-            @include adaptive-font (28, 14);
+}
+.doc-button-item{
+    @include mint-btn (24rem, 8rem);
+    @media (max-width: $l) {
+        @include adaptive-font (28, 14);
             height: 4em;
             width: 12em;
-        }
     }
+}
+.doc-button-item:hover {
+    background: $bg-tertiary-colored;
+}
 }
 
 //скролл-----------------------------------------
@@ -755,43 +777,45 @@ body {
     }
 }
 
-//футер--------------------------------------------------
-
 .footer {
+    color: $text-main;
     background: $bg-secondary-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12.5rem;
+    font-size: 1rem;
+
+    @media (max-width: $l) {
+        @include adaptive-font (16, 10);
+    }
+
+    @media (max-width: $m) {
+        height: 11rem;
+    }
+
+    @media (max-width: $s) {
+        height: 9rem;
+    }
+
+    @media (max-width: $xs) {
+        height: 8rem;
+    }
 
     //контейнер футера
     &__container {
-        font-size: 1rem;
-        color: $text-main;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 12.5rem;
+        width: 73.5rem;
+
         @media (max-width: $l) {
-            @include adaptive-font (16, 10);
-            @include adaptive-font (16, 8);
-        }
-    
-        @media (max-width: $m) {
-            height: 11rem;
-        }
-    
-        @media (max-width: $s) {
-            height: 9rem;
-        }
-    
-        @media (max-width: $xs) {
-            height: 8rem;
+            width: 82vw;
         }
 
-        // @media (max-width: $l) {
-        //     width: 82vw;
-        // }
-
-        // @media (max-width: 75rem) {
-        //     width: 94vw;
-        // }
+        @media (max-width: 75rem) {
+            width: 94vw;
+        }
     }
 
     //лого
@@ -918,6 +942,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
 
 
 //подключение шрифтов-----------------------------------
