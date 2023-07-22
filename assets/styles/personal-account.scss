@@ -1,2 +1,82 @@
 @import './vars';
 @import './templates';
+
+.user-personal-account__container{
+    background-color: $bg-secondary-light;
+   }
+
+.user-personal-account__name-container{
+    height: 5.5em;
+    display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: $bg-secondary-light;
+background-size: 100vw;
+margin-bottom: 3.75rem;
+}
+
+.name-container__fio{
+    font-size: 2.25em;
+font-weight: 500;
+    color:$text-main;
+
+}
+button{
+    width: 16.25rem;
+    height: 4.25rem;
+    border: none;
+    border-radius: 10px;
+    background-color: $bg-primary-colored;
+    font-size: 1.5em;
+    color: $text-dark;
+    cursor: pointer;
+}
+h3 {
+   color: $text-main;
+    font-size: 2.25em;
+   font-weight: 400;
+}
+
+.user-personal-account__user-data{
+    display: grid;
+    row-gap: 24px;
+ 
+    margin-bottom: 3.75rem;
+.user-data__info-line{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+ 
+}
+
+}
+.info-line__border-text{
+    display: flex;
+    width: 24.2rem;
+    height: 4.25rem;
+    border-radius: 10px;
+    background-color:$bg-secondary-light;
+    align-items: center;
+    padding-left: 1em;
+    font-size: 1.5em;
+ }
+.info-line__input-text{
+    width: 37rem;
+    height: 3.63rem;
+    border: 5px solid $bg-secondary-light ;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+.info-line__edit-btn{
+  background-color: rgb(134, 198, 194, 0.5);
+} 
+
+.user-personal-account__user-qwestions{
+    display: flex;
+    justify-content: space-between;
+    .user-qwestions__info-line{
+        display: grid;
+    }
+}

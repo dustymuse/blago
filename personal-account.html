@@ -10,59 +10,127 @@
     <title>Личный кабинет пользователя</title>
 </head>
 
-<body>
+<body><!-- header для ЛК измененный -->
+    <header class="header">
+        <!-- размеры контейнера -->
+        <div class="header__container container">
+            <!-- лого -->
+            <img src="./assets/images/icons/header__logo.png" alt="center logo" class="header__logo">
+            <div class="header__content">
+                <!-- навигация -->
+                <nav class="header__nav">
+                    <a href="./index.html" class="header__link link">Главная</a>
+                    <a href="./news.html" class="header__link link">Новости</a>
+                    <a href="./about-us.html" class="header__link link">О компании</a>
+                </nav>
+                <!-- кнопки -->
+                <img src="./assets/images/icons/header__search.png" alt="site search" class="header__search">
+                    <div class="header__btns">
+                    <img src="./assets/images/icons/header__account.png" alt="personal area" class="header__account">
+                    <button class="header__area">Выход</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
 <!-- основное содержание страницы -->
 <main>
-    <div class="nko-personal-account">
-    <div class="nko-account__name-container container">
-        <h2 class="nko__title">Иванов Иван Иванович</h2>
-        <button class="nko__button" type="submit">Изменить пароль</button>
+    <div class="user-personal-account">
+        <div class="user-personal-account__container">
+    <div class="user-personal-account__name-container container">
+        <h1 class="name-container__fio">Иванов Иван Иванович</h1>
+        <button class="name-container__passw-button" type="submit">Изменить пароль</button>
     </div> 
-    <div class="nko-account__company-data container">
-        <h4 class="company-data__title">Данные пользователя</h4>
-        <div class="company-data__info-line">
+</div>
+    <div class="user-personal-account__user-data container">
+        <h3 class="user-data__title">Данные пользователя</h3>
+        <div class="user-data__info-line">
             <p class="info-line__border-text">Фамилия Имя Отчество</p>
-            <form class="info-line__input-text">
-                <input type="text">
-            </form>
+            <input class="info-line__input-text" type="text">
             <button class="info-line__btn" type="submit">Редактировать</button>
         </div>
-        <div class="company-data__info-line">
+        <div class="user-data__info-line">
             <p class="info-line__border-text">Адрес электронной почты</p>
-            <form class="info-line__input-text">
-                <input type="email">
-            </form>
+            <input class="info-line__input-text" type="email">
             <button class="info-line__btn" type="submit">Редактировать</button>
         </div>
-        <div class="company-data__info-line">
+        <div class="user-data__info-line">
             <p class="info-line__border-text">Номер телефона</p>
-           
-            <form class="info-line__input-text">
-                <input type="tel">
-            </form>
-      
+            <input class="info-line__input-text" type="tel">
             <button class="info-line__btn" type="submit">Редактировать</button>
         </div>
-        
     </div>
      
     
-    <div class="nko-account__user-qwestions container">
-        <h4 class="user-qwestions__title">Задать вопрос</h4>
+    <div class="user-personal-account__user-qwestions container">
+      
         <div class="user-qwestions__info-line">
-            
+            <h3 class="user-qwestions__title">Задать вопрос</h3>
+            <div>
+            <select>
+                <option value="">НКО</option>
+                <option value="1">НКО Название 1</option>
+                <option value="2">НКО Название 2</option>
+                <option value="3">НКО Название 3</option>
+                <option value="4">НКО Название 4</option>
+               </select>
+               <select>
+                <option value="">Тема вопроса</option>
+                <option value="1">Заявка на помощь</option>
+                <option value="2">Программы помощи</option>
+                <option value="3">Волонтерство</option>
+                <option value="4">Другое</option>
+               </select>
+            </div>
             <textarea class="answer-wrap__area" name="message" cols="30" rows="5"></textarea>
             <button class="info-line__btn" type="submit">Ответить</button>
         </div>
-        <h4 class="user-qwestions__title">Оставить отзыв</h4>
+      
         <div class="user-qwestions__info-line">
-            
+            <h3 class="user-qwestions__title">Оставить отзыв</h3>
+            <div>
+                <select>
+                    <option value="">НКО</option>
+                    <option value="1">НКО Название 1</option>
+                    <option value="2">НКО Название 2</option>
+                    <option value="3">НКО Название 3</option>
+                    <option value="4">НКО Название 4</option>
+                   </select>
+            </div>
             <textarea name="message" cols="30" rows="5"></textarea>
             <button class="info-line__btn" type="submit">Ответить</button>
         </div>
     </div>
 </div>
 </main> 
+<footer class="footer centering-center">
+    <!-- размер контейнера -->
+    <div class="footer__container">
+        <!-- лого -->
+        <img src="./assets/images/icons/footer__logo.png" alt="center logo" class="footer__logo">
+        <!-- основные колонки  -->
+        <div class="footer__column">
+            <p class="footer__title link">Контактная информация:</p>
+            <a href="#" class="footer__text link">+7 (927) 434-05-67</a>
+            <a href="#" class="footer__text link">добавить-почту@blago.ru</a>
+            <a href="#" class="footer__text link">г. Набережные Челны, <br>
+                пр. имени Мусы Джалия, д.47а</a>
+        </div>
+        <div class="footer__column">
+            <p class="footer__title">Оферта:</p>
+            <a href="#" class="footer__text link">Публичная оферта
+                о добровольном пожертвовани</a>
+            <a href="#" class="footer__text link">Договор пожертвования
+                (публичная оферта)</a>
+        </div>
+        <div class="footer__column nav-footer">
+            <a href="./index.html" class="nav-footer__link link">Главная</a>
+            <a href="./about-us.html" class="nav-footer__link link">О нас</a>
+            <a href="./" class="nav-footer__link link">Новости</a>
+            <a href="#" class="nav-footer__link link">Личный кабинет</a>
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>

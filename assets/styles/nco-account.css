@@ -27,6 +27,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .centering-between {
   display: flex;
   justify-content: space-between;
@@ -100,30 +101,28 @@ body {
   font-size: 1.75rem;
   cursor: pointer;
 }
-@media (max-width: 90rem) and (max-width: 767px) {
+@media (max-width: 767px) {
   .btns {
     font-size: calc(12px + 27.2 * ((100vw - 320px) / 1440));
   }
 }
-@media (max-width: 90rem) and (min-width: 767px) {
+@media (min-width: 767px) {
   .btns {
     font-size: calc(12px + 16 * (100vw / 1440));
   }
 }
-@media (max-width: 90rem) and (max-width: 90rem) {
+@media (max-width: 90rem) {
   .btns {
     height: 3.8em;
     width: 20.5em;
   }
 }
-
-@media (max-width: 90rem) and (max-width: 90rem) and (max-width: 767px) {
+@media (max-width: 90rem) and (max-width: 767px) {
   .btns {
     font-size: calc(11px + 28.9 * ((100vw - 320px) / 1440));
   }
 }
-
-@media (max-width: 90rem) and (max-width: 90rem) and (min-width: 767px) {
+@media (max-width: 90rem) and (min-width: 767px) {
   .btns {
     font-size: calc(11px + 17 * (100vw / 1440));
   }
@@ -439,7 +438,6 @@ body {
     margin-bottom: 0.6em;
   }
 }
-
 .types-of-payment__img {
   width: 9.44rem;
   height: 2.6rem;
@@ -1157,4 +1155,118 @@ body {
   src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
+}
+.nko-personal-account__container {
+  background-color: #ECEEF2;
+}
+
+.nko-personal-account__name-container {
+  height: 5.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ECEEF2;
+  background-size: 100vw;
+  margin-bottom: 3.75rem;
+}
+
+.name-container__nko-title {
+  font-size: 2.25em;
+  font-weight: 500;
+  color: #156963;
+}
+
+button {
+  width: 16.25rem;
+  height: 4.25rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #83BFBC;
+  font-size: 1.5em;
+  color: #000000;
+  cursor: pointer;
+}
+
+h3 {
+  color: #156963;
+  font-size: 2.25em;
+  font-weight: 400;
+}
+
+.nko-personal-account__company-data {
+  display: grid;
+  row-gap: 24px;
+  margin-bottom: 3.75rem;
+}
+.nko-personal-account__company-data .company-data__info-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.info-line__border-text {
+  display: flex;
+  width: 24.2rem;
+  height: 4.25rem;
+  border-radius: 10px;
+  background-color: #ECEEF2;
+  align-items: center;
+  padding-left: 1em;
+  font-size: 1.5em;
+}
+
+.info-line__input-text {
+  width: 37rem;
+  height: 3.63rem;
+  border: 5px solid #ECEEF2;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1.5em;
+}
+
+.info-line__edit-btn {
+  background-color: rgba(134, 198, 194, 0.5);
+}
+
+.nko-personal-account__company-reports {
+  display: grid;
+  row-gap: 2.37rem;
+}
+.nko-personal-account__company-reports .company-reports__info-line {
+  display: flex;
+  justify-content: space-between;
+}
+.nko-personal-account__company-reports .info-line__input-text {
+  width: 58.25rem;
+}
+
+.nko-personal-account__user-applications {
+  display: grid;
+  row-gap: 1.6em;
+}
+.nko-personal-account__user-applications .user-applications__info-line {
+  display: flex;
+  gap: 1.6em;
+}
+.nko-personal-account__user-applications .info-line__border-text {
+  width: 13.6rem;
+}
+.nko-personal-account__user-applications .info-line__card-text {
+  width: 48rem;
+}
+
+.nko-personal-account__user-qwestions {
+  display: grid;
+  row-gap: 2rem;
+}
+
+.user-qwestions__info-line {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.info-line__dowbload-btn {
+  width: 4.1rem;
+  height: 3.75rem;
 }/*# sourceMappingURL=nco-account.css.map */
