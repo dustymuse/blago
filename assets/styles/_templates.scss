@@ -5,7 +5,6 @@ body {
 }
 
 //размер контента внутри секции-----------------------------
-
 .container {
     width: 82.5rem;
     margin: 0 auto;
@@ -19,7 +18,15 @@ body {
     }
 }
 
-//центрирование по краям----------------------------------
+//позиционирование-----------------------------------------
+//центрирование
+.centering-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//центрирование по краям
 .centering-between {
     display: flex;
     justify-content: space-between;
@@ -27,7 +34,6 @@ body {
 }
 
 //заголовки------------------------------------------------
-
 // h1
 .main-title {
     font-size: 2.25rem;
@@ -53,7 +59,6 @@ body {
 }
 
 //h3
-
 .third-title {
     font-size: 2.25rem;
     color: $text-main;
@@ -76,11 +81,11 @@ body {
 }
 
 //ссылки-----------------------------------------------------
-
 .link {
     color: $text-main;
     text-decoration: none;
 }
+
 
 //Кнопки-----------------------------------------------------
 
@@ -105,6 +110,7 @@ body {
     height: 6.68rem;
     font-size: 1.75rem;
     cursor: pointer;
+        @include adaptive-font (28, 12);
 
         @media (max-width: $l) {
             @include adaptive-font (28, 11);
@@ -130,7 +136,6 @@ body {
 }
 
 //мятная кнопка
-
 @mixin mint-btn ($width, $height) {
     width: $width;
     height: $height;
@@ -545,8 +550,6 @@ body {
     }
 }
 
-
-
 //header-----------------------------------------------------
 
 .header {
@@ -587,8 +590,8 @@ body {
     //навигация
     &__link {
         margin-right: 4.3rem;
-        // position: relative;
-        // text-transform: uppercase;
+        position: relative;
+        text-transform: uppercase;
 
         @media (max-width: $m) {
             margin-right: 1em;
@@ -712,7 +715,7 @@ body {
     font-size: 1rem;
 
     @media (max-width: $l) {
-        @include adaptive-font (16, 8);
+        @include adaptive-font (16, 10);
     }
 
     @media (max-width: $m) {
