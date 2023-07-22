@@ -95,16 +95,7 @@ body {
   height: 6.68rem;
   font-size: 1.75rem;
   cursor: pointer;
-}
-@media (max-width: 767px) {
-  .btns {
-    font-size: calc(12px + 27.2 * ((100vw - 320px) / 1440));
-  }
-}
-@media (min-width: 767px) {
-  .btns {
-    font-size: calc(12px + 16 * (100vw / 1440));
-  }
+  font-size: 1.75rem;
 }
 @media (max-width: 90rem) {
   .btns {
@@ -1163,7 +1154,7 @@ body {
 @media (max-width: 90rem) {
   .main-about__container {
     width: 100vw;
-    background-image: linear-gradient(to top, rgba(10, 10, 10, 0.6), rgba(11, 11, 11, 0.6)), url(../../assets/images/design/index__main-about-bg.png);
+    background-image: linear-gradient(rgba(10, 10, 10, 0.6), rgba(11, 11, 11, 0.6)), url(../../assets/images/design/index__main-about-bg.png);
     background-position: left top;
     height: 50rem;
   }
@@ -1177,6 +1168,7 @@ body {
 }
 @media (max-width: 48rem) {
   .main-about__container {
+    background-image: linear-gradient(rgba(10, 10, 10, 0.7), rgba(11, 11, 11, 0.7)), url(../../assets/images/design/index__main-about-bg.png);
     width: 100vw;
     height: 38rem;
   }
