@@ -1,10 +1,5 @@
 @import './vars';
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: $font;
 }
@@ -315,10 +310,16 @@ body {
 .types-of-payment {
     @include light-btn (100%, 5rem);
     margin-bottom: 0.81rem;
+    font-size: 1.125rem;
 
     @media (max-width: $l) {
+        @include adaptive-font (18, 10);
         @include light-btn (100%, 2.85em);
         margin-bottom: 0.6em;
+    }
+
+    @media (max-width: $xs) {
+        @include adaptive-font (18, 12);
     }
 
     &__img {
@@ -345,18 +346,6 @@ body {
 
         @media (max-width: $m) {
             margin-right: 0;
-        }
-    }
-
-    &__text {
-        font-size: 1.125rem;
-
-        @media (max-width: $l) {
-            @include adaptive-font (18, 10);
-        }
-
-        @media (max-width: $xs) {
-            @include adaptive-font (18, 12);
         }
     }
 }
