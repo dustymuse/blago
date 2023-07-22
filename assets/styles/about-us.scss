@@ -152,10 +152,9 @@
     &__img{
         width: 100%;
     }
-    &__pay-form{
-        flex-grow: 1;
-        height: 100%;
-        background-color: aquamarine;
-    }
+}
+
+.footer_green, footer{
+    background-color: $bg-primary-colored;
 }
 //Ваша помощь
