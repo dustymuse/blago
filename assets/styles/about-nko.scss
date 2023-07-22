@@ -2,7 +2,7 @@
 @import './templates';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
-* { margin: 0 auto;
+* { margin: 0;
     padding: 0;
     // border: 1px solid red !important;
     box-sizing: border-box;
@@ -42,13 +42,13 @@
     @media (max-width:$m) {
         width: 100vw;
         height: 30rem;
-        justify-content: center;
 }
 @media (max-width:$s) {
     width: 100vw;
     height: 25rem;
     background-position: right;
     margin-bottom: 3rem;
+    justify-content: center;
 }
 @media (max-width:$xs) {
     width: 100vw;
@@ -65,8 +65,10 @@
     align-items: flex-end;
     gap: 5em;
     padding-right: 5rem;
-    
     @media (max-width:$m) {
+        gap: 3em;
+    }
+    @media (max-width:$s) {
         width: 90%;
         justify-content: center;
         align-items: center;
@@ -88,6 +90,7 @@
 .help {
     @include mint-btn (17.5rem, 6.68rem);
     font-size: 1.75rem;
+    display: block;
 
     @media (max-width: $l) {
         @include adaptive-font (28, 14);
