@@ -22,7 +22,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .centering-between {
   display: flex;
   justify-content: space-between;
@@ -113,10 +112,12 @@ body {
   }
 }
 @media (max-width: 90rem) and (max-width: 90rem) and (max-width: 767px) {
+
   .btns {
     font-size: calc(11px + 28.9 * ((100vw - 320px) / 1440));
   }
 }
+
 @media (max-width: 90rem) and (max-width: 90rem) and (min-width: 767px) {
   .btns {
     font-size: calc(11px + 17 * (100vw / 1440));
@@ -434,6 +435,7 @@ body {
     margin-bottom: 0.6em;
   }
 }
+
 @media (max-width: 90rem) and (max-width: 767px) {
   .types-of-payment {
     font-size: calc(10px + 13.6 * ((100vw - 320px) / 1440));
@@ -454,6 +456,7 @@ body {
     font-size: calc(12px + 6 * (100vw / 1440));
   }
 }
+
 .types-of-payment__img {
   width: 9.44rem;
   height: 2.6rem;

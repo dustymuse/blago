@@ -36,7 +36,6 @@ $font: 'Montserrat', sans-serif;
 //36-20
 //68-30
 
-
 //Кнопки
 @mixin main-btn ($bg-color, $color, $width) {
     background-color: $bg-color;
@@ -53,6 +52,7 @@ $l: 90rem; //1440
 $m: 64rem; //1024
 $s: 48rem; //768
 $xs: 35rem; //560
+
 
 
 //адаптивность шрифта

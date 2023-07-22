@@ -96,6 +96,7 @@ body {
   font-size: 1.75rem;
   cursor: pointer;
 }
+
 @media (max-width: 90rem) and (max-width: 767px) {
   .btns {
     font-size: calc(12px + 27.2 * ((100vw - 320px) / 1440));
@@ -117,6 +118,7 @@ body {
     font-size: calc(11px + 28.9 * ((100vw - 320px) / 1440));
   }
 }
+
 @media (max-width: 90rem) and (max-width: 90rem) and (min-width: 767px) {
   .btns {
     font-size: calc(11px + 17 * (100vw / 1440));
