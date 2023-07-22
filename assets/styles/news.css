@@ -1180,12 +1180,13 @@ body {
 }
 .main-block__content {
   background: url(../images/design/news__main-with-text.png) center no-repeat;
-  width: 90rem;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
   height: 38.31rem;
 }
 @media (max-width: 90rem) {
   .main-block__content {
-    width: 100%;
     height: 38.31em;
   }
 }
