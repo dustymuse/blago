@@ -1,122 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 @import './vars';
 @import './templates';
-
-
-.nko-personal-account__container{
-    background-color: $bg-secondary-light;
-   }
-
-.nko-personal-account__name-container{
-    height: 5.5em;
-    display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: $bg-secondary-light;
-background-size: 100vw;
-margin-bottom: 3.75rem;
+//header лк нко изменения 
+.header__account{
+    vertical-align: middle;
 }
-
-.name-container__nko-title{
-    font-size: 2.25em;
-font-weight: 500;
-    color:$text-main;
-
+.header__area{
+    width: 9.3rem;
+    height: 2.8rem;
+    background-color: $bg-main-colored;
+    color: $text-light;
 }
-button{
-    width: 16.25rem;
+//main-общее // кнопки на странице 
+.info-line__btn, .info-line__edit-btn, .name-container__passw-button{
+    min-width: 16.25rem;
     height: 4.25rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: $bg-primary-colored;
     font-size: 1.5em;
     color: $text-dark;
     cursor: pointer;
 }
-h3 {
-   color: $text-main;
-    font-size: 2.25em;
-   font-weight: 400;
-}
-
-.nko-personal-account__company-data{
-    display: grid;
-    row-gap: 24px;
- 
-    margin-bottom: 3.75rem;
-.company-data__info-line{
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
- 
-}
-
-}
+//main-общее // текст в сером боксе
 .info-line__border-text{
     display: flex;
     width: 24.2rem;
     height: 4.25rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color:$bg-secondary-light;
     align-items: center;
     padding-left: 1em;
     font-size: 1.5em;
- }
+}
+//main-общее // текст в инпут поле
 .info-line__input-text{
     width: 37rem;
     height: 3.63rem;
     border: 5px solid $bg-secondary-light ;
     outline: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     font-size: 1.5em;
 }
+h3{
+    color: $text-main;
+    font-size: 2.25em;
+    font-weight: 400;
+}
+//main-светло-серый блок с названием нко 
+.nko-personal-account__container{
+    background-color: $bg-secondary-light;
+    .nko-personal-account__name-container{
+        height: 5.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $bg-secondary-light;
+        margin-bottom: 4rem;
+        .name-container__nko-title{
+            font-size: 2.25em;
+            font-weight: 500;
+            color: $text-main;
+        }
+    }
+}
+//main-данные компании
+.nko-personal-account__company-data{
+    display: grid;
+    row-gap: 1.5rem;
+    margin-bottom: 4rem;
 
-.info-line__edit-btn{
-  background-color: rgb(134, 198, 194, 0.5);
-} 
+    .company-data__info-line{
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+        .info-line__edit-btn{
+            background-color: rgb(134, 198, 194, 0.5);
+        }
+    }
+}
+//main-отчеты компании
 .nko-personal-account__company-reports{
     display: grid;
     row-gap: 2.37rem;
+    margin-bottom: 4rem;
+    .company-reports__title {
+        color: $text-main;
+        font-size: 2.25em;
+        font-weight: 400;
+    }
     .company-reports__info-line{
         display: flex;
-       
         justify-content: space-between;
-    }
-    .info-line__input-text{
-        width: 58.25rem;
+        .info-line__input-text{
+            width: 58.25rem;
+        }
     }
 }
-
+//main-заявки пользователей
 .nko-personal-account__user-applications{
     display: grid;
     row-gap: 1.6em;
+    margin-bottom: 4rem;
     .user-applications__info-line{
         display: flex;
         gap: 1.6em;
-    }
-
-    .info-line__border-text{
-        width: 13.6rem;
-    
-    }
-
-    .info-line__card-text{
-        width: 48rem;
+        .info-line__border-text{
+            width: 12.2rem;
+        }
+        .info-line__card-text{
+            width: 47.3rem;
+            border: 5px solid $bg-secondary-light ;
+            border-radius: 0.625rem;
+        }
     }
 }
-
-.nko-personal-account__user-qwestions{
+.info-line__download-btn{
+    
+    max-width: 4.1rem;
+    height: 3.75rem;
+}
+.info-line__card-text{
+    padding: 0.625rem;
+    font-size: 1.5em;
+    .card-text__user-details{
+        color: blue;
+        text-decoration: underline blue;
+    }
+}
+//main-вопросы пользователей
+.nko-personal-account__user-questions{
     display: grid;
     row-gap: 2rem;
+    margin-bottom: 4rem;
+    .user-questions__info-line{
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+    }
 }
-.user-qwestions__info-line{
-    display: flex;
-    gap: 2rem;
-    justify-content: space-between;
+.info-line__question-text{
+    width: 29rem;
+    padding: 0.625rem;
+    border: 5px solid $bg-secondary-light ;
+    border-radius: 0.625rem;
+    font-size: 1.5em;
+    .question-text__user{
+        color: blue;
+        text-decoration: underline blue;
+    }
 }
-
-
-
-.info-line__dowbload-btn{
-    width: 4.1rem;
-    height: 3.75rem;
+textarea {
+    width: 29rem;
+    outline: none;
+    border: none;
+    resize: none;
 }

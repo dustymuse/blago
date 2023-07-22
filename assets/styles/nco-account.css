@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1156,59 +1157,33 @@ body {
   font-style: normal;
   font-weight: 700;
 }
-.nko-personal-account__container {
-  background-color: #ECEEF2;
+.header__account {
+  vertical-align: middle;
 }
 
-.nko-personal-account__name-container {
-  height: 5.5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ECEEF2;
-  background-size: 100vw;
-  margin-bottom: 3.75rem;
+.header__area {
+  width: 9.3rem;
+  height: 2.8rem;
+  background-color: #156963;
+  color: #FFFFFF;
 }
 
-.name-container__nko-title {
-  font-size: 2.25em;
-  font-weight: 500;
-  color: #156963;
-}
-
-button {
-  width: 16.25rem;
+.info-line__btn, .info-line__edit-btn, .name-container__passw-button {
+  min-width: 16.25rem;
   height: 4.25rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: #83BFBC;
   font-size: 1.5em;
   color: #000000;
   cursor: pointer;
 }
 
-h3 {
-  color: #156963;
-  font-size: 2.25em;
-  font-weight: 400;
-}
-
-.nko-personal-account__company-data {
-  display: grid;
-  row-gap: 24px;
-  margin-bottom: 3.75rem;
-}
-.nko-personal-account__company-data .company-data__info-line {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-}
-
 .info-line__border-text {
   display: flex;
   width: 24.2rem;
   height: 4.25rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: #ECEEF2;
   align-items: center;
   padding-left: 1em;
@@ -1220,53 +1195,125 @@ h3 {
   height: 3.63rem;
   border: 5px solid #ECEEF2;
   outline: none;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   font-size: 1.5em;
 }
 
-.info-line__edit-btn {
+h3 {
+  color: #156963;
+  font-size: 2.25em;
+  font-weight: 400;
+}
+
+.nko-personal-account__container {
+  background-color: #ECEEF2;
+}
+.nko-personal-account__container .nko-personal-account__name-container {
+  height: 5.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ECEEF2;
+  margin-bottom: 4rem;
+}
+.nko-personal-account__container .nko-personal-account__name-container .name-container__nko-title {
+  font-size: 2.25em;
+  font-weight: 500;
+  color: #156963;
+}
+
+.nko-personal-account__company-data {
+  display: grid;
+  row-gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+.nko-personal-account__company-data .company-data__info-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
   background-color: rgba(134, 198, 194, 0.5);
 }
 
 .nko-personal-account__company-reports {
   display: grid;
   row-gap: 2.37rem;
+  margin-bottom: 4rem;
+}
+.nko-personal-account__company-reports .company-reports__title {
+  color: #156963;
+  font-size: 2.25em;
+  font-weight: 400;
 }
 .nko-personal-account__company-reports .company-reports__info-line {
   display: flex;
   justify-content: space-between;
 }
-.nko-personal-account__company-reports .info-line__input-text {
+.nko-personal-account__company-reports .company-reports__info-line .info-line__input-text {
   width: 58.25rem;
 }
 
 .nko-personal-account__user-applications {
   display: grid;
   row-gap: 1.6em;
+  margin-bottom: 4rem;
 }
 .nko-personal-account__user-applications .user-applications__info-line {
   display: flex;
   gap: 1.6em;
 }
-.nko-personal-account__user-applications .info-line__border-text {
-  width: 13.6rem;
+.nko-personal-account__user-applications .user-applications__info-line .info-line__border-text {
+  width: 12.2rem;
 }
-.nko-personal-account__user-applications .info-line__card-text {
-  width: 48rem;
+.nko-personal-account__user-applications .user-applications__info-line .info-line__card-text {
+  width: 47.3rem;
+  border: 5px solid #ECEEF2;
+  border-radius: 0.625rem;
 }
 
-.nko-personal-account__user-qwestions {
+.info-line__download-btn {
+  max-width: 4.1rem;
+  height: 3.75rem;
+}
+
+.info-line__card-text {
+  padding: 0.625rem;
+  font-size: 1.5em;
+}
+.info-line__card-text .card-text__user-details {
+  color: blue;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
+}
+
+.nko-personal-account__user-questions {
   display: grid;
   row-gap: 2rem;
+  margin-bottom: 4rem;
 }
-
-.user-qwestions__info-line {
+.nko-personal-account__user-questions .user-questions__info-line {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
 }
 
-.info-line__dowbload-btn {
-  width: 4.1rem;
-  height: 3.75rem;
+.info-line__question-text {
+  width: 29rem;
+  padding: 0.625rem;
+  border: 5px solid #ECEEF2;
+  border-radius: 0.625rem;
+  font-size: 1.5em;
+}
+.info-line__question-text .question-text__user {
+  color: blue;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
+}
+
+textarea {
+  width: 29rem;
+  outline: none;
+  border: none;
+  resize: none;
 }/*# sourceMappingURL=nco-account.css.map */

@@ -1,82 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 @import './vars';
 @import './templates';
 
-.user-personal-account__container{
-    background-color: $bg-secondary-light;
-   }
-
-.user-personal-account__name-container{
-    height: 5.5em;
-    display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: $bg-secondary-light;
-background-size: 100vw;
-margin-bottom: 3.75rem;
+//header лк нко изменения 
+.header__account{
+    vertical-align: middle;
 }
-
-.name-container__fio{
+.header__area{
+    width: 9.3rem;
+    height: 2.8rem;
+    background-color: $bg-main-colored;
+    color: $text-light;
+}
+h3 {
+    color: $text-main;
     font-size: 2.25em;
-font-weight: 500;
-    color:$text-main;
-
+    font-weight: 400;
 }
 button{
     width: 16.25rem;
     height: 4.25rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: $bg-primary-colored;
     font-size: 1.5em;
     color: $text-dark;
     cursor: pointer;
 }
-h3 {
-   color: $text-main;
-    font-size: 2.25em;
-   font-weight: 400;
-}
-
-.user-personal-account__user-data{
-    display: grid;
-    row-gap: 24px;
- 
-    margin-bottom: 3.75rem;
-.user-data__info-line{
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
- 
-}
-
-}
-.info-line__border-text{
+.info-line__border-text, .selections{
     display: flex;
     width: 24.2rem;
     height: 4.25rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color:$bg-secondary-light;
     align-items: center;
-    padding-left: 1em;
+    padding-left: 1rem;
     font-size: 1.5em;
- }
+}
 .info-line__input-text{
     width: 37rem;
     height: 3.63rem;
     border: 5px solid $bg-secondary-light ;
     outline: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     font-size: 1.5em;
 }
-
-.info-line__edit-btn{
-  background-color: rgb(134, 198, 194, 0.5);
-} 
-
+.user-personal-account__container{
+    background-color: $bg-secondary-light;
+    .user-personal-account__name-container{
+        height: 5.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $bg-secondary-light;
+        margin-bottom: 3.75rem;
+        .name-container__fio{
+            font-size: 2.25em;
+            font-weight: 500;
+            color:$text-main;
+        }
+    }
+}
+.user-personal-account__user-data{
+    display: grid;
+    row-gap: 1.5rem;
+    margin-bottom: 3.75rem;
+    .user-data__info-line{
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+        .info-line__edit-btn{
+            background-color: rgb(134, 198, 194, 0.5);
+        } 
+    }
+}
+.user-personal-account__help-btn{
+    margin-bottom: 4rem;
+    .user-personal-account__help-button{
+        width: 17.5rem;
+        height: 6.625rem;
+        background-color: $bg-main-colored;
+        font-size: 1.75em;
+        color: $text-light;
+    }
+}
 .user-personal-account__user-qwestions{
     display: flex;
-    justify-content: space-between;
+    gap: 4rem;
+    margin-bottom: 4rem;
     .user-qwestions__info-line{
         display: grid;
     }
+}
+.user-qwestions__info-line{
+    display: flex;
+    gap: 1.5rem;
+    .info-line__selections{
+        display: flex;
+        gap: 1.5rem;
+    }
+    .selections{
+        border: none;
+        width: 18.3rem;
+        outline: none;
+        cursor: pointer;
+    }
+}
+textarea {
+    width: 38.6rem;
+    outline: none;
+    border: 5px solid $bg-secondary-light ;
+    resize: none;
+    border-radius: 0.625rem;
+    font-size: 1.5em;
+}
+.info-line__button{
+    display: flex;
+    justify-content: flex-end;
 }

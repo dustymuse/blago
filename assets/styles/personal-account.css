@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1156,35 +1157,15 @@ body {
   font-style: normal;
   font-weight: 700;
 }
-.user-personal-account__container {
-  background-color: #ECEEF2;
+.header__account {
+  vertical-align: middle;
 }
 
-.user-personal-account__name-container {
-  height: 5.5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ECEEF2;
-  background-size: 100vw;
-  margin-bottom: 3.75rem;
-}
-
-.name-container__fio {
-  font-size: 2.25em;
-  font-weight: 500;
-  color: #156963;
-}
-
-button {
-  width: 16.25rem;
-  height: 4.25rem;
-  border: none;
-  border-radius: 10px;
-  background-color: #83BFBC;
-  font-size: 1.5em;
-  color: #000000;
-  cursor: pointer;
+.header__area {
+  width: 9.3rem;
+  height: 2.8rem;
+  background-color: #156963;
+  color: #FFFFFF;
 }
 
 h3 {
@@ -1193,25 +1174,25 @@ h3 {
   font-weight: 400;
 }
 
-.user-personal-account__user-data {
-  display: grid;
-  row-gap: 24px;
-  margin-bottom: 3.75rem;
-}
-.user-personal-account__user-data .user-data__info-line {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
+button {
+  width: 16.25rem;
+  height: 4.25rem;
+  border: none;
+  border-radius: 0.625rem;
+  background-color: #83BFBC;
+  font-size: 1.5em;
+  color: #000000;
+  cursor: pointer;
 }
 
-.info-line__border-text {
+.info-line__border-text, .selections {
   display: flex;
   width: 24.2rem;
   height: 4.25rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: #ECEEF2;
   align-items: center;
-  padding-left: 1em;
+  padding-left: 1rem;
   font-size: 1.5em;
 }
 
@@ -1220,18 +1201,86 @@ h3 {
   height: 3.63rem;
   border: 5px solid #ECEEF2;
   outline: none;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   font-size: 1.5em;
 }
 
-.info-line__edit-btn {
+.user-personal-account__container {
+  background-color: #ECEEF2;
+}
+.user-personal-account__container .user-personal-account__name-container {
+  height: 5.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ECEEF2;
+  margin-bottom: 3.75rem;
+}
+.user-personal-account__container .user-personal-account__name-container .name-container__fio {
+  font-size: 2.25em;
+  font-weight: 500;
+  color: #156963;
+}
+
+.user-personal-account__user-data {
+  display: grid;
+  row-gap: 1.5rem;
+  margin-bottom: 3.75rem;
+}
+.user-personal-account__user-data .user-data__info-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.user-personal-account__user-data .user-data__info-line .info-line__edit-btn {
   background-color: rgba(134, 198, 194, 0.5);
+}
+
+.user-personal-account__help-btn {
+  margin-bottom: 4rem;
+}
+.user-personal-account__help-btn .user-personal-account__help-button {
+  width: 17.5rem;
+  height: 6.625rem;
+  background-color: #156963;
+  font-size: 1.75em;
+  color: #FFFFFF;
 }
 
 .user-personal-account__user-qwestions {
   display: flex;
-  justify-content: space-between;
+  gap: 4rem;
+  margin-bottom: 4rem;
 }
 .user-personal-account__user-qwestions .user-qwestions__info-line {
   display: grid;
+}
+
+.user-qwestions__info-line {
+  display: flex;
+  gap: 1.5rem;
+}
+.user-qwestions__info-line .info-line__selections {
+  display: flex;
+  gap: 1.5rem;
+}
+.user-qwestions__info-line .selections {
+  border: none;
+  width: 18.3rem;
+  outline: none;
+  cursor: pointer;
+}
+
+textarea {
+  width: 38.6rem;
+  outline: none;
+  border: 5px solid #ECEEF2;
+  resize: none;
+  border-radius: 0.625rem;
+  font-size: 1.5em;
+}
+
+.info-line__button {
+  display: flex;
+  justify-content: flex-end;
 }/*# sourceMappingURL=personal-account.css.map */
