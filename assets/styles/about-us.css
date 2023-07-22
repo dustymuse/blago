@@ -1213,12 +1213,10 @@ body {
   }
 }
 
-.help-center__container {
-  padding: 4em 6em 0 6em;
-}
 .help-center__title {
   font-weight: 600;
   line-height: 1.5em;
+  padding-top: 2em;
   padding-bottom: 1.25em;
   text-align: center;
 }
@@ -1226,7 +1224,7 @@ body {
   color: #000000;
   line-height: 1.5em;
   font-size: 1.5rem;
-  padding-bottom: 1.5em;
+  padding: 0 2em 1.5em 2em;
 }
 @media (max-width: 90rem) and (max-width: 767px) {
   .help-center__text {
@@ -1319,26 +1317,30 @@ body {
   }
 }
 
-.your-help__container {
+.your-help {
   background-color: #ECEEF2;
-  height: 61.25rem;
+}
+.your-help__container {
+  min-height: 61.25rem;
   display: flex;
-  padding: 5rem;
-  -moz-column-gap: 4.5rem;
-       column-gap: 4.5rem;
 }
 @media (max-width: 90rem) {
   .your-help__container {
     flex-direction: column;
-    padding: 3em;
   }
 }
 .your-help__content {
-  flex-basis: 45%;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 3.125rem;
+}
+@media (max-width: 90rem) {
+  .your-help__content {
+    margin-left: 0;
+  }
 }
 .your-help__title {
   font-size: 4.25rem;
@@ -1346,6 +1348,11 @@ body {
   font-weight: 500;
   padding-bottom: 1em;
   text-align: center;
+}
+@media (max-width: 90rem) {
+  .your-help__title {
+    padding-top: 1em;
+  }
 }
 @media (max-width: 90rem) and (max-width: 767px) {
   .your-help__title {
@@ -1370,13 +1377,46 @@ body {
     width: 17em;
   }
 }
-@media (max-width: 64rem) {
+@media (max-width: 48rem) {
   .your-help__image {
     width: 12em;
   }
 }
 .your-help__img {
   width: 100%;
+}
+
+.section-payment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-payment__form {
+  font-size: 1.625rem;
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .section-payment__form {
+    font-size: calc(10px + 27.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .section-payment__form {
+    font-size: calc(10px + 16 * (100vw / 1440));
+  }
+}
+
+.donation-form {
+  border: none;
+}
+@media (max-width: 64rem) {
+  .donation-form {
+    width: 95vw;
+  }
+}
+@media (max-width: 48rem) {
+  .donation-form {
+    width: 100vw;
+  }
 }
 
 .footer_green, footer {

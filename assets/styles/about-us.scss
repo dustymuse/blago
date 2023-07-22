@@ -44,18 +44,17 @@
 // О компании
 // Центр помощи
 .help-center{
-    &__container{
-        padding: 4em 6em 0 6em;
-        }
     &__title{
         font-weight: 600;
         line-height: 1.5em;
+        padding-top: 2em;
         padding-bottom: 1.25em;
         text-align: center;
     }
     &__text{
         @include text-24 ($text-dark, 1.5em);
-        padding-bottom: 1.5em;
+        padding: 0 2em 1.5em 2em;
+
     
         @media (max-width: $l) {
             line-height: 1.5em;
@@ -109,23 +108,24 @@
 //Документы
 //Ваша помощь
 .your-help{
+    background-color: $bg-secondary-light;
     &__container{
-        background-color: $bg-secondary-light;
-        height: 61.25rem;
+        min-height: 61.25rem;
         display: flex;
-        padding: 5rem;
-        column-gap: 4.5rem;
         @media (max-width: $l) {
             flex-direction: column;
-            padding: 3em;
         }
     }
     &__content{
-        flex-basis: 45%;
+        flex-grow: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-left: 3.125rem;
+        @media (max-width: $l) {
+            margin-left: 0;
+        }
     }
     &__title{
         font-size: 4.25rem;
@@ -135,6 +135,7 @@
         text-align: center;
         @media (max-width: $l) {
             @include adaptive-font (68, 30);
+            padding-top: 1em;
         }
     }
     &__image{
@@ -145,12 +146,34 @@
         @media (max-width: $m) {
             width: 17em;
         }
-        @media (max-width: $m) {
+        @media (max-width: $s) {
             width: 12em;
         }
     }
     &__img{
         width: 100%;
+    }
+}
+
+.section-payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__form {
+        font-size: 1.625rem;
+        @media (max-width: $l) {
+            @include adaptive-font (26, 10);
+        }
+    }
+}
+
+.donation-form {
+    border: none;
+    @media (max-width: $m) {
+        width: 95vw;
+    }
+    @media (max-width: $s) {
+        width: 100vw;
     }
 }
 
