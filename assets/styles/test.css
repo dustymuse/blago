@@ -112,16 +112,28 @@ body {
   }
 }
 @media (max-width: 90rem) and (max-width: 90rem) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 90371a48f2a097a111c610063046b31916e7cc35
   .btns {
     height: 3.8em;
     width: 20.5em;
   }
 }
 @media (max-width: 90rem) and (max-width: 90rem) and (max-width: 767px) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 90371a48f2a097a111c610063046b31916e7cc35
   .btns {
     font-size: calc(11px + 28.9 * ((100vw - 320px) / 1440));
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 90371a48f2a097a111c610063046b31916e7cc35
 @media (max-width: 90rem) and (max-width: 90rem) and (min-width: 767px) {
   .btns {
     font-size: calc(11px + 17 * (100vw / 1440));
@@ -168,6 +180,10 @@ body {
   width: 46.5rem;
   height: 56.56rem;
   flex-direction: column;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 90371a48f2a097a111c610063046b31916e7cc35
 }
 @media (max-width: 767px) {
   .donation-form {
@@ -438,6 +454,10 @@ body {
     margin-bottom: 0.6em;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 90371a48f2a097a111c610063046b31916e7cc35
 .types-of-payment__img {
   width: 9.44rem;
   height: 2.6rem;
@@ -605,6 +625,10 @@ body {
 @media (max-width: 90rem) and (min-width: 767px) {
   .payment__checkbox {
     font-size: calc(12px + 6 * (100vw / 1440));
+<<<<<<< HEAD
+=======
+
+>>>>>>> 90371a48f2a097a111c610063046b31916e7cc35
   }
 }
 .payment__checkbox.payment__checkbox_first,
@@ -956,6 +980,7 @@ body {
 }
 @media (max-width: 90rem) and (max-width: 767px) {
   .footer {
+<<<<<<< HEAD
     font-size: calc(10px + 10.2 * ((100vw - 320px) / 1440));
   }
 }
@@ -967,11 +992,15 @@ body {
 @media (max-width: 90rem) and (max-width: 767px) {
   .footer {
     font-size: calc(8px + 13.6 * ((100vw - 320px) / 1440));
+=======
+
+    font-size: calc(10px + 10.2 * ((100vw - 320px) / 1440));
+>>>>>>> 90371a48f2a097a111c610063046b31916e7cc35
   }
 }
 @media (max-width: 90rem) and (min-width: 767px) {
   .footer {
-    font-size: calc(8px + 8 * (100vw / 1440));
+    font-size: calc(10px + 6 * (100vw / 1440));
   }
 }
 @media (max-width: 64rem) {

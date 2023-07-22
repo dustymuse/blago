@@ -24,16 +24,7 @@ body {
     }
 }
 
-//позиционирование-----------------------------------------
-
-//центрирование
-.centering-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-//центрирование по краям
+//центрирование по краям----------------------------------
 .centering-between {
     display: flex;
     justify-content: space-between;
@@ -119,9 +110,6 @@ body {
     height: 6.68rem;
     font-size: 1.75rem;
     cursor: pointer;
-
-    @media (max-width: $l) {
-        @include adaptive-font (28, 12);
 
         @media (max-width: $l) {
             @include adaptive-font (28, 11);
@@ -570,6 +558,7 @@ body {
 }
 
 
+
 //header-----------------------------------------------------
 
 .header {
@@ -716,7 +705,6 @@ body {
     font-size: 1rem;
 
     @media (max-width: $l) {
-        @include adaptive-font (16, 10);
         @include adaptive-font (16, 8);
     }
 
