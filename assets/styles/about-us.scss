@@ -108,8 +108,8 @@
 //Документы
 //Ваша помощь
 .your-help{
-    background-color: $bg-secondary-light;
     &__container{
+        background-color: $bg-secondary-light;
         min-height: 61.25rem;
         display: flex;
         @media (max-width: $l) {

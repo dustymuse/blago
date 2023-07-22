@@ -1317,10 +1317,8 @@ body {
   }
 }
 
-.your-help {
-  background-color: #ECEEF2;
-}
 .your-help__container {
+  background-color: #ECEEF2;
   min-height: 61.25rem;
   display: flex;
 }
