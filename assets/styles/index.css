@@ -1,9 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -425,6 +419,7 @@ body {
   font-weight: 500;
   cursor: pointer;
   margin-bottom: 0.81rem;
+  font-size: 1.125rem;
 }
 @media (max-width: 90rem) {
   .types-of-payment {
@@ -437,6 +432,26 @@ body {
     font-weight: 500;
     cursor: pointer;
     margin-bottom: 0.6em;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .types-of-payment {
+    font-size: calc(10px + 13.6 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .types-of-payment {
+    font-size: calc(10px + 8 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .types-of-payment {
+    font-size: calc(12px + 10.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .types-of-payment {
+    font-size: calc(12px + 6 * (100vw / 1440));
   }
 }
 .types-of-payment__img {
@@ -465,29 +480,6 @@ body {
 @media (max-width: 64rem) {
   .types-of-payment__img:not(:last-child) {
     margin-right: 0;
-  }
-}
-.types-of-payment__text {
-  font-size: 1.125rem;
-}
-@media (max-width: 90rem) and (max-width: 767px) {
-  .types-of-payment__text {
-    font-size: calc(10px + 13.6 * ((100vw - 320px) / 1440));
-  }
-}
-@media (max-width: 90rem) and (min-width: 767px) {
-  .types-of-payment__text {
-    font-size: calc(10px + 8 * (100vw / 1440));
-  }
-}
-@media (max-width: 35rem) and (max-width: 767px) {
-  .types-of-payment__text {
-    font-size: calc(12px + 10.2 * ((100vw - 320px) / 1440));
-  }
-}
-@media (max-width: 35rem) and (min-width: 767px) {
-  .types-of-payment__text {
-    font-size: calc(12px + 6 * (100vw / 1440));
   }
 }
 
@@ -1157,52 +1149,59 @@ body {
   font-style: normal;
   font-weight: 700;
 }
-.main-about__bg {
-  background-color: #83BFBC;
-}
-.main-about__content {
-  background: url(../images/design/index__main-about-bg.png) no-repeat;
-  background-position: start;
-  background-size: contain;
-  width: 90rem;
-  height: 49.3rem;
-  margin: 0 auto;
-  font-size: 1.5rem;
-}
-@media (max-width: 90rem) {
-  .main-about__content {
-    width: 100vw;
-    background-size: cover;
-    height: 32.8em;
-  }
-}
-.main-about__black-bg {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
+.main-about__container {
+  background-color: #FFFFFF;
+  background-image: url(../../assets/images/design/index__main-about-bg.png);
+  background-position: center top;
+  background-size: cover;
+  width: 100vw;
+  height: 60rem;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
-@media (max-width: 64rem) {
-  .main-about__black-bg {
-    background: rgba(0, 0, 0, 0.5);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 90rem) {
+  .main-about__container {
+    width: 100vw;
+    background-image: linear-gradient(to top, rgba(10, 10, 10, 0.6), rgba(11, 11, 11, 0.6)), url(../../assets/images/design/index__main-about-bg.png);
+    background-position: left top;
+    height: 50rem;
   }
-}
-@media (max-width: 48rem) {
-  .main-about__black-bg {
-    background: rgba(0, 0, 0, 0.7);
-  }
-}
-.main-about__container {
-  width: 36rem;
-  margin-right: 3.19rem;
 }
 @media (max-width: 64rem) {
   .main-about__container {
+    width: 100vw;
+    background-position: left top;
+    height: 40rem;
+  }
+}
+@media (max-width: 48rem) {
+  .main-about__container {
+    width: 100vw;
+    height: 38rem;
+  }
+}
+@media (max-width: 35rem) {
+  .main-about__container {
+    width: 100vw;
+    justify-content: center;
+    height: 32rem;
+  }
+}
+.main-about__content {
+  width: 36vw;
+  margin-right: 6vw;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 90rem) {
+  .main-about__content {
+    width: 36rem;
+    margin-right: 3.19rem;
+  }
+}
+@media (max-width: 64rem) {
+  .main-about__content {
     width: 79vw;
     margin: 0 auto;
   }
@@ -1246,9 +1245,50 @@ body {
     margin-bottom: 0.5rem;
   }
 }
+@media (max-width: 64rem) {
+  .main-about__btns {
+    align-self: center;
+  }
+}
 @media (max-width: 35rem) {
   .main-about__btns {
-    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.help {
+  background-color: #156963;
+  color: #FFFFFF;
+  width: 17.5rem;
+  border-radius: 10px;
+  border: none;
+  padding: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1em;
+}
+@media (max-width: 90rem) {
+  .help {
+    width: 10em;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nko-account {
+  background-color: #FFFFFF;
+  color: #156963;
+  width: 17.5rem;
+  border-radius: 10px;
+  border: none;
+  padding: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1em;
+}
+@media (max-width: 90rem) {
+  .nko-account {
+    width: 10em;
   }
 }
 
@@ -1542,47 +1582,29 @@ body {
 
 .short-novelty {
   width: 25.8rem;
-  height: 54.1rem;
 }
 .short-novelty__img {
   border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+@media (max-width: 48rem) {
+  .short-novelty__img {
+    max-height: 30rem;
+  }
 }
 @media (max-width: 90rem) {
   .short-novelty {
     width: 17em;
-    height: 40.8em;
   }
 }
 @media (max-width: 64rem) {
   .short-novelty {
     width: 20em;
-    height: 37em;
   }
 }
 @media (max-width: 48rem) {
-  .short-novelty {
-    width: 25em;
-    height: 43em;
-  }
-}
-@media (max-width: 35rem) {
   .short-novelty {
     width: 90vw;
-    height: 43em;
-  }
-}
-.short-novelty__img {
-  width: 100%;
-  height: 19.37rem;
-}
-@media (max-width: 90rem) {
-  .short-novelty__img {
-    height: 14em;
-  }
-}
-@media (max-width: 48rem) {
-  .short-novelty__img {
-    height: 16em;
   }
 }
 .short-novelty__title-block {
@@ -1644,7 +1666,13 @@ body {
 }
 @media (max-width: 48rem) {
   .short-novelty__main {
-    height: 18em;
+    max-height: 14em;
+    margin-bottom: 1.5em;
+  }
+}
+@media (max-width: 35rem) {
+  .short-novelty__main {
+    max-height: 16em;
   }
 }
 .short-novelty__text {
@@ -1737,6 +1765,7 @@ body {
   cursor: pointer;
   margin-bottom: 4rem;
   font-size: 1.875rem;
+  font-weight: 400;
 }
 @media (max-width: 90rem) {
   .short-news__btn {
@@ -1762,7 +1791,6 @@ body {
   }
 }
 
-.short-news__text-btn {
-  margin-right: 0.5rem;
-  font-weight: 400;
+.short-news__arrow-btn {
+  padding-left: 0.5rem;
 }/*# sourceMappingURL=index.css.map */
