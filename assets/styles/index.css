@@ -1577,6 +1577,7 @@ body {
 @media (max-width: 51rem) {
   .detail-about__content {
     max-width: 80vw;
+    padding: 0;
   }
 }
 .detail-about__scroll {
