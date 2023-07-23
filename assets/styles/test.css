@@ -409,6 +409,10 @@ body {
   border: 0.5px black dashed;
   font-weight: 500;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 0.81rem;
   font-size: 1.125rem;
 }
@@ -425,7 +429,6 @@ body {
     margin-bottom: 0.6em;
   }
 }
-
 @media (max-width: 90rem) and (max-width: 767px) {
   .types-of-payment {
     font-size: calc(10px + 13.6 * ((100vw - 320px) / 1440));
@@ -446,7 +449,6 @@ body {
     font-size: calc(12px + 6 * (100vw / 1440));
   }
 }
-
 .types-of-payment__img {
   width: 9.44rem;
   height: 2.6rem;
@@ -473,30 +475,6 @@ body {
 @media (max-width: 64rem) {
   .types-of-payment__img:not(:last-child) {
     margin-right: 0;
-  }
-}
-
-.types-of-payment__text {
-  font-size: 1.125rem;
-}
-@media (max-width: 90rem) and (max-width: 767px) {
-  .types-of-payment__text {
-    font-size: calc(10px + 13.6 * ((100vw - 320px) / 1440));
-  }
-}
-@media (max-width: 90rem) and (min-width: 767px) {
-  .types-of-payment__text {
-    font-size: calc(10px + 8 * (100vw / 1440));
-  }
-}
-@media (max-width: 35rem) and (max-width: 767px) {
-  .types-of-payment__text {
-    font-size: calc(12px + 10.2 * ((100vw - 320px) / 1440));
-  }
-}
-@media (max-width: 35rem) and (min-width: 767px) {
-  .types-of-payment__text {
-    font-size: calc(12px + 6 * (100vw / 1440));
   }
 }
 
@@ -708,6 +686,7 @@ body {
     font-size: calc(18px + 18 * (100vw / 1440));
   }
 }
+
 .title {
   font-size: 2.25rem;
   color: #156963;
@@ -942,7 +921,6 @@ body {
     margin-right: 1em;
   }
 }
-
 .header__link:after {
   content: "";
   display: block;

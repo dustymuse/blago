@@ -103,13 +103,11 @@ body {
     width: 20.5em;
   }
 }
-
 @media (max-width: 90rem) and (max-width: 767px) {
   .btns {
     font-size: calc(11px + 28.9 * ((100vw - 320px) / 1440));
   }
 }
-
 @media (max-width: 90rem) and (min-width: 767px) {
   .btns {
     font-size: calc(11px + 17 * (100vw / 1440));
@@ -298,7 +296,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border: 0.5px black dashed
+    border: 0.5px black dashed;
     font-weight: 500;
     cursor: pointer;
   }
@@ -411,6 +409,10 @@ body {
   border: 0.5px black dashed;
   font-weight: 500;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 0.81rem;
   font-size: 1.125rem;
 }
@@ -427,7 +429,6 @@ body {
     margin-bottom: 0.6em;
   }
 }
-
 @media (max-width: 90rem) and (max-width: 767px) {
   .types-of-payment {
     font-size: calc(10px + 13.6 * ((100vw - 320px) / 1440));
@@ -448,7 +449,6 @@ body {
     font-size: calc(12px + 6 * (100vw / 1440));
   }
 }
-
 .types-of-payment__img {
   width: 9.44rem;
   height: 2.6rem;
@@ -687,7 +687,6 @@ body {
   }
 }
 
-
 .title {
   font-size: 2.25rem;
   color: #156963;
@@ -820,7 +819,7 @@ body {
 .documents .doc-button-item:hover {
   background: #6DA5A2;
 }
-  
+
 .scroll::-webkit-scrollbar {
   width: 1rem;
   background-color: #DEDEDE;

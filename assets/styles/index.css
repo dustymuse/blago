@@ -285,7 +285,7 @@ body {
   background-color: #FFFFFF;
   color: #156963;
   border-radius: 0.625rem;
-  border-style: dotted;
+  border: 0.5px black dashed;
   font-weight: 500;
   cursor: pointer;
 }
@@ -296,7 +296,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border-style: dotted;
+    border: 0.5px black dashed;
     font-weight: 500;
     cursor: pointer;
   }
@@ -318,7 +318,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border-style: dotted;
+    border: 0.5px black dashed;
     font-weight: 500;
     cursor: pointer;
   }
@@ -361,7 +361,7 @@ body {
   background-color: #FFFFFF;
   color: #156963;
   border-radius: 0.625rem;
-  border-style: dotted;
+  border: 0.5px black dashed;
   font-weight: 500;
   cursor: pointer;
 }
@@ -372,7 +372,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border-style: dotted;
+    border: 0.5px black dashed;
     font-weight: 500;
     cursor: pointer;
   }
@@ -394,7 +394,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border-style: dotted;
+    border: 0.5px black dashed;
     font-weight: 500;
     cursor: pointer;
   }
@@ -406,9 +406,13 @@ body {
   background-color: #FFFFFF;
   color: #156963;
   border-radius: 0.625rem;
-  border-style: dotted;
+  border: 0.5px black dashed;
   font-weight: 500;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 0.81rem;
   font-size: 1.125rem;
 }
@@ -419,7 +423,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border-style: dotted;
+    border: 0.5px black dashed;
     font-weight: 500;
     cursor: pointer;
     margin-bottom: 0.6em;
@@ -480,7 +484,7 @@ body {
   background-color: #FFFFFF;
   color: #156963;
   border-radius: 0.625rem;
-  border-style: dotted;
+  border: 0.5px black dashed;
   font-weight: 500;
   cursor: pointer;
   outline: none;
@@ -493,7 +497,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border-style: dotted;
+    border: 0.5px black dashed;
     font-weight: 500;
     cursor: pointer;
   }
@@ -515,7 +519,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border-style: dotted;
+    border: 0.5px black dashed;
     font-weight: 500;
     cursor: pointer;
   }
@@ -1573,6 +1577,7 @@ body {
 @media (max-width: 51rem) {
   .detail-about__content {
     max-width: 80vw;
+    padding: 0;
   }
 }
 .detail-about__scroll {
@@ -1863,7 +1868,7 @@ body {
   background-color: #FFFFFF;
   color: #156963;
   border-radius: 0.625rem;
-  border-style: dotted;
+  border: 0.5px black dashed;
   font-weight: 500;
   cursor: pointer;
   border: 1px #156963 dashed;
@@ -1876,7 +1881,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border-style: dotted;
+    border: 0.5px black dashed;
     font-weight: 500;
     cursor: pointer;
   }
