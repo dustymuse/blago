@@ -97,7 +97,6 @@ body {
   cursor: pointer;
   font-size: 1.75rem;
 }
-
 @media (max-width: 90rem) {
   .btns {
     height: 3.8em;
@@ -1450,8 +1449,6 @@ body {
   background-color: #ECEEF2;
   min-height: 61.25rem;
   display: flex;
-  column-gap: 4.5rem;
-  padding: 6.25rem 5rem 4.5rem 5rem;
 }
 @media (max-width: 90rem) {
   .your-help__container {
