@@ -1611,12 +1611,12 @@ body {
 }
 @media (max-width: 64rem) {
   .documents__buttons {
+    flex-direction: column;
     gap: 1rem;
   }
 }
 @media (max-width: 48rem) {
   .documents__buttons {
-    flex-direction: column;
     gap: 1.5rem;
   }
 }
