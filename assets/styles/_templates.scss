@@ -154,7 +154,7 @@ body {
     background-color: $bg-primary-light;
     color: $text-main;
     border-radius: 0.625rem;
-    border: 0.5px black dashed;
+    border-style: dotted;
     font-weight: 500;
     cursor: pointer;
 }
@@ -496,6 +496,79 @@ body {
     }
 }
 
+// Заготовки блоков с адаптивом (class=".second-title")
+.title{
+    font-size: 2.25rem;
+    color: $text-main;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    @media (max-width: $l) {
+    @include adaptive-font (36, 20);
+        text-align: center;
+    }
+    @media (max-width:$m) {
+        margin-bottom: 2rem;
+    }
+    @media (max-width:$s) {
+        margin-bottom: 1.5rem;
+    }
+}
+
+// Блок Документы с кнопками с адаптивом---------------------------
+
+.documents{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    row-gap: 3rem;
+    padding-bottom: 4rem;
+
+&__title{
+    font-size: 2.25rem;
+    color: $text-main;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    @media (max-width: $l) {
+    @include adaptive-font (36, 20);
+        text-align: center;
+    }
+    @media (max-width:$m) {
+        margin-bottom: 2rem;
+    }
+    @media (max-width:$s) {
+        margin-bottom: 1.5rem;
+    }
+}
+&__buttons{
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:$m) {
+            gap: 1rem;
+    }
+    @media (max-width:$s) {
+            flex-direction: column;
+            gap: 1.5rem;
+    }
+}
+&__link{
+    font-size: 1.75rem;
+    @media (max-width: $l) {
+    @include adaptive-font (28, 14);
+        text-align: center;
+    }
+}
+.doc-button-item{
+    @include mint-btn (24rem, 8rem);
+    @media (max-width: $l) {
+        @include adaptive-font (28, 14);
+            height: 4em;
+            width: 12em;
+    }
+}
+.doc-button-item:hover {
+    background: $bg-tertiary-colored;
+}
+}
 
 //скролл-----------------------------------------
 @mixin scroll ($max-height) {
@@ -590,6 +663,8 @@ body {
     //навигация
     &__link {
         margin-right: 4.3rem;
+        position: relative;
+        text-transform: uppercase;
 
         @media (max-width: $m) {
             margin-right: 1em;
@@ -602,6 +677,23 @@ body {
         @media (max-width: $xs) {
             margin-right: 1em;
         }
+    }
+
+    &__link:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        display: none;
+        background-color: $text-light;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+    }
+    
+    &__link:hover:after {
+        display: block;
     }
 
     //иконки
@@ -683,8 +775,6 @@ body {
         }
     }
 }
-
-//футер--------------------------------------------------
 
 .footer {
     color: $text-main;
@@ -853,6 +943,7 @@ body {
 }
 
 
+
 //подключение шрифтов-----------------------------------
 
 @font-face {
@@ -885,4 +976,16 @@ body {
         url('../fonts/montserrat-bold.woff') format('woff');
     font-style: normal;
     font-weight: 700;
+}
+
+//мятная кнопка
+@mixin mint-btn ($width, $height) {
+    width: $width;
+    height: $height;
+    background-color: $bg-primary-colored;
+    color: $text-light;
+    border-radius: 0.625rem;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
 }
