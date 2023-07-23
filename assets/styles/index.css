@@ -103,13 +103,11 @@ body {
     width: 20.5em;
   }
 }
-
 @media (max-width: 90rem) and (max-width: 767px) {
   .btns {
     font-size: calc(11px + 28.9 * ((100vw - 320px) / 1440));
   }
 }
-
 @media (max-width: 90rem) and (min-width: 767px) {
   .btns {
     font-size: calc(11px + 17 * (100vw / 1440));
@@ -287,7 +285,7 @@ body {
   background-color: #FFFFFF;
   color: #156963;
   border-radius: 0.625rem;
-  border: 0.5px black dashed;
+  border-style: dotted;
   font-weight: 500;
   cursor: pointer;
 }
@@ -298,7 +296,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border: 0.5px black dashed;
+    border-style: dotted;
     font-weight: 500;
     cursor: pointer;
   }
@@ -320,7 +318,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border: 0.5px black dashed;
+    border-style: dotted;
     font-weight: 500;
     cursor: pointer;
   }
@@ -363,7 +361,7 @@ body {
   background-color: #FFFFFF;
   color: #156963;
   border-radius: 0.625rem;
-  border: 0.5px black dashed;
+  border-style: dotted;
   font-weight: 500;
   cursor: pointer;
 }
@@ -374,7 +372,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border: 0.5px black dashed;
+    border-style: dotted;
     font-weight: 500;
     cursor: pointer;
   }
@@ -396,7 +394,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border: 0.5px black dashed;
+    border-style: dotted;
     font-weight: 500;
     cursor: pointer;
   }
@@ -408,7 +406,7 @@ body {
   background-color: #FFFFFF;
   color: #156963;
   border-radius: 0.625rem;
-  border: 0.5px black dashed;
+  border-style: dotted;
   font-weight: 500;
   cursor: pointer;
   margin-bottom: 0.81rem;
@@ -421,13 +419,12 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border: 0.5px black dashed;
+    border-style: dotted;
     font-weight: 500;
     cursor: pointer;
     margin-bottom: 0.6em;
   }
 }
-
 @media (max-width: 90rem) and (max-width: 767px) {
   .types-of-payment {
     font-size: calc(10px + 13.6 * ((100vw - 320px) / 1440));
@@ -448,7 +445,6 @@ body {
     font-size: calc(12px + 6 * (100vw / 1440));
   }
 }
-
 .types-of-payment__img {
   width: 9.44rem;
   height: 2.6rem;
@@ -484,7 +480,7 @@ body {
   background-color: #FFFFFF;
   color: #156963;
   border-radius: 0.625rem;
-  border: 0.5px black dashed;
+  border-style: dotted;
   font-weight: 500;
   cursor: pointer;
   outline: none;
@@ -497,7 +493,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border: 0.5px black dashed;
+    border-style: dotted;
     font-weight: 500;
     cursor: pointer;
   }
@@ -519,7 +515,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border: 0.5px black dashed;
+    border-style: dotted;
     font-weight: 500;
     cursor: pointer;
   }
@@ -921,7 +917,6 @@ body {
     margin-right: 1em;
   }
 }
-
 .header__link:after {
   content: "";
   display: block;
@@ -1316,6 +1311,7 @@ body {
 }
 @media (max-width: 64rem) {
   .main-about__container {
+    background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(11, 11, 11, 0.8)), url(../../assets/images/design/index__main-about-bg.png);
     width: 100vw;
     background-position: left top;
     height: 40rem;
@@ -1323,7 +1319,6 @@ body {
 }
 @media (max-width: 48rem) {
   .main-about__container {
-    background-image: linear-gradient(rgba(10, 10, 10, 0.7), rgba(11, 11, 11, 0.7)), url(../../assets/images/design/index__main-about-bg.png);
     width: 100vw;
     height: 38rem;
   }
@@ -1336,7 +1331,6 @@ body {
   }
 }
 .main-about__content {
-
   width: 36vw;
   margin-right: 6vw;
   display: flex;
@@ -1360,6 +1354,7 @@ body {
 @media (max-width: 64rem) {
   .main-about__title {
     margin-bottom: 1.5rem;
+    text-align: center;
   }
 }
 @media (max-width: 35rem) {
@@ -1386,6 +1381,11 @@ body {
 @media (max-width: 90rem) {
   .main-about__text {
     line-height: 1.5em;
+  }
+}
+@media (max-width: 64rem) {
+  .main-about__text {
+    text-align: center;
   }
 }
 @media (max-width: 35rem) {
@@ -1416,12 +1416,13 @@ body {
   line-height: 1em;
 }
 @media (max-width: 90rem) {
-  .main-about .help {
+  .help {
     width: 10em;
     display: flex;
     align-items: center;
   }
 }
+
 .nko-account {
   background-color: #FFFFFF;
   color: #156963;
@@ -1754,7 +1755,6 @@ body {
     width: 90vw;
   }
 }
-
 .short-novelty__title-block {
   height: 5.6rem;
   display: flex;
@@ -1863,7 +1863,7 @@ body {
   background-color: #FFFFFF;
   color: #156963;
   border-radius: 0.625rem;
-  border: 0.5px black dashed;
+  border-style: dotted;
   font-weight: 500;
   cursor: pointer;
   border: 1px #156963 dashed;
@@ -1876,7 +1876,7 @@ body {
     background-color: #FFFFFF;
     color: #156963;
     border-radius: 0.625rem;
-    border: 0.5px black dashed;
+    border-style: dotted;
     font-weight: 500;
     cursor: pointer;
   }
@@ -1913,6 +1913,7 @@ body {
   cursor: pointer;
   margin-bottom: 4rem;
   font-size: 1.875rem;
+  font-weight: 400;
 }
 @media (max-width: 90rem) {
   .short-news__btn {
