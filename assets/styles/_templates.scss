@@ -154,7 +154,7 @@ body {
     background-color: $bg-primary-light;
     color: $text-main;
     border-radius: 0.625rem;
-    border-style: dotted;
+    border: 0.5px black dashed;
     font-weight: 500;
     cursor: pointer;
 }
@@ -308,6 +308,10 @@ body {
 //Кнопка выбора платёжной системы
 .types-of-payment {
     @include light-btn (100%, 5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 0.81rem;
     font-size: 1.125rem;
 
@@ -497,18 +501,21 @@ body {
 }
 
 // Заготовки блоков с адаптивом (class=".second-title")
-.title{
+.title {
     font-size: 2.25rem;
     color: $text-main;
     font-weight: 500;
     margin-bottom: 3rem;
+
     @media (max-width: $l) {
-    @include adaptive-font (36, 20);
+        @include adaptive-font (36, 20);
         text-align: center;
     }
+
     @media (max-width:$m) {
         margin-bottom: 2rem;
     }
+
     @media (max-width:$s) {
         margin-bottom: 1.5rem;
     }
@@ -516,58 +523,69 @@ body {
 
 // Блок Документы с кнопками с адаптивом---------------------------
 
-.documents{
+.documents {
     text-align: center;
     display: grid;
     grid-template-rows: 1fr, 1fr;
     row-gap: 3rem;
     padding-bottom: 4rem;
 
-&__title{
-    font-size: 2.25rem;
-    color: $text-main;
-    font-weight: 500;
-    margin-bottom: 3rem;
-    @media (max-width: $l) {
-    @include adaptive-font (36, 20);
-        text-align: center;
+    &__title {
+        font-size: 2.25rem;
+        color: $text-main;
+        font-weight: 500;
+        margin-bottom: 3rem;
+
+        @media (max-width: $l) {
+            @include adaptive-font (36, 20);
+            text-align: center;
+        }
+
+        @media (max-width:$m) {
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width:$s) {
+            margin-bottom: 1.5rem;
+        }
     }
-    @media (max-width:$m) {
-        margin-bottom: 2rem;
-    }
-    @media (max-width:$s) {
-        margin-bottom: 1.5rem;
-    }
-}
-&__buttons{
-    display: flex;
-    justify-content: space-between;
-    @media (max-width:$m) {
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width:$m) {
             gap: 1rem;
-    }
-    @media (max-width:$s) {
+        }
+
+        @media (max-width:$s) {
             flex-direction: column;
             gap: 1.5rem;
+        }
     }
-}
-&__link{
-    font-size: 1.75rem;
-    @media (max-width: $l) {
-    @include adaptive-font (28, 14);
-        text-align: center;
+
+    &__link {
+        font-size: 1.75rem;
+
+        @media (max-width: $l) {
+            @include adaptive-font (28, 14);
+            text-align: center;
+        }
     }
-}
-.doc-button-item{
-    @include mint-btn (24rem, 8rem);
-    @media (max-width: $l) {
-        @include adaptive-font (28, 14);
+
+    .doc-button-item {
+        @include mint-btn (24rem, 8rem);
+
+        @media (max-width: $l) {
+            @include adaptive-font (28, 14);
             height: 4em;
             width: 12em;
+        }
     }
-}
-.doc-button-item:hover {
-    background: $bg-tertiary-colored;
-}
+
+    .doc-button-item:hover {
+        background: $bg-tertiary-colored;
+    }
 }
 
 //скролл-----------------------------------------
@@ -691,7 +709,7 @@ body {
         left: 0;
         z-index: 1;
     }
-    
+
     &__link:hover:after {
         display: block;
     }

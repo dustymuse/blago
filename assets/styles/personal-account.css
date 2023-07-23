@@ -1,4 +1,3 @@
-
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -104,13 +103,11 @@ body {
     width: 20.5em;
   }
 }
-
 @media (max-width: 90rem) and (max-width: 767px) {
   .btns {
     font-size: calc(11px + 28.9 * ((100vw - 320px) / 1440));
   }
 }
-
 @media (max-width: 90rem) and (min-width: 767px) {
   .btns {
     font-size: calc(11px + 17 * (100vw / 1440));
@@ -412,6 +409,10 @@ body {
   border: 0.5px black dashed;
   font-weight: 500;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 0.81rem;
   font-size: 1.125rem;
 }
@@ -428,7 +429,6 @@ body {
     margin-bottom: 0.6em;
   }
 }
-
 @media (max-width: 90rem) and (max-width: 767px) {
   .types-of-payment {
     font-size: calc(10px + 13.6 * ((100vw - 320px) / 1440));
@@ -449,7 +449,6 @@ body {
     font-size: calc(12px + 6 * (100vw / 1440));
   }
 }
-
 .types-of-payment__img {
   width: 9.44rem;
   height: 2.6rem;
@@ -922,7 +921,6 @@ body {
     margin-right: 1em;
   }
 }
-
 .header__link:after {
   content: "";
   display: block;
@@ -938,7 +936,6 @@ body {
 .header__link:hover:after {
   display: block;
 }
-
 .header__search {
   margin-right: 2.25rem;
   width: 2.4rem;
