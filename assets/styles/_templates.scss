@@ -1,16 +1,10 @@
 @import './vars';
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: $font;
 }
 
 //размер контента внутри секции-----------------------------
-
 .container {
     width: 82.5rem;
     margin: 0 auto;
@@ -25,7 +19,6 @@ body {
 }
 
 //позиционирование-----------------------------------------
-
 //центрирование
 .centering-center {
     display: flex;
@@ -41,7 +34,6 @@ body {
 }
 
 //заголовки------------------------------------------------
-
 // h1
 .main-title {
     font-size: 2.25rem;
@@ -67,7 +59,6 @@ body {
 }
 
 //h3
-
 .third-title {
     font-size: 2.25rem;
     color: $text-main;
@@ -90,11 +81,11 @@ body {
 }
 
 //ссылки-----------------------------------------------------
-
 .link {
     color: $text-main;
     text-decoration: none;
 }
+
 
 //Кнопки-----------------------------------------------------
 
@@ -119,17 +110,13 @@ body {
     height: 6.68rem;
     font-size: 1.75rem;
     cursor: pointer;
+    font-size: 1.75rem;
 
     @media (max-width: $l) {
-        @include adaptive-font (28, 12);
-
-        @media (max-width: $l) {
-            @include adaptive-font (28, 11);
-            height: 3.8em;
-            width: 20.5em;
-        }
+        @include adaptive-font (28, 11);
+        height: 3.8em;
+        width: 20.5em;
     }
-}
 
 .help {
     @include main-btn ($bg-main-colored, $text-light, 17.5rem);
@@ -148,7 +135,6 @@ body {
 }
 
 //мятная кнопка
-
 @mixin mint-btn ($width, $height) {
     width: $width;
     height: $height;
@@ -322,10 +308,16 @@ body {
 .types-of-payment {
     @include light-btn (100%, 5rem);
     margin-bottom: 0.81rem;
+    font-size: 1.125rem;
 
     @media (max-width: $l) {
+        @include adaptive-font (18, 10);
         @include light-btn (100%, 2.85em);
         margin-bottom: 0.6em;
+    }
+
+    @media (max-width: $xs) {
+        @include adaptive-font (18, 12);
     }
 
     &__img {
@@ -352,18 +344,6 @@ body {
 
         @media (max-width: $m) {
             margin-right: 0;
-        }
-    }
-
-    &__text {
-        font-size: 1.125rem;
-
-        @media (max-width: $l) {
-            @include adaptive-font (18, 10);
-        }
-
-        @media (max-width: $xs) {
-            @include adaptive-font (18, 12);
         }
     }
 }
@@ -642,7 +622,6 @@ body {
     }
 }
 
-
 //header-----------------------------------------------------
 
 .header {
@@ -683,6 +662,8 @@ body {
     //навигация
     &__link {
         margin-right: 4.3rem;
+        position: relative;
+        text-transform: uppercase;
 
         @media (max-width: $m) {
             margin-right: 1em;
@@ -695,6 +676,23 @@ body {
         @media (max-width: $xs) {
             margin-right: 1em;
         }
+    }
+
+    &__link:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        display: none;
+        background-color: $text-light;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+    }
+    
+    &__link:hover:after {
+        display: block;
     }
 
     //иконки

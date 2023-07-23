@@ -1,100 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 @import './vars';
 @import './templates';
 
 //первая секция (кратко about)----------------------------------------
-//цветной фон, если макет больше 1440
-*{
-    box-sizing: border-box;
-}
-// .main-about {
-//     &__bg {
-//         background-color: #83BFBC;
-//     }
+.main-about {
+    &__container {
+        background-color: $bg-primary-light;
+        background-image: url(../../assets/images/design/index__main-about-bg.png);
+        background-position: center top;
+        background-size: cover;
+        width: 100vw;
+        height: 60rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
 
-    //основная картинка
-    // &__content {
-    //     background: url(../images/design/index__main-about-bg.png) no-repeat;
-    //     background-position: start;
-    //     background-size: contain;
-    //     width: 90rem;
-    //     height: 49.3rem;
-    //     margin: 0 auto;
-    //     font-size: 1.5rem;
-
-    //     @media (max-width:$l) {
-    //         width: 100vw;
-    //         background-size: cover;
-    //         height: 32.8em;
-            //исправить положение детей на бэкграунду!!!!!!!!!
-    //     }
-    // }
-
-    //чёрный фон для контрастности на планшетах
-    //позиционирование контента
-    // &__black-bg {
-    //     width: 100%;
-    //     height: 100%;
-    //     margin: 0 auto;
-    //     display: flex;
-    //     justify-content: end;
-    //     align-items: center;
-
-    //     @media (max-width: $m) {
-    //         background: rgba(0, 0, 0, 0.5);
-    //         flex-direction: column;
-    //         justify-content: center;
-    //         align-items: center;
-    //     }
-
-    //     @media (max-width: $s) {
-    //         background: rgba(0, 0, 0, 0.7);
-    //     }
-    // }
-
-    .main-about{
-        &__container{
-            background-color: $bg-primary-light;
-            background-image: url(../../assets/images/design/index__main-about-bg.png);
-            background-position: center top;
-            background-size: cover;
+        @media (max-width:$l) {
             width: 100vw;
-            height: 60rem;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            margin-bottom: 5rem;
-
-            @media (max-width:$l) {
-                width: 100vw;
-                // background-image: linear-gradient(to top, rgb(21, 105, 99, 0.7), rgba(21, 105, 99, 0.7)), url(../../assets/images/design/index__main-about-bg.png);
-                background-image: linear-gradient(to top, rgba(10, 10, 10, 0.6), rgba(11, 11, 11, 0.6)), url(../../assets/images/design/index__main-about-bg.png);
-                background-position: left top;
-                height: 50rem;
-            }
-            @media (max-width:$m) {
-                width: 100vw;
-                background-position: left top;
-                height: 40rem;
+            background-image: linear-gradient(rgba(10, 10, 10, 0.6), rgba(11, 11, 11, 0.6)), url(../../assets/images/design/index__main-about-bg.png);
+            background-position: left top;
+            height: 50rem;
         }
+
+        @media (max-width:$m) {
+            width: 100vw;
+            background-position: left top;
+            height: 40rem;
+        }
+
         @media (max-width:$s) {
+            background-image: linear-gradient(rgba(10, 10, 10, 0.7), rgba(11, 11, 11, 0.7)), url(../../assets/images/design/index__main-about-bg.png);
             width: 100vw;
             height: 38rem;
-            margin-bottom: 3rem;
         }
+
         @media (max-width:$xs) {
             width: 100vw;
             justify-content: center;
-            margin-bottom: 1.5rem;
             height: 32rem;
         }
-        }
-        // весь контент текст
+    }
+
+    // весь контент текст
     &__content {
-        width: 36rem;
-        margin-right: 3.19rem;
+        width: 36vw;
+        margin-right: 6vw;
         display: flex;
         flex-direction: column;
+
+        @media (max-width: $l) {
+            width: 36rem;
+            margin-right: 3.19rem;
+        }
 
         @media (max-width: $m) {
             width: 79vw;
@@ -136,26 +92,26 @@
             margin-top: 0.5rem;
         }
     }
-    .help {
-        @include main-btn ($bg-main-colored, $text-light, 17.5rem);
-    
-        @media (max-width: $l) {
-            width: 10em;
-            display: flex;
-            align-items: center;
-        }
-    }
-    
-    .nko-account {
-        @include main-btn ($bg-primary-light, $text-main, 17.5rem);
-    
-        @media (max-width: $l) {
-            width: 10em;
-        }
+}
+
+.help {
+    @include main-btn ($bg-main-colored, $text-light, 17.5rem);
+
+    @media (max-width: $l) {
+        width: 10em;
+        display: flex;
+        align-items: center;
     }
 }
 
-    
+.nko-account {
+    @include main-btn ($bg-primary-light, $text-main, 17.5rem);
+
+    @media (max-width: $l) {
+        width: 10em;
+    }
+}
+
 
 //форма пожертвований-----------------------------
 .section-payment {
@@ -364,37 +320,26 @@
 
 //дизайн блокa одной новости
 .short-novelty {
-    max-width: 25.8rem;
-    height: 54.1rem;
-
+    width: 25.8rem;
     &__img {
         border-radius: 10px 10px 0 0;
-    }
+        width: 100%;
 
+        @media (max-width: $s) {
+            max-height: 30rem;
+        }
+    }
 
     @media (max-width: $l) {
         width: 17em;
-        height: 40.8em;
     }
 
     @media (max-width: $m) {
         width: 20em;
-        height: 37em;
     }
 
     @media (max-width: $s) {
-        width: 25em;
-        height: 43em;
-    }
-
-    @media (max-width: $xs) {
         width: 90vw;
-        height: 43em;
-    }
-
-    &__img {
-        max-width: 100%;
-        max-height: 19.37rem;
     }
 
     &__title-block {
@@ -445,7 +390,12 @@
         }
 
         @media (max-width: $s) {
-            height: 18em;
+            max-height: 14em;
+            margin-bottom: 1.5em;
+        }
+
+        @media (max-width: $xs) {
+            max-height: 16em;
         }
     }
 
@@ -491,6 +441,7 @@
     @include mint-btn (17.5rem, 5rem);
     margin-bottom: 4rem;
     font-size: 1.875rem;
+    font-weight: 400;
 
     @media (max-width: $l) {
         @include adaptive-font (30, 19);
@@ -499,7 +450,6 @@
     }
 }
 
-.short-news__text-btn {
-    margin-right: 0.5rem;
-    font-weight: 400;
+.short-news__arrow-btn {
+    padding-left: 0.5rem;
 }
