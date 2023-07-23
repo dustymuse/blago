@@ -12,7 +12,7 @@
         font-size: 2.25rem;
         color: $text-main;
         font-weight: 500;
-        margin-bottom: 3rem;
+        margin-bottom: 2.5rem;
         @media (max-width: $l) {
             @include adaptive-font (36, 20);
             text-align: center;
@@ -21,7 +21,7 @@
             margin-bottom: 2rem;
         }
         @media (max-width:$s) {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
     }
 
@@ -212,21 +212,23 @@
 // <!-- Отчеты о проделанной работе -->--------------------------------
 //Документы------------------------------------------------------------
 .documents{
+
+&__container {
     text-align: center;
     display: grid;
     grid-template-rows: 1fr, 1fr;
-    row-gap: 3rem;
-    padding-bottom: 4rem;
+    // max-width: 73rem;
+    @media (max-width:$l) {
+        // max-width: 68rem;
+    }
+    }
 
 &__buttons{
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
     @media (max-width:$m) {
         flex-direction: column;
-        gap: 1rem;
-    }
-    @media (max-width:$s) {
-        gap: 1.5rem;
     }
 }
 &__link{
@@ -240,9 +242,11 @@
     @include mint-btn (24rem, 8rem);
     @media (max-width: $l) {
         @include adaptive-font (28, 14);
-        height: 4em;
-        width: 12em;
-}
+        width: 22rem;
+        }
+        @media (max-width: 1230px) {
+            width: 20rem;
+            }
 }
 .doc-button-item:hover {
     background: $bg-tertiary-colored;
@@ -263,8 +267,10 @@
     &__container{
         width: 80rem;
         max-width: 100%;
-        margin: 0 auto;
         text-align: center;
+        @media (max-width:$l) {
+            max-width: 68rem;
+        }
         @media (max-width: $m) {
             max-width: 80vw;
             }
@@ -440,6 +446,9 @@ label, a{
 }
 #medium:checked ~ #slider-medium{
 	max-width: 34rem;
+    @media ((max-width: 440px)) {
+        max-width: 20rem;
+    }
 }
 
 #switch1-medium:checked ~ #controls-medium label:nth-child(4),
