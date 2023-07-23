@@ -98,6 +98,7 @@ body {
   cursor: pointer;
   font-size: 1.75rem;
 }
+
 @media (max-width: 90rem) {
   .btns {
     height: 3.8em;
@@ -767,6 +768,8 @@ body {
 }
 .header__link {
   margin-right: 4.3rem;
+  position: relative;
+  text-transform: uppercase;
 }
 @media (max-width: 64rem) {
   .header__link {
@@ -782,6 +785,21 @@ body {
   .header__link {
     margin-right: 1em;
   }
+}
+.header__link:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  display: none;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+.header__link:hover:after {
+  display: block;
 }
 .header__search {
   margin-right: 2.25rem;
@@ -1146,70 +1164,127 @@ body {
   background-image: url(../../assets/images/design/about-us__bg-about-company.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 37rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 @media (max-width: 90rem) {
   .about-company__container {
-    width: 100vw;
+    width: 100%;
     background-size: cover;
-    height: 32.8em;
+    height: 32rem;
+  }
+}
+@media (max-width: 64rem) {
+  .about-company__container {
+    height: 30rem;
+  }
+}
+@media (max-width: 48rem) {
+  .about-company__container {
+    height: 25rem;
+    background-position: left;
+    justify-content: center;
+  }
+}
+@media (max-width: 35rem) {
+  .about-company__container {
+    height: 20rem;
+  }
+}
+.about-company__title {
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-right: 2em;
+}
+@media (max-width: 48rem) {
+  .about-company__title {
+    margin-right: 0;
   }
 }
 
-.about-company__title {
-  font-size: 4.25rem;
-  color: #FFFFFF;
-  padding-top: 15rem;
-  padding-left: 45rem;
-}
-
-.help-center {
-  padding: 3rem 0;
-}
-
 .help-center__title {
-  font-size: 2.25rem;
   font-weight: 600;
-  color: #156963;
-  line-height: 5rem;
-  padding-bottom: 2.25rem;
+  line-height: 1.5em;
+  padding-top: 2em;
+  padding-bottom: 1.25em;
   text-align: center;
 }
-
 .help-center__text {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  padding-bottom: 2.5rem;
   color: #000000;
+  line-height: 1.5em;
+  font-size: 1.5rem;
+  padding: 0 2em 1.5em 2em;
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .help-center__text {
+    font-size: calc(15px + 15.3 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .help-center__text {
+    font-size: calc(15px + 9 * (100vw / 1440));
+  }
+}
+@media (max-width: 90rem) {
+  .help-center__text {
+    line-height: 1.5em;
+  }
+}
+@media (max-width: 35rem) {
+  .help-center__text {
+    margin-bottom: 0.5rem;
+  }
 }
 
-.documents {
+.documents__container {
   text-align: center;
   display: grid;
   grid-template-rows: 1fr, 1fr;
-  row-gap: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2.5em;
 }
-
 .documents__buttons {
   display: flex;
   justify-content: space-between;
 }
-
+@media (max-width: 64rem) {
+  .documents__buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media (max-width: 48rem) {
+  .documents__buttons {
+    gap: 1.5rem;
+  }
+}
 .documents__title {
-  font-size: 2.25rem;
-  color: #156963;
-  font-weight: 500;
   padding-bottom: 2.25rem;
 }
-
 .documents__link {
   font-size: 1.75rem;
+}
+@media (max-width: 90rem) {
+  .documents__link {
+    text-align: center;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .documents__link {
+    font-size: calc(14px + 23.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .documents__link {
+    font-size: calc(14px + 14 * (100vw / 1440));
+  }
 }
 
 .doc-button-item {
   width: 24rem;
-  height: 9.25rem;
+  height: 8rem;
   background-color: #83BFBC;
   color: #FFFFFF;
   border-radius: 0.625rem;
@@ -1217,37 +1292,125 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
+@media (max-width: 90rem) {
+  .doc-button-item {
+    height: 4em;
+    width: 12em;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .doc-button-item {
+    font-size: calc(14px + 23.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .doc-button-item {
+    font-size: calc(14px + 14 * (100vw / 1440));
+  }
+}
 
 .your-help__container {
   background-color: #ECEEF2;
-  height: 61.25rem;
+  min-height: 61.25rem;
   display: flex;
   column-gap: 4.5rem;
   padding: 6.25rem 5rem 4.5rem 5rem;
 }
-
-.your-help__content {
-  flex-basis: 50%;
-  text-align: center;
+@media (max-width: 90rem) {
+  .your-help__container {
+    flex-direction: column;
+  }
 }
-
+.your-help__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3.125rem;
+}
+@media (max-width: 90rem) {
+  .your-help__content {
+    margin-left: 0;
+  }
+}
 .your-help__title {
   font-size: 4.25rem;
   color: #156963;
   font-weight: 500;
-  padding-bottom: 2.25rem;
+  padding-bottom: 1em;
+  text-align: center;
 }
-
+@media (max-width: 90rem) {
+  .your-help__title {
+    padding-top: 1em;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .your-help__title {
+    font-size: calc(30px + 64.6 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .your-help__title {
+    font-size: calc(30px + 38 * (100vw / 1440));
+  }
+}
 .your-help__image {
-  width: 30.2rem;
+  max-width: 37rem;
 }
-
+@media (max-width: 90rem) {
+  .your-help__image {
+    width: 27em;
+  }
+}
+@media (max-width: 64rem) {
+  .your-help__image {
+    width: 17em;
+  }
+}
+@media (max-width: 48rem) {
+  .your-help__image {
+    width: 12em;
+  }
+}
 .your-help__img {
-  max-width: 100%;
+  width: 100%;
 }
 
-.your-help__pay-form {
-  width: 100%;
-  height: 100%;
-  background-color: aquamarine;
+.section-payment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-payment__form {
+  font-size: 1.625rem;
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .section-payment__form {
+    font-size: calc(10px + 27.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .section-payment__form {
+    font-size: calc(10px + 16 * (100vw / 1440));
+  }
+}
+
+.donation-form {
+  border: none;
+}
+@media (max-width: 64rem) {
+  .donation-form {
+    width: 95vw;
+  }
+}
+@media (max-width: 48rem) {
+  .donation-form {
+    width: 100vw;
+  }
+}
+
+.footer_green, footer {
+  background-color: #83BFBC;
 }/*# sourceMappingURL=about-us.css.map */

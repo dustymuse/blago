@@ -117,7 +117,6 @@ body {
         height: 3.8em;
         width: 20.5em;
     }
-}
 
 .help {
     @include main-btn ($bg-main-colored, $text-light, 17.5rem);
@@ -590,6 +589,8 @@ body {
     //навигация
     &__link {
         margin-right: 4.3rem;
+        position: relative;
+        text-transform: uppercase;
 
         @media (max-width: $m) {
             margin-right: 1em;
@@ -602,6 +603,23 @@ body {
         @media (max-width: $xs) {
             margin-right: 1em;
         }
+    }
+
+    &__link:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        display: none;
+        background-color: $text-light;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+    }
+    
+    &__link:hover:after {
+        display: block;
     }
 
     //иконки
