@@ -104,11 +104,13 @@ body {
     width: 20.5em;
   }
 }
+
 @media (max-width: 90rem) and (max-width: 767px) {
   .btns {
     font-size: calc(11px + 28.9 * ((100vw - 320px) / 1440));
   }
 }
+
 @media (max-width: 90rem) and (min-width: 767px) {
   .btns {
     font-size: calc(11px + 17 * (100vw / 1440));
@@ -426,6 +428,7 @@ body {
     margin-bottom: 0.6em;
   }
 }
+
 @media (max-width: 90rem) and (max-width: 767px) {
   .types-of-payment {
     font-size: calc(10px + 13.6 * ((100vw - 320px) / 1440));
@@ -446,6 +449,7 @@ body {
     font-size: calc(12px + 6 * (100vw / 1440));
   }
 }
+
 .types-of-payment__img {
   width: 9.44rem;
   height: 2.6rem;
@@ -684,6 +688,139 @@ body {
   }
 }
 
+.title {
+  font-size: 2.25rem;
+  color: #156963;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+@media (max-width: 90rem) {
+  .title {
+    text-align: center;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .title {
+    font-size: calc(20px + 27.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .title {
+    font-size: calc(20px + 16 * (100vw / 1440));
+  }
+}
+@media (max-width: 64rem) {
+  .title {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 48rem) {
+  .title {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.documents {
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr, 1fr;
+  row-gap: 3rem;
+  padding-bottom: 4rem;
+}
+.documents__title {
+  font-size: 2.25rem;
+  color: #156963;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+@media (max-width: 90rem) {
+  .documents__title {
+    text-align: center;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .documents__title {
+    font-size: calc(20px + 27.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .documents__title {
+    font-size: calc(20px + 16 * (100vw / 1440));
+  }
+}
+@media (max-width: 64rem) {
+  .documents__title {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 48rem) {
+  .documents__title {
+    margin-bottom: 1.5rem;
+  }
+}
+.documents__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 64rem) {
+  .documents__buttons {
+    gap: 1rem;
+  }
+}
+@media (max-width: 48rem) {
+  .documents__buttons {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+.documents__link {
+  font-size: 1.75rem;
+}
+@media (max-width: 90rem) {
+  .documents__link {
+    text-align: center;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .documents__link {
+    font-size: calc(14px + 23.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .documents__link {
+    font-size: calc(14px + 14 * (100vw / 1440));
+  }
+}
+.documents .doc-button-item {
+  width: 24rem;
+  height: 8rem;
+  background-color: #83BFBC;
+  color: #FFFFFF;
+  border-radius: 0.625rem;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media (max-width: 90rem) {
+  .documents .doc-button-item {
+    height: 4em;
+    width: 12em;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .documents .doc-button-item {
+    font-size: calc(14px + 23.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .documents .doc-button-item {
+    font-size: calc(14px + 14 * (100vw / 1440));
+  }
+}
+.documents .doc-button-item:hover {
+  background: #6DA5A2;
+}
+
 .scroll::-webkit-scrollbar {
   width: 1rem;
   background-color: #DEDEDE;
@@ -785,6 +922,7 @@ body {
     margin-right: 1em;
   }
 }
+
 .header__link:after {
   content: "";
   display: block;
@@ -1199,6 +1337,7 @@ body {
   }
 }
 .main-about__content {
+
   width: 36vw;
   margin-right: 6vw;
   display: flex;
@@ -1278,13 +1417,12 @@ body {
   line-height: 1em;
 }
 @media (max-width: 90rem) {
-  .help {
+  .main-about .help {
     width: 10em;
     display: flex;
     align-items: center;
   }
 }
-
 .nko-account {
   background-color: #FFFFFF;
   color: #156963;
@@ -1617,6 +1755,7 @@ body {
     width: 90vw;
   }
 }
+
 .short-novelty__title-block {
   height: 5.6rem;
   display: flex;
@@ -1775,7 +1914,6 @@ body {
   cursor: pointer;
   margin-bottom: 4rem;
   font-size: 1.875rem;
-  font-weight: 400;
 }
 @media (max-width: 90rem) {
   .short-news__btn {

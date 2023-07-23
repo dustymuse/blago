@@ -88,7 +88,6 @@
         @media (max-width: $m) {
             align-self: center;
         }
-
         @media (max-width: $xs) {
             margin-top: 0.5rem;
         }
@@ -112,7 +111,6 @@
         width: 10em;
     }
 }
-
 
 
 //форма пожертвований-----------------------------
@@ -323,7 +321,6 @@
 //дизайн блокa одной новости
 .short-novelty {
     width: 25.8rem;
-
     &__img {
         border-radius: 10px 10px 0 0;
         width: 100%;
@@ -455,5 +452,4 @@
 
 .short-news__arrow-btn {
     padding-left: 0.5rem;
-
 }
