@@ -110,13 +110,12 @@ body {
     height: 6.68rem;
     font-size: 1.75rem;
     cursor: pointer;
-        @include adaptive-font (28, 12);
+    font-size: 1.75rem;
 
-        @media (max-width: $l) {
-            @include adaptive-font (28, 11);
-            height: 3.8em;
-            width: 20.5em;
-        }
+    @media (max-width: $l) {
+        @include adaptive-font (28, 11);
+        height: 3.8em;
+        width: 20.5em;
     }
 
 .help {

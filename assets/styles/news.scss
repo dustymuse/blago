@@ -8,36 +8,26 @@
 
 //блок с главным заголовком----------------------------------------------
 .main-block {
-    background-color: $bg-primary-colored;
-    width: 100%;
+    //картинка сразу с заголовком
+    background: url(../images/design/news__main-with-text.png) center no-repeat;
+    //картинка без заголовка
+    // background: url(../images/design/news__main.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 38.31rem;
     margin-bottom: 4.5rem;
     @include adaptive-font (16, 10);
 
     @media (max-width: $l) {
         margin-bottom: 4.5em;
+        height: 38.31em;
     }
 
     @media (max-width: $s) {
+        background: url(../images/design/news__main-with-text.png) center / cover no-repeat;
+        background-position-x: 60%;
         margin-bottom: 3em;
-    }
-
-    &__content {
-        //картинка сразу с заголовком
-        background: url(../images/design/news__main-with-text.png) center no-repeat;
-        //картинка без заголовка
-        // background: url(../images/design/news__main.png) no-repeat;
-        width: 90rem;
-        height: 38.31rem;
-
-        @media (max-width: $l) {
-            width: 100%;
-            height: 38.31em;
-        }
-
-        @media (max-width: $m) {
-            background: url(../images/design/news__main-with-text.png) center / cover no-repeat;
-            background-position-x: 60%;
-        }
     }
 
     &__title {

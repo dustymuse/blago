@@ -16,7 +16,7 @@
 
         @media (max-width:$l) {
             width: 100vw;
-            background-image: linear-gradient(to top, rgba(10, 10, 10, 0.6), rgba(11, 11, 11, 0.6)), url(../../assets/images/design/index__main-about-bg.png);
+            background-image: linear-gradient(rgba(10, 10, 10, 0.6), rgba(11, 11, 11, 0.6)), url(../../assets/images/design/index__main-about-bg.png);
             background-position: left top;
             height: 50rem;
         }
@@ -28,6 +28,7 @@
         }
 
         @media (max-width:$s) {
+            background-image: linear-gradient(rgba(10, 10, 10, 0.7), rgba(11, 11, 11, 0.7)), url(../../assets/images/design/index__main-about-bg.png);
             width: 100vw;
             height: 38rem;
         }
