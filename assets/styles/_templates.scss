@@ -100,6 +100,15 @@ body {
     font-weight: 500;
     cursor: pointer;
     line-height: 1em;
+    transition: 0.2s;
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+        }
+    &:active{
+        transform: translateY(-1px);
+        box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    } 
 }
 
 //кнопки заявка о помощи и входа для нко
@@ -145,6 +154,15 @@ body {
     border: none;
     font-weight: 500;
     cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+        }
+    &:active{
+        transform: translateY(-2px);
+        box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    }    
 }
 
 //белая кнопка из формы пожертвования
@@ -157,6 +175,14 @@ body {
     border: 0.5px black dashed;
     font-weight: 500;
     cursor: pointer;
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+        }
+    &:active{
+        transform: translateY(-2px);
+        box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    } 
 }
 
 //линия
