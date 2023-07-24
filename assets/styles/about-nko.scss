@@ -103,6 +103,10 @@
     transition: 1s;
     transform: scale(1.05);
 }
+.help:active{
+    transform: translateY(-2px);
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+}
 }
 // <!-- Название НКО -->----------------------------------------------
 // <!-- Описание НКО -->----------------------------------------------
@@ -252,6 +256,10 @@
     background: $bg-tertiary-colored;
     transition: 1s;
     transform: scale(1.05);
+}
+&:active{
+    transform: translateY(-2px);
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }
 }
 //Документы-------------------------------------------------------------

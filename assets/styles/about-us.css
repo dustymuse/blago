@@ -128,12 +128,9 @@ body {
   transition: 0.2s;
 }
 .help:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px rgba(0, 0, 0, 0.1);
-}
-.help:active {
-  transform: translateY(-1px);
-  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+  background: #6DA5A2;
+  transition: 1s;
+  transform: scale(1.05);
 }
 @media (max-width: 90rem) {
   .help {
@@ -154,12 +151,9 @@ body {
   transition: 0.2s;
 }
 .nko-account:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px rgba(0, 0, 0, 0.1);
-}
-.nko-account:active {
-  transform: translateY(-1px);
-  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+  background: #6DA5A2;
+  transition: 1s;
+  transform: scale(1.05);
 }
 @media (max-width: 90rem) {
   .nko-account {
@@ -264,8 +258,9 @@ body {
   font-size: 1.75rem;
 }
 .payment__monthly:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  background: #6DA5A2;
+  transition: 1s;
+  transform: scale(1.05);
 }
 .payment__monthly:active {
   transform: translateY(-2px);
@@ -296,8 +291,9 @@ body {
 }
 @media (max-width: 90rem) {
   .payment__monthly:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    background: #6DA5A2;
+    transition: 1s;
+    transform: scale(1.05);
   }
   .payment__monthly:active {
     transform: translateY(-2px);
@@ -317,8 +313,9 @@ body {
     transition: 0.2s;
   }
   .payment__monthly:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    background: #6DA5A2;
+    transition: 1s;
+    transform: scale(1.05);
   }
   .payment__monthly:active {
     transform: translateY(-2px);
@@ -338,8 +335,8 @@ body {
   cursor: pointer;
 }
 .payment__one-time:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+  transform: scale(1.05);
 }
 .payment__one-time:active {
   transform: translateY(-2px);
@@ -369,8 +366,8 @@ body {
 }
 @media (max-width: 90rem) {
   .payment__one-time:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+    transform: scale(1.05);
   }
   .payment__one-time:active {
     transform: translateY(-2px);
@@ -389,8 +386,8 @@ body {
     cursor: pointer;
   }
   .payment__one-time:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+    transform: scale(1.05);
   }
   .payment__one-time:active {
     transform: translateY(-2px);
@@ -440,8 +437,8 @@ body {
   cursor: pointer;
 }
 .sum-btns > *:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+  transform: scale(1.05);
 }
 .sum-btns > *:active {
   transform: translateY(-2px);
@@ -471,8 +468,8 @@ body {
 }
 @media (max-width: 90rem) {
   .sum-btns > *:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+    transform: scale(1.05);
   }
   .sum-btns > *:active {
     transform: translateY(-2px);
@@ -491,8 +488,8 @@ body {
     cursor: pointer;
   }
   .sum-btns > *:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+    transform: scale(1.05);
   }
   .sum-btns > *:active {
     transform: translateY(-2px);
@@ -517,8 +514,8 @@ body {
   font-size: 1.125rem;
 }
 .types-of-payment:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+  transform: scale(1.05);
 }
 .types-of-payment:active {
   transform: translateY(-2px);
@@ -549,8 +546,8 @@ body {
 }
 @media (max-width: 90rem) {
   .types-of-payment:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+    transform: scale(1.05);
   }
   .types-of-payment:active {
     transform: translateY(-2px);
@@ -609,8 +606,8 @@ body {
   font-size: 1.25rem;
 }
 .payment__input:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+  transform: scale(1.05);
 }
 .payment__input:active {
   transform: translateY(-2px);
@@ -640,8 +637,8 @@ body {
 }
 @media (max-width: 90rem) {
   .payment__input:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+    transform: scale(1.05);
   }
   .payment__input:active {
     transform: translateY(-2px);
@@ -660,8 +657,8 @@ body {
     cursor: pointer;
   }
   .payment__input:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+    transform: scale(1.05);
   }
   .payment__input:active {
     transform: translateY(-2px);
@@ -810,8 +807,9 @@ body {
   font-size: 2.25rem;
 }
 .payment__donation:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  background: #6DA5A2;
+  transition: 1s;
+  transform: scale(1.05);
 }
 .payment__donation:active {
   transform: translateY(-2px);
@@ -830,8 +828,9 @@ body {
     transition: 0.2s;
   }
   .payment__donation:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    background: #6DA5A2;
+    transition: 1s;
+    transform: scale(1.05);
   }
   .payment__donation:active {
     transform: translateY(-2px);
@@ -964,8 +963,9 @@ body {
   transition: 0.2s;
 }
 .documents .doc-button-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  background: #6DA5A2;
+  transition: 1s;
+  transform: scale(1.05);
 }
 .documents .doc-button-item:active {
   transform: translateY(-2px);
@@ -1173,12 +1173,9 @@ body {
   margin-right: 0.5rem;
 }
 .header__registration:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px rgba(0, 0, 0, 0.1);
-}
-.header__registration:active {
-  transform: translateY(-1px);
-  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+  background: #6DA5A2;
+  transition: 1s;
+  transform: scale(1.05);
 }
 @media (max-width: 90rem) {
   .header__registration {
@@ -1207,12 +1204,9 @@ body {
 }
 @media (max-width: 90rem) {
   .header__registration:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px rgba(0, 0, 0, 0.1);
-  }
-  .header__registration:active {
-    transform: translateY(-1px);
-    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    background: #6DA5A2;
+    transition: 1s;
+    transform: scale(1.05);
   }
 }
 @media (max-width: 48rem) {
@@ -1229,12 +1223,9 @@ body {
     transition: 0.2s;
   }
   .header__registration:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px rgba(0, 0, 0, 0.1);
-  }
-  .header__registration:active {
-    transform: translateY(-1px);
-    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    background: #6DA5A2;
+    transition: 1s;
+    transform: scale(1.05);
   }
 }
 .header__area {
@@ -1251,12 +1242,9 @@ body {
   transition: 0.2s;
 }
 .header__area:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px rgba(0, 0, 0, 0.1);
-}
-.header__area:active {
-  transform: translateY(-1px);
-  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+  background: #6DA5A2;
+  transition: 1s;
+  transform: scale(1.05);
 }
 @media (max-width: 90rem) {
   .header__area {
@@ -1284,12 +1272,9 @@ body {
 }
 @media (max-width: 90rem) {
   .header__area:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px rgba(0, 0, 0, 0.1);
-  }
-  .header__area:active {
-    transform: translateY(-1px);
-    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    background: #6DA5A2;
+    transition: 1s;
+    transform: scale(1.05);
   }
 }
 @media (max-width: 48rem) {
@@ -1306,12 +1291,9 @@ body {
     transition: 0.2s;
   }
   .header__area:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px rgba(0, 0, 0, 0.1);
-  }
-  .header__area:active {
-    transform: translateY(-1px);
-    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    background: #6DA5A2;
+    transition: 1s;
+    transform: scale(1.05);
   }
 }
 
