@@ -884,7 +884,7 @@ body {
   text-align: center;
   display: grid;
   grid-template-rows: 1fr, 1fr;
-  row-gap: 3rem;
+  row-gap: 2rem;
   padding-bottom: 4rem;
 }
 .documents__title {
