@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 @import './vars';
 @import './templates';
-//header лк нко изменения 
+//Header ЛК НКО
 .header__account{
     vertical-align: middle;
+    cursor: pointer;
 }
 .header__area{
     width: 9.3rem;
@@ -11,43 +12,7 @@
     background-color: $bg-main-colored;
     color: $text-light;
 }
-//main-общее // кнопки на странице 
-.info-line__btn, .info-line__edit-btn, .name-container__passw-button{
-    min-width: 16.25rem;
-    height: 4.25rem;
-    border: none;
-    border-radius: 0.625rem;
-    background-color: $bg-primary-colored;
-    font-size: 1.5em;
-    color: $text-dark;
-    cursor: pointer;
-}
-//main-общее // текст в сером боксе
-.info-line__border-text{
-    display: flex;
-    width: 24.2rem;
-    height: 4.25rem;
-    border-radius: 0.625rem;
-    background-color:$bg-secondary-light;
-    align-items: center;
-    padding-left: 1em;
-    font-size: 1.5em;
-}
-//main-общее // текст в инпут поле
-.info-line__input-text{
-    width: 37rem;
-    height: 3.63rem;
-    border: 5px solid $bg-secondary-light ;
-    outline: none;
-    border-radius: 0.625rem;
-    font-size: 1.5em;
-}
-h3{
-    color: $text-main;
-    font-size: 2.25em;
-    font-weight: 400;
-}
-//main-светло-серый блок с названием нко 
+//Св.-серый блок с Названием И Кнопкой смены пароля
 .nko-personal-account__container{
     background-color: $bg-secondary-light;
     .nko-personal-account__name-container{
@@ -57,56 +22,380 @@ h3{
         align-items: center;
         background-color: $bg-secondary-light;
         margin-bottom: 4rem;
+        @media (max-width: $s) {
+            margin-bottom: 2rem;
+        }
+        @media (max-width: $xs) {
+            margin-bottom: 2rem;
+        }
         .name-container__nko-title{
             font-size: 2.25em;
             font-weight: 500;
             color: $text-main;
+            @media (max-width: $l) {
+                @include adaptive-font (36, 20);
+            }
+            @media (max-width: $xs) {
+                @include adaptive-font (30,22);
+            }
+        }
+        .name-container__passw-button{
+            max-width: 16.25rem;
+            width: 100%;
+            padding: 5px;
+            max-height: 4.25rem;
+            border: none;
+            border-radius: 0.625rem;
+            background-color: $bg-primary-colored;
+            font-size: 1.5em;
+            color: $text-dark;
+            cursor: pointer;
+            max-height: 4.25rem;
+            height: 100vh;
+            @media (max-width: $l) {
+                @include adaptive-font (18, 12);
+                max-height: 4rem;
+                height: 100vh;
+            }
+            @media (max-width: $s) {
+                @include adaptive-font (16, 12);
+                max-width: 10rem;
+                max-height: 3rem;
+            }
+            @media (max-width: $xs) {
+                @include adaptive-font (12,10);
+                max-width: 6.5rem;
+                max-height: 2.2rem;
+            }
         }
     }
 }
-//main-данные компании
+//Блок Данные компании
 .nko-personal-account__company-data{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     row-gap: 1.5rem;
     margin-bottom: 4rem;
-
+    .company-data__title{
+        color: $text-main;
+        font-size: 2.25em;
+        font-weight: 400;
+        @media (max-width: $l) {
+            @include adaptive-font (28, 12);
+        }
+        @media (max-width: $s) {
+            background-color: $bg-main-colored;
+            color: $text-light;
+            line-height: 2rem;
+        }
+        @media (max-width: $xs) {
+            @include adaptive-font (24, 20);
+        
+        }
+    }
     .company-data__info-line{
         display: flex;
         justify-content: space-between;
         gap: 1.5rem;
+        @media (max-width: $xs) {
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .info-line__border-text{
+            display: flex;
+            max-width: 24.2rem;
+            width: 100%;
+            max-height: 4.25rem;
+            border-radius: 0.625rem;
+            background-color:$bg-secondary-light;
+            align-items: center;
+            padding-left: 0.625rem;
+            font-size: 1.5em;
+            @media (max-width: $l) {
+                @include adaptive-font (20, 16);
+                max-width:20rem;
+            }
+            @media (max-width: $m) {
+                @include adaptive-font (16, 14);
+                max-width: 14rem;
+                width: 100vw;
+                height: 3rem;
+            }
+            @media (max-width: $xs) {
+                min-width: 18rem;
+                background-color:$bg-primary-light;
+                overflow: wrap;
+                @include adaptive-font (20, 18);
+                
+            }
+        }  
+        .info-line__input-text{
+            width: 40rem;
+            height: 3.63rem;
+            border: 5px solid $bg-secondary-light ;
+            outline: none;
+            border-radius: 0.625rem;
+            font-size: 1.5em;
+            @media (max-width: $l) {
+                max-height: 4rem;
+                height: 100vh;
+                @include adaptive-font (22, 20);
+            }
+            @media (max-width: $s) {
+                min-width: 10rem;
+                max-height: 3rem;
+                @include adaptive-font (18, 16);
+            }
+            @media (max-width: $xs) {
+                min-width: 5.5rem;
+                max-height: 3rem;
+                @include adaptive-font (22, 20);
+            }
+        }  
         .info-line__edit-btn{
+            max-width: 14rem;
+            width: 100%;
+            padding: 5px;
+            max-height: 4.25rem;
+            border: none;
+            border-radius: 0.625rem;
+            font-size: 1.5em;
+            color: $text-dark;
+            cursor: pointer;
             background-color: rgb(134, 198, 194, 0.5);
+            @media (max-width: $l) {
+                max-height: 4rem;
+                height: 100vh;
+                @include adaptive-font (22, 20);
+            }
+            @media (max-width: $s) {
+                min-width: 10rem;
+                max-height: 3rem;
+                @include adaptive-font (18, 16);
+            }
+            @media (max-width: $xs) {
+                max-width: 5.5rem;
+                max-height: 3rem;
+                @include adaptive-font (16, 14);
+            }
         }
     }
 }
-//main-отчеты компании
+//Поле загрузки документов 
+input[type="file"] {
+    max-width: 56rem;
+    width: 100vw;
+    min-height: 4rem;
+    border-radius: 0.625rem;
+    border: 5px solid  $bg-secondary-light;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    color: blue;
+    text-decoration: underline 1px blue;
+    @media (max-width: $l) {
+        max-height: 4rem;
+        height: 100vh;
+        @include adaptive-font (22, 20);
+    }
+    @media (max-width: $m) {
+        min-width: 30.5rem;
+        max-height: 4rem;
+        height: 100vh;
+        @include adaptive-font (20, 18);
+    }
+    @media (max-width: $s) {
+        min-width: 10rem;
+        max-height: 3rem;
+        @include adaptive-font (18, 16);
+    }
+    @media (max-width: $xs) {
+        min-width: 4rem;
+        max-height: 2rem;
+        @include adaptive-font (20, 18);
+    }
+}
+input[type="file"]::file-selector-button {
+    width: 16.25rem;
+    min-height: 4rem;
+    padding: 10px;
+    border: none;
+    background-color: rgb(134, 198, 194, 0.5);
+    color:$text-dark;
+    cursor: pointer;
+    @media (max-width: $l) {
+        max-height: 4rem;
+        height: 100vh;
+        @include adaptive-font (22, 20);
+    }
+    @media (max-width: $m) {
+        max-width: 10rem;
+        max-height: 3rem;
+        @include adaptive-font (18, 16);
+    }
+    @media (max-width: $s) {
+        min-width: 4rem;
+        max-height: 3rem;
+        @include adaptive-font (18, 16);
+    }
+    @media (max-width: $xs) {
+        min-width: 4rem;
+        max-height: 2rem;
+    }
+}
+//Блок Отчеты компании
 .nko-personal-account__company-reports{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     row-gap: 2.37rem;
     margin-bottom: 4rem;
-    .company-reports__title {
+    .nko-personal-account__company-reports-container{
+        @media (max-width: $m) {
+            background-color: $bg-secondary-light;
+        }
+    }
+        .company-reports__title{
+            color: $text-main;
+            font-size: 2.25em;
+            font-weight: 400;
+            @media (max-width: $l) {
+                @include adaptive-font (28, 12);
+            }
+            @media (max-width: $s) {
+                background-color: $bg-main-colored;
+                color: $text-light;
+                line-height: 2rem;
+            }
+            @media (max-width: $xs) {
+                @include adaptive-font (24, 20);
+               
+            }
+        }
+        .company-reports__info-line{
+            display: flex;
+            justify-content: space-between;
+            gap: 1.5rem;
+            @media (max-width: $xs) {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+            @media (max-width: $m) {
+                flex-wrap: wrap;
+            }
+                .info-line__add-text{
+                    min-width: 40rem;
+                    width: 100%;
+                    height: 3.63rem;
+                    border: 5px solid $bg-secondary-light ;
+                    outline: none;
+                    border-radius: 0.625rem;
+                    font-size: 1.5em;
+                    padding-left: 0.625rem;
+                    @media (max-width: $l) {
+                        min-width: 30rem;
+                        max-height: 4rem;
+                        height: 100vh;
+                        @include adaptive-font (22, 20);
+                    }
+                    @media (max-width: $m) {
+                        max-height: 3rem;
+                        @include adaptive-font (18, 16);
+                    }
+                    @media (max-width: $xs) {
+                        min-width: 5.5rem;
+                        max-height: 3rem;
+                        @include adaptive-font (22, 20);
+                    }
+                }
+        }
+}
+.info-line__send-btn{
+    max-width: 14rem;
+    width: 100%;
+    padding: 5px;
+    max-height: 4.25rem;
+    border: none;
+    border-radius: 0.625rem;
+    font-size: 1.5em;
+    color: $text-dark;
+    cursor: pointer;
+    background-color:$bg-primary-colored;
+    @media (max-width: $l) {
+        max-height: 4rem;
+        height: 100vh;
+        @include adaptive-font (22, 20);
+    }
+    @media (max-width: $s) {
+        min-width: 10rem;
+        max-height: 3rem;
+    @include adaptive-font (18, 16);
+    }
+    @media (max-width: $xs) {
+        max-width: 5.5rem;
+        max-height: 3rem;
+        @include adaptive-font (16, 14);
+    }
+}
+//Блок Заявки пользователей
+.nko-personal-account__user-applications{
+    display:flex;
+    flex-direction: column;
+    row-gap: 1.6em;
+    margin-bottom: 4rem;
+    .user-applications__title{
         color: $text-main;
         font-size: 2.25em;
         font-weight: 400;
-    }
-    .company-reports__info-line{
-        display: flex;
-        justify-content: space-between;
-        .info-line__input-text{
-            width: 58.25rem;
+        @media (max-width: $l) {
+            @include adaptive-font (28, 12);
         }
+        @media (max-width: $s) {
+            background-color: $bg-main-colored;
+            color: $text-light;
+            line-height: 2rem;
+        }
+        @media (max-width: $xs) {
+            @include adaptive-font (24, 20);
+            
+        }
+
+
     }
-}
-//main-заявки пользователей
-.nko-personal-account__user-applications{
-    display: grid;
-    row-gap: 1.6em;
-    margin-bottom: 4rem;
     .user-applications__info-line{
         display: flex;
+        justify-content: space-between;
         gap: 1.6em;
+        @media (max-width: $s) {
+           flex-wrap: wrap;
+           }
         .info-line__border-text{
-            width: 12.2rem;
+            max-width: 12.2rem;
+            display: flex;
+            
+            width: 100%;
+            max-height: 4.25rem;
+            border-radius: 0.625rem;
+            background-color:$bg-secondary-light;
+            align-items: center;
+            padding-left: 0.625rem;
+            font-size: 1.5em;
+            @media (max-width: $l) {
+                @include adaptive-font (20, 16);
+                max-width:10rem;
+            }
+            @media (max-width: $m) {
+                @include adaptive-font (16, 14);
+                max-width: 8rem;
+                width: 100vw;
+                height: 3rem;
+            }
+          
+            @media (max-width: $xs) {
+                min-width: 18rem;
+                background-color:$bg-primary-light;
+                
+                @include adaptive-font (20, 18);
+                
+            }
         }
         .info-line__card-text{
             width: 47.3rem;
@@ -115,44 +404,130 @@ h3{
         }
     }
 }
-.info-line__download-btn{
-    
-    max-width: 4.1rem;
-    height: 3.75rem;
-}
 .info-line__card-text{
     padding: 0.625rem;
     font-size: 1.5em;
+    line-height: 1.6em;
+    @media (max-width: $l){
+        @include adaptive-font (22, 12);
+        line-height: 1.2em;
+    }
     .card-text__user-details{
         color: blue;
         text-decoration: underline blue;
     }
 }
-//main-вопросы пользователей
+.info-line__btn{
+    max-width: 14rem;
+    width: 100%;
+    padding: 5px;
+    max-height: 4.25rem;
+    border: none;
+    border-radius: 0.625rem;
+    font-size: 1.5em;
+    color: $text-dark;
+    cursor: pointer;
+    background-color: $bg-primary-colored;
+    @media (max-width: $l) {
+        max-height: 4rem;
+        height: 100vh;
+        @include adaptive-font (22, 20);
+    }
+    @media (max-width: $s) {
+        min-width: 10rem;
+        max-height: 3rem;
+        @include adaptive-font (18, 16);
+    }
+    @media (max-width: $xs) {
+        max-width: 5.5rem;
+        max-height: 3rem;
+        @include adaptive-font (16, 14);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Блок Вопросы пользователей
 .nko-personal-account__user-questions{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     row-gap: 2rem;
     margin-bottom: 4rem;
+  .user-questions__title {
+    color: $text-main;
+    font-size: 2.25em;
+    font-weight: 400;
+    @media (max-width: $l) {
+        @include adaptive-font (28, 12);
+    }
+    @media (max-width: $s) {
+        background-color: $bg-main-colored;
+        color: $text-light;
+        line-height: 2rem;
+    }
+    @media (max-width: $xs) {
+        @include adaptive-font (24, 20);
+        
+    }
+
+  }
     .user-questions__info-line{
         display: flex;
         gap: 2rem;
         justify-content: space-between;
+        @media (max-width: $s) {
+            flex-wrap: wrap;
+            }
     }
 }
-.info-line__question-text{
-    width: 29rem;
+.info-line__question-text, .info-line__answer-text{
+    max-width: 30rem;
+    width: 100%;
     padding: 0.625rem;
     border: 5px solid $bg-secondary-light ;
     border-radius: 0.625rem;
     font-size: 1.5em;
-    .question-text__user{
-        color: blue;
-        text-decoration: underline blue;
-    }
-}
-textarea {
-    width: 29rem;
     outline: none;
-    border: none;
-    resize: none;
+    @media (max-width: $m) {
+       width: 20rem;
+    }
+    @media (max-width: $s) {
+        width:30rem;
+     }
+    .question-text__question{
+        max-width: fit-content;
+        border: none;
+        outline: none;
+        width: 100%;
+        overflow: hidden;
+        @media (max-width: $l){
+    
+        @include adaptive-font (22, 12);
+        line-height: 1.2em;
+        }
+       
+    }
+    
+}
+.question-text__user{
+        color: blue;
+    text-decoration: underline blue;
+    @media (max-width: $l){
+        @include adaptive-font (22, 12);
+        line-height: 1.2em;
+    }
 }
