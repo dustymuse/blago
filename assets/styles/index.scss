@@ -1,58 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 @import './vars';
 @import './templates';
 
 //первая секция (кратко about)----------------------------------------
-//цветной фон, если макет больше 1440
 .main-about {
-    &__bg {
-        background-color: #83BFBC;
-    }
-
-    //основная картинка
-    &__content {
-        background: url(../images/design/index__main-about-bg.png) no-repeat;
-        background-position: start;
-        background-size: contain;
-        width: 90rem;
-        height: 49.3rem;
-        margin: 0 auto;
-        font-size: 1.5rem;
+    &__container {
+        background-color: $bg-primary-light;
+        background-image: url(../../assets/images/design/index__main-about-bg.png);
+        background-position: center top;
+        background-size: cover;
+        width: 100vw;
+        height: 60rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
 
         @media (max-width:$l) {
             width: 100vw;
-            background-size: cover;
-            height: 32.8em;
-            //исправить положение детей на бэкграунду!!!!!!!!!
+            background-image: linear-gradient(rgba(10, 10, 10, 0.6), rgba(11, 11, 11, 0.6)), url(../../assets/images/design/index__main-about-bg.png);
+            background-position: left top;
+            height: 50rem;
         }
-    }
 
-    //чёрный фон для контрастности на планшетах
-    //позиционирование контента
-    &__black-bg {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: end;
-        align-items: center;
+        @media (max-width:$m) {
+            background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(11, 11, 11, 0.8)), url(../../assets/images/design/index__main-about-bg.png);
+            width: 100vw;
+            background-position: left top;
+            height: 40rem;
+        }
 
-        @media (max-width: $m) {
-            background: rgba(0, 0, 0, 0.5);
-            flex-direction: column;
+        @media (max-width:$s) {
+            width: 100vw;
+            height: 38rem;
+        }
+
+        @media (max-width:$xs) {
+            width: 100vw;
             justify-content: center;
-            align-items: center;
-        }
-
-        @media (max-width: $s) {
-            background: rgba(0, 0, 0, 0.7);
+            height: 32rem;
         }
     }
 
     // весь контент текст
-    &__container {
-        width: 36rem;
-        margin-right: 3.19rem;
+    &__content {
+        width: 36vw;
+        margin-right: 6vw;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $l) {
+            width: 36rem;
+            margin-right: 3.19rem;
+        }
 
         @media (max-width: $m) {
             width: 79vw;
@@ -65,6 +63,7 @@
 
         @media (max-width: $m) {
             margin-bottom: 1.5rem;
+            text-align: center;
         }
 
         @media (max-width: $xs) {
@@ -81,17 +80,44 @@
             line-height: 1.5em;
         }
 
+        @media (max-width: $m) {
+            text-align: center;
+        }
+
         @media (max-width: $xs) {
             margin-bottom: 0.5rem;
         }
     }
 
     &__btns {
+        @media (max-width: $m) {
+            align-self: center;
+        }
+
         @media (max-width: $xs) {
-            padding-top: 0.5rem;
+            margin-top: 0.5rem;
         }
     }
 }
+
+.help {
+    @include main-btn ($bg-main-colored, $text-light, 17.5rem);
+
+    @media (max-width: $l) {
+        width: 10em;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nko-account {
+    @include main-btn ($bg-primary-light, $text-main, 17.5rem);
+
+    @media (max-width: $l) {
+        width: 10em;
+    }
+}
+
 
 //форма пожертвований-----------------------------
 .section-payment {
@@ -201,6 +227,7 @@
 
         @media (max-width: 51rem) {
             max-width: 80vw;
+            padding: 0;
         }
     }
 
@@ -301,44 +328,26 @@
 //дизайн блокa одной новости
 .short-novelty {
     width: 25.8rem;
-    height: 54.1rem;
 
     &__img {
         border-radius: 10px 10px 0 0;
-    }
+        width: 100%;
 
+        @media (max-width: $s) {
+            max-height: 30rem;
+        }
+    }
 
     @media (max-width: $l) {
         width: 17em;
-        height: 40.8em;
     }
 
     @media (max-width: $m) {
         width: 20em;
-        height: 37em;
     }
 
     @media (max-width: $s) {
-        width: 25em;
-        height: 43em;
-    }
-
-    @media (max-width: $xs) {
         width: 90vw;
-        height: 43em;
-    }
-
-    &__img {
-        width: 100%;
-        height: 19.37rem;
-
-        @media (max-width: $l) {
-            height: 14em;
-        }
-
-        @media (max-width: $s) {
-            height: 16em;
-        }
     }
 
     &__title-block {
@@ -389,7 +398,12 @@
         }
 
         @media (max-width: $s) {
-            height: 18em;
+            max-height: 14em;
+            margin-bottom: 1.5em;
+        }
+
+        @media (max-width: $xs) {
+            max-height: 16em;
         }
     }
 
@@ -435,15 +449,24 @@
     @include mint-btn (17.5rem, 5rem);
     margin-bottom: 4rem;
     font-size: 1.875rem;
+    font-weight: 400;
 
     @media (max-width: $l) {
         @include adaptive-font (30, 19);
         @include mint-btn (9.3em, 2.6em);
         margin-bottom: 2.13em;
     }
+    transition: 0.2s;
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+        }
+    &:active{
+        transform: translateY(-2px);
+        box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    }  
 }
 
-.short-news__text-btn {
-    margin-right: 0.5rem;
-    font-weight: 400;
+.short-news__arrow-btn {
+    padding-left: 0.5rem;
 }

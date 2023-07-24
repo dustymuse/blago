@@ -1,0 +1,586 @@
+@import './vars';
+@import './templates';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* { margin: 0;
+    padding: 0;
+    // border: 1px solid red !important;
+    box-sizing: border-box;
+    }
+
+.title {
+        font-size: 2.25rem;
+        color: $text-main;
+        font-weight: 500;
+        margin-bottom: 2.5rem;
+        @media (max-width: $l) {
+            @include adaptive-font (36, 20);
+            text-align: center;
+        }
+        @media (max-width:$m) {
+            margin-bottom: 2rem;
+        }
+        @media (max-width:$s) {
+            margin-bottom: 1rem;
+        }
+    }
+
+// <!-- Название НКО -->---------------------------------------------
+.about-nko{
+&__container{
+    background-color: $bg-primary-light;
+    background-image: url(../../assets/images/design/background_about-nko.png);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 40rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5rem;
+
+    @media (max-width:$m) {
+        width: 100vw;
+        height: 30rem;
+}
+@media (max-width:$s) {
+    width: 100vw;
+    height: 25rem;
+    background-position: right;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+@media (max-width:$xs) {
+    width: 100vw;
+    height: 20rem;
+    margin-bottom: 1.5rem;
+}
+}
+&__content {
+    width:50vw ;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 5em;
+    padding-right: 5rem;
+    @media (max-width:$m) {
+        gap: 3em;
+    }
+    @media (max-width:$s) {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        padding: 0rem;
+    }
+}
+&__title {
+        font-size: 4.25rem;
+        font-weight: 700;
+        color: $text-light;
+        text-align: center;
+
+        @media (max-width: $l) {
+            @include adaptive-font (68, 26);
+}
+}
+// кнопка help
+.help {
+    @include mint-btn (17.5rem, 6.68rem);
+    font-size: 1.75rem;
+    display: block;
+
+    @media (max-width: $l) {
+        @include adaptive-font (28, 14);
+        height: 4em;
+        width: 12em;
+}
+}
+.help:hover {
+    background: $bg-tertiary-colored;
+    transition: 1s;
+    transform: scale(1.05);
+}
+}
+// <!-- Название НКО -->----------------------------------------------
+// <!-- Описание НКО -->----------------------------------------------
+.nko-page{
+    padding-bottom: 3rem;
+    @media (max-width:$m) {
+        padding-bottom: 2rem;
+        @media (max-width:$xs) {
+            padding-bottom: 1rem;
+        }
+    }
+
+&__container{
+    max-width: 72rem;
+    text-align: justify;
+    @media (max-width: $l) {
+        max-width: 80vw;
+    }
+}
+&__title{
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: $text-main;
+    line-height: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
+    @media (max-width: $l) {
+        @include adaptive-font (36, 18);
+    }
+    @media (max-width:$m) {
+        line-height: 3rem;
+        margin-bottom: 2rem;
+    }
+    @media (max-width:$s) {
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+    }
+}
+&__ogrn {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+    color: $text-main;
+    text-align: center;
+    @media (max-width:$m) {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+    @media (max-width:$xs) {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+&__text{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+    color: $text-dark;
+
+    @include text-24 ($text-dark, 1.8rem);
+    margin-bottom: 2em;
+
+    @media (max-width: $l) {
+        line-height: 1.5em;
+    }
+
+    @media (max-width: $xs) {
+        margin-bottom: 1.5rem;
+    }
+}
+}
+// <!-- Описание НКО -->----------------------------------------------
+// <!-- Отчеты о проделанной работе -->-------------------------------
+.reports-nko {
+    padding-bottom: 4rem;
+    @media (max-width:$xs) {
+        padding-bottom: 3rem;
+    }
+    &__container {
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: $l) {
+        max-width: 80vw;
+    }
+}
+    &__item {
+    @include main-btn ($bg-primary-light, $text-main, 28rem,);
+    height:  6.25rem;
+    border-style: dotted;
+    font-size: 1.75rem;
+    
+    @media (max-width: $l) {
+        @include adaptive-font (28, 14);
+        height: 4em;
+        width: 12em;
+}
+}
+&__item:hover {
+    background: $bg-tertiary-colored;
+    color: $text-light;
+    transition: all 800ms cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+}
+// <!-- Отчеты о проделанной работе -->--------------------------------
+//Документы------------------------------------------------------------
+.documents{
+
+&__container {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    // max-width: 73rem;
+    @media (max-width:$l) {
+        // max-width: 68rem;
+    }
+    }
+
+&__buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    @media (max-width:$m) {
+        flex-direction: column;
+    }
+}
+&__link{
+    font-size: 1.75rem;
+    @media (max-width: $l) {
+        @include adaptive-font (28, 14);
+        text-align: center;
+    }
+}
+.doc-button-item{
+    @include mint-btn (24rem, 8rem);
+    @media (max-width: $l) {
+        @include adaptive-font (28, 14);
+        width: 22rem;
+        }
+        @media (max-width: 1230px) {
+            width: 20rem;
+            }
+}
+.doc-button-item:hover {
+    background: $bg-tertiary-colored;
+    transition: 1s;
+    transform: scale(1.05);
+}
+}
+//Документы-------------------------------------------------------------
+// Отзывы---------------------------------------------------------------
+.reviews {
+    background-color: white;
+    text-align: justify;
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    row-gap: 3rem;
+    padding-bottom: 4rem;
+        &__container{
+            width: 80rem;
+            max-width: 100%;
+            text-align: center;
+            @media (max-width:$l) {
+                max-width: 68rem;
+                }
+            @media (max-width: $m) {
+                max-width: 80vw;
+                }
+            @media (max-width: $xs) {
+                width: 50vw;
+                }
+        }
+        &__content {
+            display: flex;
+            justify-content: center;
+        }
+        &__box {
+            display:flex;
+            justify-content: space-between;
+        }
+        &__screen {
+            display: flex;
+            justify-content: space-between;
+            gap: 1.5rem;
+            @media (max-width: $m) {
+                justify-content: center;
+            }
+        }
+        &__block {
+            width: 32rem;
+            height: 15rem;
+            border: 0.2rem dotted $bg-main-colored !important;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: $s) {
+                width: 28rem;
+                height: 18rem;
+            }
+        }
+        &__text{
+            color: $text-dark;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: justify;
+            line-height: 1.25rem;
+            width: 28rem;
+            @media (max-width: $m) {
+                @include adaptive-font(16, 14);
+            }
+            @media (max-width: $s) {
+                width: 26rem;
+                margin: 1rem;
+            }
+        }
+
+// слайдер---------------------------------------------------------------
+#slides article{
+	width: 33.33%;
+	float: left;
+}
+#slides .reviews__box{
+	width: 300%;
+	line-height: 0;
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+#overflow{
+	width: 100%;
+	overflow: hidden;
+}
+.reviews__block {
+	width: 100%;
+}
+#desktop:checked ~ #slider{
+	max-width: 68rem;
+}
+
+#switch1:checked ~ #controls label:nth-child(3),
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2){
+	background: url('../images/icons/arrow-slider-left_about-nko.png') no-repeat;
+	float: left;
+	margin: 0 0 0 1rem;
+	height: 2.6rem;
+	width: 2.6rem;
+}
+
+#switch1:checked ~ #controls label:nth-child(2),
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(1){
+	background: url('../images/icons/arrow-slider_about-nko.png') no-repeat;
+	float: right;
+	margin: 0 1rem 0 0;
+	height: 2.6rem;
+	width: 2.6rem;
+}
+
+label, a{
+	cursor: pointer;
+}
+.reviews__slider input{
+	display: none;
+}
+#switch1:checked ~ #slides .reviews__box{
+	margin-left: 0;
+}
+#switch2:checked ~ #slides .reviews__box{
+	margin-left: -100%;
+}
+#switch3:checked ~ #slides .reviews__box{
+	margin-left: -200%;
+}
+#controls{
+	margin: 1% 0 0 0;
+	width: 100%;
+	height: 1.125rem;
+}
+#active label{
+	border-radius: 10px;
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	background: $bg-primary-colored;
+}
+#active{
+	margin: 1% 0 0;
+	text-align: center;
+}
+#active label:hover{
+	background: $bg-tertiary-colored;
+}
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3){
+	background: $bg-main-colored;
+}
+#controls label:hover{
+	opacity: 0.7;
+}
+#controls label{
+	transition: opacity 0.2s ease-out;
+}
+.reviews__slider {
+    @media (max-width: $m) {
+        display: none;
+    }
+}
+// слайдер m------------------------------------------------------
+#slider-medium article{
+	width: 25%;
+	float: left;
+}
+#slides-medium .reviews__box-medium{
+	width: 400%;
+	line-height: 0;
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+#overflow-medium{
+	width: 100%;
+	overflow: hidden;
+}
+.reviews__block-medium {
+	width: 100%;
+}
+#medium:checked ~ #slider-medium{
+	max-width: 34rem;
+    @media ((max-width: 470px)) {
+        max-width: 20rem;
+    }
+}
+
+#switch1-medium:checked ~ #controls-medium label:nth-child(4),
+#switch2-medium:checked ~ #controls-medium label:nth-child(1),
+#switch3-medium:checked ~ #controls-medium label:nth-child(2),
+#switch4-medium:checked ~ #controls-medium label:nth-child(3){
+	background: url('../images/icons/arrow-slider-left_about-nko.png') no-repeat;
+	float: left;
+	margin: 0 0 0 1rem;
+	height: 2.6rem;
+	width: 2.6rem;
+}
+
+#switch1-medium:checked ~ #controls-medium label:nth-child(2),
+#switch2-medium:checked ~ #controls-medium label:nth-child(3),
+#switch3-medium:checked ~ #controls-medium label:nth-child(4),
+#switch4-medium:checked ~ #controls-medium label:nth-child(1){
+	background: url('../images/icons/arrow-slider_about-nko.png') no-repeat;
+	float: right;
+	margin: 0 1rem 0 0;
+	height: 2.6rem;
+	width: 2.6rem;
+}
+
+label, a{
+	cursor: pointer;
+}
+.reviews__medium input{
+	display: none;
+}
+#switch1-medium:checked ~ #slides-medium .reviews__box-medium{
+	margin-left: 0;
+}
+#switch2-medium:checked ~ #slides-medium .reviews__box-medium{
+	margin-left: -100%;
+}
+#switch3-medium:checked ~ #slides-medium .reviews__box-medium{
+	margin-left: -200%;
+}
+#switch4-medium:checked ~ #slides-medium .reviews__box-medium{
+	margin-left: -300%;
+}
+
+#controls-medium{
+	margin: 1% 0 0 0;
+	width: 100%;
+	height: 1.125rem;
+}
+#active-medium label{
+	border-radius: 10px;
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	background: $bg-primary-colored;
+}
+#active-medium{
+	margin: 0 auto;
+	text-align: center;
+}
+#active-medium label:hover{
+	background: $bg-tertiary-colored;
+}
+
+#switch1-medium:checked ~ #active-medium label:nth-child(1),
+#switch2-medium:checked ~ #active-medium label:nth-child(2),
+#switch3-medium:checked ~ #active-medium label:nth-child(3),
+#switch4-medium:checked ~ #active-medium label:nth-child(4){
+	background: $bg-main-colored;
+}
+#controls-medium label:hover{
+	opacity: 0.7;
+}
+#controls-medium label{
+	transition: opacity 0.2s ease-out;
+}
+
+.reviews__medium {
+        display: none;
+        @media (max-width: $m){
+            display: block;
+        }
+    }
+
+}
+// Отзывы---------------------------------------------------------------
+// Соцсети--------------------------------------------------------------
+.social {
+    &__container {
+        display: grid;
+        grid-template-rows: 1fr, 1fr;
+        row-gap: 3rem;
+        padding-bottom: 4rem;
+        justify-content: center;
+        @media (max-width: $l) {
+            max-width: 80vw;
+        }
+        }
+    &__title{
+        display: flex;
+        justify-content: center;
+        font-size: 1.75rem;
+        color: $text-main;
+        font-weight: 500;
+        @media (max-width: $l) {
+            @include adaptive-font (36, 20);
+            text-align: center;
+        }
+        }
+    &__icons {
+        display: flex;
+        list-style: none;
+        padding-left: 5rem;
+        @media (max-width:$m) {
+            padding-left: 3.5rem;
+        }
+        @media (max-width:$xs) {
+            padding-left: 4rem;
+        }
+        }
+    &__icon-link{
+        display: flex;
+        width: 10rem;
+        justify-content: space-between;
+        @media (max-width:$m) {
+            width: 8rem;
+        }
+        @media (max-width:$xs) {
+            width: 5rem;
+        }
+        }
+        &__img {
+            width: 5rem;
+            height: 5rem;
+            @media (max-width:$m) {
+                width: 4rem;
+                height: 4rem;
+            }
+            @media (max-width:$xs) {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+        &__img:hover {
+            opacity: 0.6;
+            transition: 1s;
+            transform: scale(1.2);
+        }
+}
+// Соцсети-------------------------------------------------------------

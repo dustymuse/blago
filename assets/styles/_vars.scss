@@ -36,25 +36,14 @@ $font: 'Montserrat', sans-serif;
 //36-20
 //68-30
 
-
-@mixin text-24 ($color, $line-height) {
-    color: $color;
-    line-height: $line-height;
-    font-size: 1.5rem;
-
-    @media (max-width: $l) {
-        @include adaptive-font(24, 15);
-    }
-}
-
-
 //Кнопки
 @mixin main-btn ($bg-color, $color, $width) {
     background-color: $bg-color;
     color: $color;
-    width: $width;
+    width: $width;;
     border-radius: 10px;
     border: none;
+    text-align: center;
     padding: 1em;
     font-weight: 500;
 }
@@ -72,7 +61,7 @@ $maxWidth: 1440;
 
 @mixin adaptive-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
-    $addMobSize: $addSize +$addSize * 0.7;
+    $addMobSize: $addSize + $addSize * 0.7;
 
     @media (max-width: 767px) {
         font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
@@ -82,4 +71,3 @@ $maxWidth: 1440;
         font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
     }
 }
-

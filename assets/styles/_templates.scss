@@ -1,10 +1,5 @@
 @import './vars';
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: $font;
 }
@@ -105,6 +100,17 @@ body {
     font-weight: 500;
     cursor: pointer;
     line-height: 1em;
+    transition: 0.2s;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    }
 }
 
 //кнопки заявка о помощи и входа для нко
@@ -115,13 +121,12 @@ body {
     height: 6.68rem;
     font-size: 1.75rem;
     cursor: pointer;
-        @include adaptive-font (28, 12);
+    font-size: 1.75rem;
 
-        @media (max-width: $l) {
-            @include adaptive-font (28, 11);
-            height: 3.8em;
-            width: 20.5em;
-        }
+    @media (max-width: $l) {
+        @include adaptive-font (28, 11);
+        height: 3.8em;
+        width: 20.5em;
     }
 
 
@@ -151,6 +156,17 @@ body {
     border: none;
     font-weight: 500;
     cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+        transform: translateY(-2px);
+        box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    }
 }
 
 //белая кнопка из формы пожертвования
@@ -163,6 +179,16 @@ body {
     border: 0.5px black dashed;
     font-weight: 500;
     cursor: pointer;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+        transform: translateY(-2px);
+        box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    }
 }
 
 //линия
@@ -314,11 +340,21 @@ body {
 //Кнопка выбора платёжной системы
 .types-of-payment {
     @include light-btn (100%, 5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 0.81rem;
+    font-size: 1.125rem;
 
     @media (max-width: $l) {
+        @include adaptive-font (18, 10);
         @include light-btn (100%, 2.85em);
         margin-bottom: 0.6em;
+    }
+
+    @media (max-width: $xs) {
+        @include adaptive-font (18, 12);
     }
 
     &__img {
@@ -345,18 +381,6 @@ body {
 
         @media (max-width: $m) {
             margin-right: 0;
-        }
-    }
-
-    &__text {
-        font-size: 1.125rem;
-
-        @media (max-width: $l) {
-            @include adaptive-font (18, 10);
-        }
-
-        @media (max-width: $xs) {
-            @include adaptive-font (18, 12);
         }
     }
 }
@@ -508,6 +532,93 @@ body {
     }
 }
 
+// Заготовки блоков с адаптивом (class=".second-title")
+.title {
+    font-size: 2.25rem;
+    color: $text-main;
+    font-weight: 500;
+    margin-bottom: 3rem;
+
+    @media (max-width: $l) {
+        @include adaptive-font (36, 20);
+        text-align: center;
+    }
+
+    @media (max-width:$m) {
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width:$s) {
+        margin-bottom: 1.5rem;
+    }
+}
+
+// Блок Документы с кнопками с адаптивом---------------------------
+
+.documents {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    row-gap: 2rem;
+    padding-bottom: 4rem;
+
+    &__title {
+        font-size: 2.25rem;
+        color: $text-main;
+        font-weight: 500;
+        margin-bottom: 3rem;
+
+        @media (max-width: $l) {
+            @include adaptive-font (36, 20);
+            text-align: center;
+        }
+
+        @media (max-width:$m) {
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width:$s) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width:$m) {
+            gap: 1rem;
+        }
+
+        @media (max-width:$s) {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+    }
+
+    &__link {
+        font-size: 1.75rem;
+
+        @media (max-width: $l) {
+            @include adaptive-font (28, 14);
+            text-align: center;
+        }
+    }
+
+    .doc-button-item {
+        @include mint-btn (24rem, 8rem);
+
+        @media (max-width: $l) {
+            @include adaptive-font (28, 14);
+            height: 4em;
+            width: 12em;
+        }
+    }
+
+    .doc-button-item:hover {
+        background: $bg-tertiary-colored;
+    }
+}
 
 //скролл-----------------------------------------
 @mixin scroll ($max-height) {
@@ -600,8 +711,15 @@ body {
     }
 
     //навигация
+
+    &__navig {
+        display: flex;
+    }
+
     &__link {
         margin-right: 4.3rem;
+        position: relative;
+        text-transform: uppercase;
 
         @media (max-width: $m) {
             margin-right: 1em;
@@ -614,6 +732,23 @@ body {
         @media (max-width: $xs) {
             margin-right: 1em;
         }
+    }
+
+    &__link:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        display: none;
+        background-color: $text-light;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__link:hover:after {
+        display: block;
     }
 
     //иконки
@@ -695,8 +830,6 @@ body {
         }
     }
 }
-
-//футер--------------------------------------------------
 
 .footer {
     color: $text-main;
@@ -865,6 +998,7 @@ body {
 }
 
 
+
 //подключение шрифтов-----------------------------------
 
 @font-face {
@@ -897,4 +1031,16 @@ body {
         url('../fonts/montserrat-bold.woff') format('woff');
     font-style: normal;
     font-weight: 700;
+}
+
+//мятная кнопка
+@mixin mint-btn ($width, $height) {
+    width: $width;
+    height: $height;
+    background-color: $bg-primary-colored;
+    color: $text-light;
+    border-radius: 0.625rem;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
 }
