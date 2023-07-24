@@ -14,7 +14,6 @@
 </head>
 
 <body>
-    <!-- header -->
     <header class="header">
         <!-- размеры контейнера -->
         <div class="header__container container">
@@ -23,9 +22,11 @@
             <div class="header__content">
                 <!-- навигация -->
                 <nav class="header__nav">
-                    <a href="./index.html" class="header__link link">Главная</a>
-                    <a href="./news.html" class="header__link link">Новости</a>
-                    <a href="./about-us.html" class="header__link link">О компании</a>
+                    <ul class="header__navig">
+                        <li class="header__li"><a href="./index.html" class="header__link link">Главная</a></li>
+                        <li class="header__li"><a href="./news.html" class="header__link link">Новости</a></li>
+                        <li class="header__li"><a href="./about-us.html" class="header__link link">О компании</a></li>
+                    </ul>
                 </nav>
                 <!-- кнопки -->
                 <img src="./assets/images/icons/header__search.png" alt="site search" class="header__search">
@@ -374,12 +375,12 @@
                 <a href="#" class="footer__text link">Договор пожертвования
                     (публичная оферта)</a>
             </div>
-            <div class="footer__column nav-footer">
-                <a href="./index.html" class="nav-footer__link link">Главная</a>
-                <a href="./about-us.html" class="nav-footer__link link">О нас</a>
-                <a href="./news.html" class="nav-footer__link link">Новости</a>
-                <a href="#" class="nav-footer__link link">Личный кабинет</a>
-            </div>
+                <ul class="footer__column nav-footer">
+                    <li><a href="./index.html" class="nav-footer__link link">Главная</a></li>
+                    <li><a href="./about-us.html" class="nav-footer__link link">О нас</a></li>
+                    <li><a href="./news.html" class="nav-footer__link link">Новости</a></li>
+                    <li><a href="#" class="nav-footer__link link">Личный кабинет</a></li>
+                </ul>
         </div>
     </footer>
 </body>
