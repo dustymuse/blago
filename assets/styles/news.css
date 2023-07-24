@@ -1071,6 +1071,9 @@ body {
   display: flex;
   align-items: center;
 }
+.header__navig {
+  display: flex;
+}
 .header__link {
   margin-right: 4.3rem;
   position: relative;
