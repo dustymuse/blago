@@ -1510,6 +1510,26 @@ body {
 .news {
   flex-direction: column;
 }
+.news__line {
+  margin: 3.1rem 0;
+  border: none;
+  border-top: 1px solid #83BFBC;
+}
+@media (max-width: 90rem) {
+  .news__line {
+    margin: 2.7em 0;
+  }
+}
+@media (max-width: 64rem) {
+  .news__line {
+    margin: 1.7em 0;
+  }
+}
+@media (max-width: 48rem) {
+  .news__line {
+    margin: 1em 0;
+  }
+}
 
 .main-block {
   background: url(../images/design/news__main-with-text.png) center no-repeat;
@@ -1595,6 +1615,11 @@ body {
     margin-bottom: 0.87em;
   }
 }
+@media (max-width: 48rem) {
+  .new__title {
+    text-align: start;
+  }
+}
 .new__text {
   font-size: 1.125rem;
   line-height: 125%;
@@ -1619,26 +1644,13 @@ body {
   }
 }
 .new__img {
+  width: 100%;
   margin-bottom: 1.6rem;
 }
 @media (max-width: 90rem) {
   .new__img {
     margin-bottom: 1.6em;
   }
-}
-.new__line {
-  margin: 3.1rem 0;
-  border: none;
-  border-top: 1px solid #83BFBC;
-}
-@media (max-width: 90rem) {
-  .new__line {
-    margin: 2.7em 0;
-  }
-}
-
-.hidden-paragraphs {
-  display: none;
 }
 
 .more,
@@ -1659,5 +1671,70 @@ body {
   .more,
   .less {
     font-size: calc(12px + 6 * (100vw / 1440));
+  }
+}
+
+.pagination {
+  display: flex !important;
+  justify-content: center;
+  margin-bottom: 3.1rem;
+  border: none;
+}
+@media (max-width: 90rem) {
+  .pagination {
+    margin-bottom: 2.7em;
+  }
+}
+@media (max-width: 64rem) {
+  .pagination {
+    margin-bottom: 1.7em;
+  }
+}
+@media (max-width: 48rem) {
+  .pagination {
+    margin-bottom: 1em;
+  }
+}
+.pagination .page-number {
+  color: #156963;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 0.3rem;
+  padding: 0;
+  display: inline;
+  position: relative;
+}
+@media (max-width: 90rem) {
+  .pagination .page-number {
+    margin: 0 0.2em;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .pagination .page-number {
+    font-size: calc(15px + 15.3 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .pagination .page-number {
+    font-size: calc(15px + 9 * (100vw / 1440));
+  }
+}
+.pagination .page-number_active {
+  color: #156963;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .pagination .page-number_active {
+    font-size: calc(20px + 20.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .pagination .page-number_active {
+    font-size: calc(20px + 12 * (100vw / 1440));
   }
 }/*# sourceMappingURL=news.css.map */
