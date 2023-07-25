@@ -1537,43 +1537,6 @@ body {
   color: #FFFFFF;
 }
 
-h3 {
-  color: #156963;
-  font-size: 2.25em;
-  font-weight: 400;
-}
-
-button {
-  width: 16.25rem;
-  height: 4.25rem;
-  border: none;
-  border-radius: 0.625rem;
-  background-color: #83BFBC;
-  font-size: 1.5em;
-  color: #000000;
-  cursor: pointer;
-}
-
-.info-line__border-text, .selections {
-  display: flex;
-  width: 24.2rem;
-  height: 4.25rem;
-  border-radius: 0.625rem;
-  background-color: #ECEEF2;
-  align-items: center;
-  padding-left: 1rem;
-  font-size: 1.5em;
-}
-
-.info-line__input-text {
-  width: 37rem;
-  height: 3.63rem;
-  border: 5px solid #ECEEF2;
-  outline: none;
-  border-radius: 0.625rem;
-  font-size: 1.5em;
-}
-
 .user-personal-account__container {
   background-color: #ECEEF2;
 }
@@ -1583,26 +1546,339 @@ button {
   justify-content: space-between;
   align-items: center;
   background-color: #ECEEF2;
-  margin-bottom: 3.75rem;
+  margin-bottom: 4rem;
+}
+@media (max-width: 48rem) {
+  .user-personal-account__container .user-personal-account__name-container {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 35rem) {
+  .user-personal-account__container .user-personal-account__name-container {
+    margin-bottom: 2rem;
+  }
 }
 .user-personal-account__container .user-personal-account__name-container .name-container__fio {
   font-size: 2.25em;
   font-weight: 500;
   color: #156963;
 }
+@media (max-width: 90rem) and (max-width: 767px) {
+  .user-personal-account__container .user-personal-account__name-container .name-container__fio {
+    font-size: calc(20px + 27.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .user-personal-account__container .user-personal-account__name-container .name-container__fio {
+    font-size: calc(20px + 16 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .user-personal-account__container .user-personal-account__name-container .name-container__fio {
+    font-size: calc(22px + 13.6 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .user-personal-account__container .user-personal-account__name-container .name-container__fio {
+    font-size: calc(22px + 8 * (100vw / 1440));
+  }
+}
+.user-personal-account__container .user-personal-account__name-container .name-container__passw-button {
+  max-width: 16.25rem;
+  width: 100%;
+  padding: 5px;
+  max-height: 4.25rem;
+  border: none;
+  border-radius: 0.625rem;
+  background-color: #83BFBC;
+  font-size: 1.5em;
+  color: #000000;
+  cursor: pointer;
+  max-height: 4.25rem;
+  height: 100vh;
+  transition: 0.2s;
+}
+@media (max-width: 90rem) {
+  .user-personal-account__container .user-personal-account__name-container .name-container__passw-button {
+    max-height: 4rem;
+    height: 100vh;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .user-personal-account__container .user-personal-account__name-container .name-container__passw-button {
+    font-size: calc(12px + 10.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .user-personal-account__container .user-personal-account__name-container .name-container__passw-button {
+    font-size: calc(12px + 6 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .user-personal-account__container .user-personal-account__name-container .name-container__passw-button {
+    max-width: 10rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 48rem) and (max-width: 767px) {
+  .user-personal-account__container .user-personal-account__name-container .name-container__passw-button {
+    font-size: calc(12px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 48rem) and (min-width: 767px) {
+  .user-personal-account__container .user-personal-account__name-container .name-container__passw-button {
+    font-size: calc(12px + 4 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  .user-personal-account__container .user-personal-account__name-container .name-container__passw-button {
+    max-width: 6.5rem;
+    max-height: 2.2rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .user-personal-account__container .user-personal-account__name-container .name-container__passw-button {
+    font-size: calc(10px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .user-personal-account__container .user-personal-account__name-container .name-container__passw-button {
+    font-size: calc(10px + 2 * (100vw / 1440));
+  }
+}
+.user-personal-account__container .user-personal-account__name-container .name-container__passw-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+.user-personal-account__container .user-personal-account__name-container .name-container__passw-button:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+}
 
 .user-personal-account__user-data {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   row-gap: 1.5rem;
-  margin-bottom: 3.75rem;
+  margin-bottom: 4rem;
+}
+.user-personal-account__user-data .user-data__title {
+  color: #156963;
+  font-size: 2.25em;
+  font-weight: 400;
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .user-personal-account__user-data .user-data__title {
+    font-size: calc(12px + 27.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .user-personal-account__user-data .user-data__title {
+    font-size: calc(12px + 16 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .user-personal-account__user-data .user-data__title {
+    background-color: #156963;
+    color: #FFFFFF;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .user-personal-account__user-data .user-data__title {
+    font-size: calc(20px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .user-personal-account__user-data .user-data__title {
+    font-size: calc(20px + 4 * (100vw / 1440));
+  }
 }
 .user-personal-account__user-data .user-data__info-line {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
 }
+@media (max-width: 35rem) {
+  .user-personal-account__user-data .user-data__info-line {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+.user-personal-account__user-data .user-data__info-line .info-line__border-text {
+  display: flex;
+  max-width: 24.2rem;
+  width: 100%;
+  max-height: 4.25rem;
+  border-radius: 0.625rem;
+  background-color: #ECEEF2;
+  align-items: center;
+  padding-left: 0.625rem;
+  font-size: 1.5em;
+}
+@media (max-width: 90rem) {
+  .user-personal-account__user-data .user-data__info-line .info-line__border-text {
+    max-width: 20rem;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__border-text {
+    font-size: calc(16px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__border-text {
+    font-size: calc(16px + 4 * (100vw / 1440));
+  }
+}
+@media (max-width: 64rem) {
+  .user-personal-account__user-data .user-data__info-line .info-line__border-text {
+    max-width: 14rem;
+    width: 100vw;
+    height: 4.25rem;
+  }
+}
+@media (max-width: 64rem) and (max-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__border-text {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 64rem) and (min-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__border-text {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  .user-personal-account__user-data .user-data__info-line .info-line__border-text {
+    min-width: 18rem;
+    background-color: #FFFFFF;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__border-text {
+    font-size: calc(18px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__border-text {
+    font-size: calc(18px + 2 * (100vw / 1440));
+  }
+}
+.user-personal-account__user-data .user-data__info-line .info-line__input-text {
+  width: 40rem;
+  height: 3.8rem;
+  border: 5px solid #ECEEF2;
+  outline: none;
+  border-radius: 0.625rem;
+  font-size: 1.5em;
+}
+@media (max-width: 90rem) {
+  .user-personal-account__user-data .user-data__info-line .info-line__input-text {
+    height: 3.6rem;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__input-text {
+    font-size: calc(20px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__input-text {
+    font-size: calc(20px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .user-personal-account__user-data .user-data__info-line .info-line__input-text {
+    min-width: 10rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 48rem) and (max-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__input-text {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 48rem) and (min-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__input-text {
+    font-size: calc(16px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  .user-personal-account__user-data .user-data__info-line .info-line__input-text {
+    min-width: 5.5rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__input-text {
+    font-size: calc(20px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__input-text {
+    font-size: calc(20px + 2 * (100vw / 1440));
+  }
+}
 .user-personal-account__user-data .user-data__info-line .info-line__edit-btn {
+  max-width: 14rem;
+  width: 100%;
+  padding: 5px;
+  min-height: 3.8rem;
+  border: none;
+  border-radius: 0.625rem;
+  font-size: 1.5em;
+  color: #000000;
+  cursor: pointer;
   background-color: rgba(134, 198, 194, 0.5);
+  transition: 0.2s;
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__edit-btn {
+    font-size: calc(20px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__edit-btn {
+    font-size: calc(20px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .user-personal-account__user-data .user-data__info-line .info-line__edit-btn {
+    min-width: 10rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 48rem) and (max-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__edit-btn {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 48rem) and (min-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__edit-btn {
+    font-size: calc(16px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  .user-personal-account__user-data .user-data__info-line .info-line__edit-btn {
+    max-width: 5.5rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__edit-btn {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .user-personal-account__user-data .user-data__info-line .info-line__edit-btn {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+.user-personal-account__user-data .user-data__info-line .info-line__edit-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+.user-personal-account__user-data .user-data__info-line .info-line__edit-btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }
 
 .user-personal-account__help-btn {
@@ -1611,45 +1887,272 @@ button {
 .user-personal-account__help-btn .user-personal-account__help-button {
   width: 17.5rem;
   height: 6.625rem;
+  border: none;
+  border-radius: 0.625rem;
   background-color: #156963;
   font-size: 1.75em;
   color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.user-personal-account__help-btn .user-personal-account__help-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+.user-personal-account__help-btn .user-personal-account__help-button:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }
 
-.user-personal-account__user-qwestions {
+.user-personal-account__user-questions {
   display: flex;
-  gap: 4rem;
+  justify-content: space-between;
   margin-bottom: 4rem;
 }
-.user-personal-account__user-qwestions .user-qwestions__info-line {
-  display: grid;
+@media (max-width: 64rem) {
+  .user-personal-account__user-questions {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
 }
-
-.user-qwestions__info-line {
+.user-personal-account__user-questions .user-questions__info-line {
   display: flex;
+  flex-direction: column;
   gap: 1.5rem;
 }
-.user-qwestions__info-line .info-line__selections {
-  display: flex;
-  gap: 1.5rem;
+.user-personal-account__user-questions .user-questions__info-line .info-line__title {
+  color: #156963;
+  font-size: 2.25em;
+  font-weight: 400;
 }
-.user-qwestions__info-line .selections {
+@media (max-width: 90rem) and (max-width: 767px) {
+  .user-personal-account__user-questions .user-questions__info-line .info-line__title {
+    font-size: calc(12px + 27.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .user-personal-account__user-questions .user-questions__info-line .info-line__title {
+    font-size: calc(12px + 16 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .user-personal-account__user-questions .user-questions__info-line .info-line__title {
+    width: 100%;
+    background-color: #156963;
+    color: #FFFFFF;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .user-personal-account__user-questions .user-questions__info-line .info-line__title {
+    font-size: calc(20px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .user-personal-account__user-questions .user-questions__info-line .info-line__title {
+    font-size: calc(20px + 4 * (100vw / 1440));
+  }
+}
+.user-personal-account__user-questions .user-questions__info-line .info-line__selection-options {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 64rem) {
+  .user-personal-account__user-questions .user-questions__info-line .info-line__selection-options {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.user-personal-account__user-questions .user-questions__info-line .selections {
+  height: 4.25rem;
   border: none;
-  width: 18.3rem;
+  width: 17rem;
   outline: none;
   cursor: pointer;
+  border-radius: 0.625rem;
+  background-color: #ECEEF2;
+  align-items: center;
+  padding-left: 0.625rem;
+  font-size: 1.3em;
+}
+@media (max-width: 90rem) {
+  .user-personal-account__user-questions .user-questions__info-line .selections {
+    max-width: 15rem;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .user-personal-account__user-questions .user-questions__info-line .selections {
+    font-size: calc(16px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .user-personal-account__user-questions .user-questions__info-line .selections {
+    font-size: calc(16px + 4 * (100vw / 1440));
+  }
+}
+@media (max-width: 64rem) {
+  .user-personal-account__user-questions .user-questions__info-line .selections {
+    height: 4rem;
+  }
+}
+@media (max-width: 64rem) and (max-width: 767px) {
+  .user-personal-account__user-questions .user-questions__info-line .selections {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 64rem) and (min-width: 767px) {
+  .user-personal-account__user-questions .user-questions__info-line .selections {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  .user-personal-account__user-questions .user-questions__info-line .selections {
+    max-width: 12rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .user-personal-account__user-questions .user-questions__info-line .selections {
+    font-size: calc(18px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .user-personal-account__user-questions .user-questions__info-line .selections {
+    font-size: calc(18px + 2 * (100vw / 1440));
+  }
+}
+.user-personal-account__user-questions .user-questions__info-line .selections option {
+  background-color: white;
+  font-size: 1em;
+  outline: none;
+}
+@media (max-width: 64rem) {
+  .user-personal-account__user-questions .user-questions__info-line .selections option {
+    max-width: 14rem;
+    width: 100vw;
+    height: 4.25rem;
+  }
+}
+@media (max-width: 64rem) and (max-width: 767px) {
+  .user-personal-account__user-questions .user-questions__info-line .selections option {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 64rem) and (min-width: 767px) {
+  .user-personal-account__user-questions .user-questions__info-line .selections option {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  .user-personal-account__user-questions .user-questions__info-line .selections option {
+    min-width: 8rem;
+    background-color: #FFFFFF;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .user-personal-account__user-questions .user-questions__info-line .selections option {
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .user-personal-account__user-questions .user-questions__info-line .selections option {
+    font-size: calc(10px + 4 * (100vw / 1440));
+  }
 }
 
-textarea {
-  width: 38.6rem;
+.info-line__answer-wrap {
+  min-width: 40rem;
+  width: 100%;
   outline: none;
   border: 5px solid #ECEEF2;
-  resize: none;
   border-radius: 0.625rem;
   font-size: 1.5em;
+  box-sizing: border-box;
+}
+@media (max-width: 90rem) {
+  .info-line__answer-wrap {
+    min-width: 32rem;
+  }
+}
+@media (max-width: 1189px) {
+  .info-line__answer-wrap {
+    min-width: 28rem;
+    background-color: #FFFFFF;
+  }
+}
+@media (max-width: 48rem) {
+  .info-line__answer-wrap {
+    min-width: 18rem;
+    background-color: #FFFFFF;
+  }
 }
 
 .info-line__button {
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 64rem) {
+  .info-line__button {
+    justify-content: flex-start;
+  }
+}
+.info-line__button .btn {
+  width: 16.25rem;
+  height: 4.25rem;
+  border: none;
+  border-radius: 0.625rem;
+  background-color: #83BFBC;
+  font-size: 1.5em;
+  color: #000000;
+  cursor: pointer;
+  transition: 0.2s;
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .info-line__button .btn {
+    font-size: calc(20px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .info-line__button .btn {
+    font-size: calc(20px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .info-line__button .btn {
+    min-width: 10rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 48rem) and (max-width: 767px) {
+  .info-line__button .btn {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 48rem) and (min-width: 767px) {
+  .info-line__button .btn {
+    font-size: calc(16px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  .info-line__button .btn {
+    max-width: 5.5rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .info-line__button .btn {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .info-line__button .btn {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+.info-line__button .btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+.info-line__button .btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=personal-account.css.map */

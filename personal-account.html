@@ -12,7 +12,7 @@
         content="Управляйте своими заявками на помощь, получайте поддержку от некоммерческих организаций в личном кабинете на центральном портале помощи «Хаер».">
 
 </head>
-<body><!-- header для ЛК измененный -->
+<body>
     <header class="header">
         <!-- размеры контейнера -->
         <div class="header__container container">
@@ -34,7 +34,6 @@
             </div>
         </div>
     </header>
-<!-- основное содержание страницы -->
 <main>
     <div class="user-personal-account">
         <div class="user-personal-account__container">
@@ -47,35 +46,35 @@
             <h3 class="user-data__title">Данные пользователя</h3>
             <div class="user-data__info-line">
                 <p class="info-line__border-text">Фамилия Имя Отчество</p>
-                <input class="info-line__input-text" type="text">
-                <button class="info-line__btn" type="submit">Редактировать</button>
+                <input class="info-line__input-text" type="text" name="fio">
+                <button class="info-line__edit-btn" type="submit">Редактировать</button>
             </div>
             <div class="user-data__info-line">
                 <p class="info-line__border-text">Адрес электронной почты</p>
-                <input class="info-line__input-text" type="email">
-                <button class="info-line__btn" type="submit">Редактировать</button>
+                <input class="info-line__input-text" type="email" name="mail">
+                <button class="info-line__edit-btn" type="submit">Редактировать</button>
             </div>
             <div class="user-data__info-line">
                 <p class="info-line__border-text">Номер телефона</p>
-                <input class="info-line__input-text" type="tel">
-                <button class="info-line__btn" type="submit">Редактировать</button>
+                <input class="info-line__input-text" type="tel" name="phone-number">
+                <button class="info-line__edit-btn" type="submit">Редактировать</button>
             </div>
         </div>
         <div class="user-personal-account__help-btn container">
             <button class="user-personal-account__help-button">Подать заявку на помощь</button>
         </div>
-        <div class="user-personal-account__user-qwestions container">
-            <div class="user-qwestions__info-line">
+        <div class="user-personal-account__user-questions container">
+            <div class="user-questions__info-line">
                 <h3 class="info-line__title">Задать вопрос</h3>
-                <div class="info-line__selections">
-                    <select class="selections">
+                <div class="info-line__selection-options">
+                    <select class="selections" name="nko">
                         <option class="nko-option" selected value="">НКО</option>
                         <option class="nko-option" value="1">НКО Название 1</option>
                         <option class="nko-option" value="2">НКО Название 2</option>
                         <option class="nko-option" value="3">НКО Название 3</option>
                         <option class="nko-option" value="4">НКО Название 4</option>
                     </select>
-                    <select class="selections">
+                    <select class="selections" name="question-type">
                         <option class="theme-option" selected value="">Тема вопроса</option>
                         <option class="theme-option" value="1">Заявка на помощь</option>
                         <option class="theme-option" value="2">Программы помощи</option>
@@ -88,10 +87,10 @@
                     <button class="btn" type="submit">Ответить</button>
                 </div>
             </div>
-            <div class="user-qwestions__info-line">
-                <h3 class="user-qwestions__title">Оставить отзыв</h3>
+            <div class="user-questions__info-line">
+                <h3 class="info-line__title">Оставить отзыв</h3>
                 <div class="info-line__selections">
-                    <select class="selections">
+                    <select class="selections" name="nko">
                         <option class="nko-option" selected value="">НКО</option>
                         <option class="nko-option" value="1">НКО Название 1</option>
                         <option class="nko-option" value="2">НКО Название 2</option>
