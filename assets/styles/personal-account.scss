@@ -112,42 +112,43 @@
             display: flex;
             max-width: 24.2rem;
             width: 100%;
-            max-height: 4.25rem;
+            height: 4.25rem;
             border-radius: 0.625rem;
             background-color:$bg-secondary-light;
             align-items: center;
             padding-left: 0.625rem;
             font-size: 1.5em;
             @media (max-width: $l) {
-                @include adaptive-font (20, 16);
+                @include adaptive-font (21, 19);
                 max-width:20rem;
             }
             @media (max-width: $m) {
-                @include adaptive-font (16, 14);
+                @include adaptive-font (18, 16);
                 max-width: 14rem;
                 width: 100vw;
-                height: 4.25rem;
+            }
+            @media (max-width: $s) {
+                @include adaptive-font (17, 14);
+                max-height: 3rem;
             }
             @media (max-width: $xs) {
                 min-width: 18rem;
-                background-color:$bg-primary-light;
                 @include adaptive-font (20, 18);
             }
         }  
         .info-line__input-text{
             width: 40rem;
-            height: 3.8rem;
+            height: 3.625rem;
             border: 5px solid $bg-secondary-light ;
             outline: none;
             border-radius: 0.625rem;
             font-size: 1.5em;
             @media (max-width: $l) {
-                height: 3.6rem;
                 @include adaptive-font (22, 20);
             }
             @media (max-width: $s) {
                 min-width: 10rem;
-                max-height: 3rem;
+                max-height: 2.375rem;
                 @include adaptive-font (18, 16);
             }
             @media (max-width: $xs) {
@@ -159,7 +160,7 @@
             max-width: 14rem;
             width: 100%;
             padding: 5px;
-            min-height: 3.8rem;
+            height: 4.25rem;
             border: none;
             border-radius: 0.625rem;
             font-size: 1.5em;
@@ -176,7 +177,6 @@
             }
             @media (max-width: $xs) {
                 max-width: 5.5rem;
-                max-height: 3rem;
                 @include adaptive-font (16, 14);
             }
             transition: 0.2s;
@@ -221,7 +221,7 @@
     margin-bottom: 4rem;
     @media (max-width: $m) {
         flex-direction: column;
-        row-gap: 30px;
+        row-gap: 1.875rem;
     }
     .user-questions__info-line{
         display: flex;
@@ -265,10 +265,10 @@
             font-size: 1.3em;
             @media (max-width: $l) {
                 @include adaptive-font (20, 16);
-                max-width:15rem;
+                max-width:13rem;
             }
             @media (max-width: $m) {
-                @include adaptive-font (16, 14);
+                @include adaptive-font (18, 16);
                 height: 4rem;
             }
             @media (max-width: $xs) {
@@ -276,19 +276,11 @@
                 @include adaptive-font (20, 18);
             }
             option{
-                background-color: white;
+                background-color:$bg-primary-light;
                 font-size: 1em;
                 outline: none;
                 @media (max-width: $m) {
-                    @include adaptive-font (16, 14);
-                    max-width: 14rem;
-                    width: 100vw;
-                    height: 4.25rem;
-                }
-                @media (max-width: $xs) {
-                    min-width: 8rem;
-                    background-color:$bg-primary-light;
-                    @include adaptive-font (14, 10);
+                    @include adaptive-font (14, 12);
                 }
             }
         }
@@ -303,10 +295,14 @@
     font-size: 1.5em;
     box-sizing: border-box;
     @media (max-width: $l) {
-        min-width: 32rem;
+        min-width: 35rem;
     }
-    @media (max-width: 1189px) {
-        min-width: 28rem;
+    @media (max-width: 1280px) {
+        min-width: 27rem;
+        background-color:$bg-primary-light;
+    }
+    @media (max-width: $m) {
+        min-width: 20rem;
         background-color:$bg-primary-light;
     }
     @media (max-width: $s) {
