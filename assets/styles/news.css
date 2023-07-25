@@ -1613,6 +1613,11 @@ body {
     margin-bottom: 0.87em;
   }
 }
+@media (max-width: 48rem) {
+  .new__title {
+    text-align: start;
+  }
+}
 .new__text {
   font-size: 1.125rem;
   line-height: 125%;

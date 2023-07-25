@@ -71,6 +71,10 @@
         @media (max-width: $l) {
             margin-bottom: 0.87em;
         }
+
+        @media (max-width: $s) {
+            text-align: start;
+        }
     }
 
 
