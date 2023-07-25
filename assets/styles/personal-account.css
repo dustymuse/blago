@@ -1,12 +1,4 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
-
-=======
->>>>>>> 1e2738c74f819e5d24fcdfc646e4d597b3189aeb
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -106,19 +98,6 @@ body {
   cursor: pointer;
   font-size: 1.75rem;
 }
-<<<<<<< HEAD
-@media (max-width: 767px) {
-  .btns {
-    font-size: calc(12px + 27.2 * ((100vw - 320px) / 1440));
-  }
-}
-@media (min-width: 767px) {
-  .btns {
-    font-size: calc(12px + 16 * (100vw / 1440));
-  }
-}
-=======
->>>>>>> 1e2738c74f819e5d24fcdfc646e4d597b3189aeb
 @media (max-width: 90rem) {
   .btns {
     height: 3.8em;
@@ -905,7 +884,7 @@ body {
 .documents {
   text-align: center;
   display: grid;
-  grid-template-rows: 1fr, 1fr;
+  grid-template-rows: 1fr 1fr;
   row-gap: 2rem;
   padding-bottom: 4rem;
 }

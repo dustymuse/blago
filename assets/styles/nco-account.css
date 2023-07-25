@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -97,17 +98,7 @@ body {
   cursor: pointer;
   font-size: 1.75rem;
 }
-@media (max-width: 90rem) and (max-width: 767px) {
-  .btns {
-    font-size: calc(12px + 27.2 * ((100vw - 320px) / 1440));
-  }
-}
-@media (max-width: 90rem) and (min-width: 767px) {
-  .btns {
-    font-size: calc(12px + 16 * (100vw / 1440));
-  }
-}
-@media (max-width: 90rem) and (max-width: 90rem) {
+@media (max-width: 90rem) {
   .btns {
     height: 3.8em;
     width: 20.5em;
@@ -546,7 +537,36 @@ body {
     margin-bottom: 0.6em;
   }
 }
-
+@media (max-width: 90rem) and (max-width: 767px) {
+  .types-of-payment {
+    font-size: calc(10px + 13.6 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .types-of-payment {
+    font-size: calc(10px + 8 * (100vw / 1440));
+  }
+}
+@media (max-width: 90rem) {
+  .types-of-payment:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  }
+  .types-of-payment:active {
+    transform: translateY(-2px);
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .types-of-payment {
+    font-size: calc(12px + 10.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .types-of-payment {
+    font-size: calc(12px + 6 * (100vw / 1440));
+  }
+}
 .types-of-payment__img {
   width: 9.44rem;
   height: 2.6rem;
@@ -864,7 +884,7 @@ body {
 .documents {
   text-align: center;
   display: grid;
-  grid-template-rows: 1fr, 1fr;
+  grid-template-rows: 1fr 1fr;
   row-gap: 2rem;
   padding-bottom: 4rem;
 }
@@ -1577,6 +1597,7 @@ body {
   cursor: pointer;
   max-height: 4.25rem;
   height: 100vh;
+  transition: 0.2s;
 }
 @media (max-width: 90rem) {
   .nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button {
@@ -1625,6 +1646,14 @@ body {
   .nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button {
     font-size: calc(10px + 2 * (100vw / 1440));
   }
+}
+.nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+.nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }
 
 .nko-personal-account__company-data {
@@ -1723,7 +1752,6 @@ body {
   .nko-personal-account__company-data .company-data__info-line .info-line__border-text {
     min-width: 18rem;
     background-color: #FFFFFF;
-    overflow: wrap;
   }
 }
 @media (max-width: 35rem) and (max-width: 767px) {
@@ -1803,6 +1831,7 @@ body {
   color: #000000;
   cursor: pointer;
   background-color: rgba(134, 198, 194, 0.5);
+  transition: 0.2s;
 }
 @media (max-width: 90rem) {
   .nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
@@ -1851,6 +1880,14 @@ body {
   .nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
     font-size: calc(14px + 2 * (100vw / 1440));
   }
+}
+.nko-personal-account__company-data .company-data__info-line .info-line__edit-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+.nko-personal-account__company-data .company-data__info-line .info-line__edit-btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }
 
 input[type=file] {
@@ -2124,6 +2161,7 @@ input[type=file]::file-selector-button {
   color: #000000;
   cursor: pointer;
   background-color: #83BFBC;
+  transition: 0.2s;
 }
 @media (max-width: 90rem) {
   .info-line__send-btn {
@@ -2172,6 +2210,14 @@ input[type=file]::file-selector-button {
   .info-line__send-btn {
     font-size: calc(14px + 2 * (100vw / 1440));
   }
+}
+.info-line__send-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+.info-line__send-btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }
 
 .nko-personal-account__user-applications {
@@ -2324,6 +2370,7 @@ input[type=file]::file-selector-button {
   color: #000000;
   cursor: pointer;
   background-color: #83BFBC;
+  transition: 0.2s;
 }
 @media (max-width: 90rem) {
   .info-line__btn {
@@ -2372,6 +2419,14 @@ input[type=file]::file-selector-button {
   .info-line__btn {
     font-size: calc(14px + 2 * (100vw / 1440));
   }
+}
+.info-line__btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+.info-line__btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }
 
 .nko-personal-account__user-questions {
@@ -2443,12 +2498,12 @@ input[type=file]::file-selector-button {
   }
 }
 .info-line__question-text .question-text__question, .info-line__answer-text .question-text__question {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  width: 100vw;
   border: none;
   outline: none;
   width: 100%;
   overflow: hidden;
+  line-height: 1.6em;
 }
 @media (max-width: 90rem) {
   .info-line__question-text .question-text__question, .info-line__answer-text .question-text__question {
