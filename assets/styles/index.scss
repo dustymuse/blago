@@ -456,16 +456,6 @@
         @include mint-btn (9.3em, 2.6em);
         margin-bottom: 2.13em;
     }
-    transition: 0.2s;
-    &:hover {
-        background: $bg-tertiary-colored;
-        transition: 1s;
-        transform: scale(1.05);
-        }
-    &:active{
-        transform: translateY(-2px);
-        box-shadow: 0 2px rgba(0, 0, 0, 0.1);
-    }  
 }
 
 .short-news__arrow-btn {
