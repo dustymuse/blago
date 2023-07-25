@@ -220,7 +220,7 @@
     justify-content: space-between;
     margin-bottom: 4rem;
     @media (max-width: $m) {
-        flex-wrap: wrap;
+        flex-direction: column;
         row-gap: 30px;
     }
     .user-questions__info-line{
@@ -247,7 +247,7 @@
         .info-line__selection-options{
             display: flex;
             justify-content: space-between;
-            @media (max-width: $m) {
+            @media (max-width: 1028px) {
                 flex-direction: column;
                 gap: 10px;
             }

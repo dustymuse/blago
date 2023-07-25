@@ -1911,7 +1911,7 @@ body {
 }
 @media (max-width: 64rem) {
   .user-personal-account__user-questions {
-    flex-wrap: wrap;
+    flex-direction: column;
     row-gap: 30px;
   }
 }
@@ -1957,7 +1957,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 64rem) {
+@media (max-width: 1028px) {
   .user-personal-account__user-questions .user-questions__info-line .info-line__selection-options {
     flex-direction: column;
     gap: 10px;
