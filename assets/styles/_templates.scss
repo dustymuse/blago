@@ -103,14 +103,11 @@ body {
     transition: 0.2s;
 
     &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+        background: $bg-tertiary-colored;
+        transition: 1s;
+        transform: scale(1.05);
     }
 
-    &:active {
-        transform: translateY(-1px);
-        box-shadow: 0 2px rgba(0, 0, 0, 0.1);
-    }
 }
 
 //кнопки заявка о помощи и входа для нко
@@ -159,11 +156,11 @@ body {
     transition: 0.2s;
 
     &:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+        background: $bg-tertiary-colored;
+        transition: 1s;
+        transform: scale(1.05);
     }
-
-    &:active {
+    &:active{
         transform: translateY(-2px);
         box-shadow: 0 2px rgba(0, 0, 0, 0.1);
     }
@@ -181,11 +178,10 @@ body {
     cursor: pointer;
 
     &:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+        transition: 1s;
+        transform: scale(1.05);
     }
-
-    &:active {
+    &:active{
         transform: translateY(-2px);
         box-shadow: 0 2px rgba(0, 0, 0, 0.1);
     }
