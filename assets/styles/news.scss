@@ -4,6 +4,25 @@
 
 .news {
     flex-direction: column;
+
+    //линия
+    &__line {
+        margin: 3.1rem 0;
+        border: none;
+        border-top: 1px solid $text-green-light;
+
+        @media (max-width: $l) {
+            margin: 2.7em 0;
+        }
+
+        @media (max-width: $m) {
+            margin: 1.7em 0;
+        }
+
+        @media (max-width: $s) {
+            margin: 1em 0;
+        }
+    }
 }
 
 //блок с главным заголовком----------------------------------------------
@@ -77,8 +96,6 @@
         }
     }
 
-
-
     //текст
     &__text {
         font-size: 1.125rem;
@@ -100,29 +117,13 @@
 
     //отступ после картинки
     &__img {
+        width: 100%;
         margin-bottom: 1.6rem;
 
         @media (max-width: $l) {
             margin-bottom: 1.6em;
         }
     }
-
-
-    //линия
-    &__line {
-        margin: 3.1rem 0;
-        border: none;
-        border-top: 1px solid $text-green-light;
-
-        @media (max-width: $l) {
-            margin: 2.7em 0;
-        }
-    }
-}
-
-
-.hidden-paragraphs {
-    display: none;
 }
 
 //стиль ссылки развернуть/свернуть
@@ -137,4 +138,55 @@
     @media (max-width: $l) {
         @include adaptive-font (18, 12);
     }
+}
+
+//переключатель страниц
+.pagination {
+    display: flex !important;
+    justify-content: center;
+    margin-bottom: 3.1rem;
+    border: none;
+
+    @media (max-width: $l) {
+        margin-bottom: 2.7em;
+    }
+
+    @media (max-width: $m) {
+        margin-bottom: 1.7em;
+    }
+
+    @media (max-width: $s) {
+        margin-bottom: 1em;
+    }
+
+    .page-number {
+        color: $text-main;
+        font-size: 1.5rem;
+        font-weight: 500;
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 0 0.3rem;
+        padding: 0;
+        display: inline;
+        position: relative;
+
+        @media (max-width: $l) {
+            @include adaptive-font (24, 15);
+            margin: 0 0.2em;
+        }
+
+
+        &_active {
+            color: $text-main;
+            text-decoration: underline;
+            font-size: 2rem;
+
+            @media (max-width: $l) {
+                @include adaptive-font (32, 20);
+            }
+        }
+    }
+
 }
