@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +11,145 @@
     <meta name="description"
         content="Предоставляйте помощь, откликайтесь на заявки и координируйте проекты некоммерческой организации в личном кабинете на центральном портале помощи «Хаер».">
 </head>
-
 <body>
-
+<header class="header">
+    <div class="header__container container">
+        <img src="./assets/images/icons/header__logo.png" alt="center logo" class="header__logo">
+        <div class="header__content">
+            <nav class="header__nav">
+                <a href="./index.html" class="header__link link">Главная</a>
+                <a href="./news.html" class="header__link link">Новости</a>
+                <a href="./about-us.html" class="header__link link">О компании</a>
+            </nav>
+            <img src="./assets/images/icons/header__search.png" alt="site search" class="header__search">
+                <div class="header__btns">
+                    <img src="./assets/images/icons/header__account.png" alt="personal area" class="header__account">
+                    <button class="header__area">Выход</button>
+                </div>
+            </div>
+        </div>
+    </header>
+<main>
+    <div class="nko-personal-account">
+        <div class="nko-personal-account__container">
+        <div class="nko-personal-account__name-container container">
+            <h1 class="name-container__nko-title">Некоммерческая организация</h1>
+            <button class="name-container__passw-button" type="submit">Изменить пароль</button>
+        </div> 
+        </div> 
+        <div class="nko-personal-account__company-data container">
+            <h3 class="company-data__title">Данные компании</h3>
+            <div class="company-data__info-line">
+                <p class="info-line__border-text">ФИО руководителя организации</p>
+                <input class="info-line__input-text" type="text" name="fio">
+                <button class="info-line__edit-btn" type="submit">Редактировать</button>
+            </div>
+            <div class="company-data__info-line">
+                <p class="info-line__border-text">Юридический адрес организации</p>
+                <input class="info-line__input-text" type="text" name="adress">
+                <button class="info-line__edit-btn" type="submit">Редактировать</button>
+            </div>
+            <div class="company-data__info-line">
+                <p class="info-line__border-text">Свидетельство регистрации НКО</p>
+                <input class="info-line__input-file" type="file">
+            </div>
+            <div class="company-data__info-line">
+                <p class="info-line__border-text">Свидетельство о постановке на учет в налоговом органе</p>
+                <input class="info-line__input-file" type="file">
+            </div>
+            <div class="company-data__info-line">
+                <p class="info-line__border-text">Устав</p>
+                <input class="info-line__input-file" type="file">
+                
+            </div>
+        </div>
+        <div class="nko-personal-account__company-reports container">
+            <h3 class="company-reports__title">Отчеты компании</h3>
+            <div class="company-reports__info-line">
+                <input class="info-line__add-text" type="text" name="report-doc" placeholder="Отчёт о проделанной работе">
+                <input class="info-line__download-doc" type="file" name="doc">
+                <button class="info-line__send-btn" type="submit">Отправить</button>
+            </div>
+            <div class="company-reports__info-line">
+                <input class="info-line__add-text" type="text" name="report-doc" placeholder="Отчёт о количестве благополучателей">
+                <input class="info-line__download-doc" type="file" name="doc">
+                <button class="info-line__send-btn" type="submit">Отправить</button>
+            </div>
+            <div class="company-reports__info-line">
+                <input class="info-line__add-text" type="text" name="news-doc" placeholder="Новости">
+                <input class="info-line__download-doc" type="file" name="doc">
+                <button class="info-line__send-btn" type="submit">Отправить</button>
+            </div>
+        </div>
+        <div class="nko-personal-account__user-applications container">
+            <h3 class="user-applications__title">Заявки пользователей</h3>
+            <div class="user-applications__info-line">
+                <p class="info-line__border-text">Еда</p>
+                <div class="info-line__card-text">
+                    <p class="card-text__user-details">Смитов И.И. // смитовии@mail.ru // +79000000000</p>
+                    <p class="card-text__app">Уважаемая благотворительная организация,
+                обращаюсь к вам с просьбой о помощи в предоставлении пищевых продуктов для меня и моей семьи. В настоящее время мы находимся в тяжелой жизненной ситуации. Надеемся насколько возможно скорее получить ответ от вас и надеемся, что вы рассмотрите нашу просьбу и предоставите нам необходимую помощь.
+                С уважением,
+                Смитов И.И.</p>
+                </div>
+                <button class="info-line__btn" type="submit">Принять</button>
+            </div>
+            <div class="user-applications__info-line">
+                <p class="info-line__border-text">Одежда</p>
+                <div class="info-line__card-text">
+                    <p class="card-text__user-details">Иванова А.А. // +79000000000</p>
+                    <p class="card-text__app">Добрый день! Обращаюсь к вам с просьбой о помощи. В предоставлении пищевых продуктов для меня и моей семьи. В настоящее время мы находимся в тяжелой жизненной ситуации. Надеемся насколько возможно скорее получить ответ от вас и надеемся, что вы рассмотрите нашу просьбу и предоставите нам необходимую помощь.
+                С уважением,
+                Иванова А.А.</p>
+                </div>
+                <button class="info-line__btn" type="submit">Принять</button>
+            </div>
+        </div>  
+        <div class="nko-personal-account__user-questions container">
+            <h3 class="user-questions__title">Вопросы пользователей</h3>
+            <div class="user-questions__info-line">
+                <div class="info-line__question-text">
+                    <p class="question-text__user">Пользователь</p>
+                    <textarea readonly class="question-text__question" name="message" cols="30" rows="5">Здравствуйте! Как я могу получить помощь от вашей организации? В каких областях вы оказываете поддержку? </textarea>
+                </div>
+                <textarea class="info-line__answer-text" name="message" cols="30" rows="5"></textarea>
+                <button class="info-line__btn" type="submit">Ответить</button>
+            </div>
+            <div class="user-questions__info-line">
+                <div class="info-line__question-text">
+                    <p class="question-text__user">Пользователь</p>
+                    <textarea readonly class="question-text__question" name="message" cols="30" rows="5">Добрый день! Подскажите, пожалуйста, как можно стать добровольцем в вашей отганизации? Может у вас можно пройти стажировку?</textarea>
+                </div>
+                <textarea class="info-line__answer-text" name="message" cols="30" rows="5"></textarea>
+                <button class="info-line__btn" type="submit">Ответить</button>
+            </div>
+        </div>
+    </div>
+</main> 
+<footer class="footer centering-center">
+    <div class="footer__container">
+        <img src="./assets/images/icons/footer__logo.png" alt="center logo" class="footer__logo">
+        <div class="footer__column">
+            <p class="footer__title link">Контактная информация:</p>
+            <a href="#" class="footer__text link">+7 (927) 434-05-67</a>
+            <a href="#" class="footer__text link">добавить-почту@blago.ru</a>
+            <a href="#" class="footer__text link">г. Набережные Челны, <br>
+                пр. имени Мусы Джалия, д.47а</a>
+        </div>
+        <div class="footer__column">
+            <p class="footer__title">Оферта:</p>
+            <a href="#" class="footer__text link">Публичная оферта
+                о добровольном пожертвовани</a>
+            <a href="#" class="footer__text link">Договор пожертвования
+                (публичная оферта)</a>
+        </div>
+        <div class="footer__column nav-footer">
+            <a href="./index.html" class="nav-footer__link link">Главная</a>
+            <a href="./about-us.html" class="nav-footer__link link">О нас</a>
+            <a href="./" class="nav-footer__link link">Новости</a>
+            <a href="#" class="nav-footer__link link">Личный кабинет</a>
+        </div>
+    </div>
+</footer>
 </body>
-
 </html>

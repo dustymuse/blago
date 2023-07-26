@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -749,7 +750,7 @@ body {
 .documents {
   text-align: center;
   display: grid;
-  grid-template-rows: 1fr, 1fr;
+  grid-template-rows: 1fr 1fr;
   row-gap: 2rem;
   padding-bottom: 4rem;
 }
@@ -1323,4 +1324,1050 @@ body {
   src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
+}
+.header__account {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.header__area {
+  width: 9.3rem;
+  height: 2.8rem;
+  background-color: #156963;
+  color: #FFFFFF;
+}
+
+.nko-personal-account__container {
+  background-color: #ECEEF2;
+}
+.nko-personal-account__container .nko-personal-account__name-container {
+  height: 5.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ECEEF2;
+  margin-bottom: 4rem;
+}
+@media (max-width: 48rem) {
+  .nko-personal-account__container .nko-personal-account__name-container {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 35rem) {
+  .nko-personal-account__container .nko-personal-account__name-container {
+    margin-bottom: 2rem;
+  }
+}
+.nko-personal-account__container .nko-personal-account__name-container .name-container__nko-title {
+  font-size: 2.25em;
+  font-weight: 500;
+  color: #156963;
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .nko-personal-account__container .nko-personal-account__name-container .name-container__nko-title {
+    font-size: calc(20px + 27.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .nko-personal-account__container .nko-personal-account__name-container .name-container__nko-title {
+    font-size: calc(20px + 16 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .nko-personal-account__container .nko-personal-account__name-container .name-container__nko-title {
+    font-size: calc(22px + 13.6 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .nko-personal-account__container .nko-personal-account__name-container .name-container__nko-title {
+    font-size: calc(22px + 8 * (100vw / 1440));
+  }
+}
+.nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button {
+  max-width: 16.25rem;
+  width: 100%;
+  padding: 5px;
+  max-height: 4.25rem;
+  border: none;
+  border-radius: 0.625rem;
+  background-color: #83BFBC;
+  font-size: 1.5em;
+  color: #000000;
+  cursor: pointer;
+  max-height: 4.25rem;
+  height: 100vh;
+  transition: 0.2s;
+}
+@media (max-width: 90rem) {
+  .nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button {
+    max-height: 4rem;
+    height: 100vh;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button {
+    font-size: calc(12px + 10.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button {
+    font-size: calc(12px + 6 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button {
+    max-width: 10rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 48rem) and (max-width: 767px) {
+  .nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button {
+    font-size: calc(12px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 48rem) and (min-width: 767px) {
+  .nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button {
+    font-size: calc(12px + 4 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  .nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button {
+    max-width: 6.5rem;
+    max-height: 2.2rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button {
+    font-size: calc(10px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button {
+    font-size: calc(10px + 2 * (100vw / 1440));
+  }
+}
+.nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+.nko-personal-account__container .nko-personal-account__name-container .name-container__passw-button:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.nko-personal-account__company-data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+.nko-personal-account__company-data .company-data__title {
+  color: #156963;
+  font-size: 2.25em;
+  font-weight: 400;
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .nko-personal-account__company-data .company-data__title {
+    font-size: calc(12px + 27.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .nko-personal-account__company-data .company-data__title {
+    font-size: calc(12px + 16 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .nko-personal-account__company-data .company-data__title {
+    background-color: #156963;
+    color: #FFFFFF;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .nko-personal-account__company-data .company-data__title {
+    font-size: calc(20px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .nko-personal-account__company-data .company-data__title {
+    font-size: calc(20px + 4 * (100vw / 1440));
+  }
+}
+.nko-personal-account__company-data .company-data__info-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+@media (max-width: 35rem) {
+  .nko-personal-account__company-data .company-data__info-line {
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+}
+.nko-personal-account__company-data .company-data__info-line .info-line__border-text {
+  display: flex;
+  max-width: 24.2rem;
+  width: 100%;
+  min-height: 4rem;
+  border-radius: 0.625rem;
+  background-color: #ECEEF2;
+  align-items: center;
+  padding-left: 0.625rem;
+  font-size: 1.5em;
+}
+@media (max-width: 90rem) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__border-text {
+    max-width: 20rem;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__border-text {
+    font-size: calc(16px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__border-text {
+    font-size: calc(16px + 4 * (100vw / 1440));
+  }
+}
+@media (max-width: 64rem) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__border-text {
+    max-width: 14rem;
+    width: 100vw;
+    padding-right: 0.625rem;
+  }
+}
+@media (max-width: 64rem) and (max-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__border-text {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 64rem) and (min-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__border-text {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__border-text {
+    max-width: 14rem;
+    width: 100vw;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 48rem) and (max-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__border-text {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 48rem) and (min-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__border-text {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__border-text {
+    min-width: 18rem;
+    width: 100vw;
+    background-color: #FFFFFF;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__border-text {
+    font-size: calc(18px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__border-text {
+    font-size: calc(18px + 2 * (100vw / 1440));
+  }
+}
+.nko-personal-account__company-data .company-data__info-line .info-line__input-text {
+  width: 40rem;
+  height: 3.625rem;
+  border: 5px solid #ECEEF2;
+  outline: none;
+  border-radius: 0.625rem;
+  font-size: 1.5em;
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__input-text {
+    font-size: calc(20px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__input-text {
+    font-size: calc(20px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__input-text {
+    min-width: 10rem;
+    max-height: 3.25rem;
+  }
+}
+@media (max-width: 48rem) and (max-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__input-text {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 48rem) and (min-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__input-text {
+    font-size: calc(16px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__input-text {
+    min-width: 5.5rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__input-text {
+    font-size: calc(20px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__input-text {
+    font-size: calc(20px + 2 * (100vw / 1440));
+  }
+}
+.nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
+  max-width: 14rem;
+  width: 100%;
+  padding: 5px;
+  max-height: 4.25rem;
+  border: none;
+  border-radius: 0.625rem;
+  font-size: 1.5em;
+  color: #000000;
+  cursor: pointer;
+  background-color: rgba(134, 198, 194, 0.5);
+  transition: 0.2s;
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
+    font-size: calc(20px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
+    font-size: calc(20px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 64rem) and (max-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
+    font-size: calc(18px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 64rem) and (min-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
+    font-size: calc(18px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
+    min-width: 10rem;
+    max-height: 3.8rem;
+  }
+}
+@media (max-width: 48rem) and (max-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 48rem) and (min-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
+    font-size: calc(16px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
+    max-width: 5.5rem;
+    height: 4rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+.nko-personal-account__company-data .company-data__info-line .info-line__edit-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+.nko-personal-account__company-data .company-data__info-line .info-line__edit-btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+}
+
+input[type=file] {
+  max-width: 57rem;
+  width: 100%;
+  min-height: 4rem;
+  border-radius: 0.625rem;
+  border: 5px solid #ECEEF2;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  color: blue;
+  -webkit-text-decoration: underline 1px blue;
+          text-decoration: underline 1px blue;
+  vertical-align: middle;
+}
+@media (max-width: 90rem) {
+  input[type=file] {
+    width: 100vw;
+    max-height: 4rem;
+    height: 100vh;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  input[type=file] {
+    font-size: calc(20px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  input[type=file] {
+    font-size: calc(20px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 64rem) {
+  input[type=file] {
+    min-width: 30.5rem;
+    max-height: 4rem;
+    height: 100vh;
+  }
+}
+@media (max-width: 64rem) and (max-width: 767px) {
+  input[type=file] {
+    font-size: calc(18px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 64rem) and (min-width: 767px) {
+  input[type=file] {
+    font-size: calc(18px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  input[type=file] {
+    min-width: 10rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 48rem) and (max-width: 767px) {
+  input[type=file] {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 48rem) and (min-width: 767px) {
+  input[type=file] {
+    font-size: calc(16px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  input[type=file] {
+    min-width: 4rem;
+    max-height: 2rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  input[type=file] {
+    font-size: calc(18px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  input[type=file] {
+    font-size: calc(18px + 2 * (100vw / 1440));
+  }
+}
+
+input[type=file]::file-selector-button {
+  width: 16.25rem;
+  min-height: 4rem;
+  padding: 10px;
+  border: none;
+  background-color: rgba(134, 198, 194, 0.5);
+  color: #000000;
+  cursor: pointer;
+}
+@media (max-width: 90rem) {
+  input[type=file]::file-selector-button {
+    max-height: 4rem;
+    height: 100vh;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  input[type=file]::file-selector-button {
+    font-size: calc(20px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  input[type=file]::file-selector-button {
+    font-size: calc(20px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 64rem) {
+  input[type=file]::file-selector-button {
+    max-width: 10rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 64rem) and (max-width: 767px) {
+  input[type=file]::file-selector-button {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 64rem) and (min-width: 767px) {
+  input[type=file]::file-selector-button {
+    font-size: calc(16px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  input[type=file]::file-selector-button {
+    min-width: 4rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 48rem) and (max-width: 767px) {
+  input[type=file]::file-selector-button {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 48rem) and (min-width: 767px) {
+  input[type=file]::file-selector-button {
+    font-size: calc(16px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  input[type=file]::file-selector-button {
+    min-width: 4rem;
+    max-height: 2rem;
+  }
+}
+
+.nko-personal-account__company-reports {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.37rem;
+  margin-bottom: 4rem;
+}
+@media (max-width: 64rem) {
+  .nko-personal-account__company-reports .nko-personal-account__company-reports-container {
+    background-color: #ECEEF2;
+  }
+}
+.nko-personal-account__company-reports .company-reports__title {
+  color: #156963;
+  font-size: 2.25em;
+  font-weight: 400;
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .nko-personal-account__company-reports .company-reports__title {
+    font-size: calc(12px + 27.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .nko-personal-account__company-reports .company-reports__title {
+    font-size: calc(12px + 16 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .nko-personal-account__company-reports .company-reports__title {
+    background-color: #156963;
+    color: #FFFFFF;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .nko-personal-account__company-reports .company-reports__title {
+    font-size: calc(20px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .nko-personal-account__company-reports .company-reports__title {
+    font-size: calc(20px + 4 * (100vw / 1440));
+  }
+}
+.nko-personal-account__company-reports .company-reports__info-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+@media (max-width: 90rem) {
+  .nko-personal-account__company-reports .company-reports__info-line {
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+}
+.nko-personal-account__company-reports .company-reports__info-line .info-line__add-text {
+  min-width: 40rem;
+  width: 100%;
+  height: 3.7rem;
+  border: 5px solid #ECEEF2;
+  outline: none;
+  border-radius: 0.625rem;
+  font-size: 1.5em;
+  padding-left: 0.625rem;
+}
+@media (max-width: 90rem) {
+  .nko-personal-account__company-reports .company-reports__info-line .info-line__add-text {
+    min-width: 30rem;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .nko-personal-account__company-reports .company-reports__info-line .info-line__add-text {
+    font-size: calc(20px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .nko-personal-account__company-reports .company-reports__info-line .info-line__add-text {
+    font-size: calc(20px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 64rem) {
+  .nko-personal-account__company-reports .company-reports__info-line .info-line__add-text {
+    max-height: 3rem;
+  }
+}
+@media (max-width: 64rem) and (max-width: 767px) {
+  .nko-personal-account__company-reports .company-reports__info-line .info-line__add-text {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 64rem) and (min-width: 767px) {
+  .nko-personal-account__company-reports .company-reports__info-line .info-line__add-text {
+    font-size: calc(16px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  .nko-personal-account__company-reports .company-reports__info-line .info-line__add-text {
+    min-width: 5.5rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .nko-personal-account__company-reports .company-reports__info-line .info-line__add-text {
+    font-size: calc(20px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .nko-personal-account__company-reports .company-reports__info-line .info-line__add-text {
+    font-size: calc(20px + 2 * (100vw / 1440));
+  }
+}
+
+.info-line__send-btn {
+  max-width: 14rem;
+  width: 100%;
+  padding: 5px;
+  max-height: 4.25rem;
+  border: none;
+  border-radius: 0.625rem;
+  font-size: 1.5em;
+  color: #000000;
+  cursor: pointer;
+  background-color: #83BFBC;
+  transition: 0.2s;
+}
+@media (max-width: 90rem) {
+  .info-line__send-btn {
+    max-height: 4rem;
+    height: 100vh;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .info-line__send-btn {
+    font-size: calc(20px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .info-line__send-btn {
+    font-size: calc(20px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 64rem) and (max-width: 767px) {
+  .info-line__send-btn {
+    font-size: calc(18px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 64rem) and (min-width: 767px) {
+  .info-line__send-btn {
+    font-size: calc(18px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .info-line__send-btn {
+    min-width: 10rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 48rem) and (max-width: 767px) {
+  .info-line__send-btn {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 48rem) and (min-width: 767px) {
+  .info-line__send-btn {
+    font-size: calc(16px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  .info-line__send-btn {
+    max-width: 5.5rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .info-line__send-btn {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .info-line__send-btn {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+.info-line__send-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+.info-line__send-btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.nko-personal-account__user-applications {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6em;
+  margin-bottom: 4rem;
+}
+.nko-personal-account__user-applications .user-applications__title {
+  color: #156963;
+  font-size: 2.25em;
+  font-weight: 400;
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .nko-personal-account__user-applications .user-applications__title {
+    font-size: calc(12px + 27.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .nko-personal-account__user-applications .user-applications__title {
+    font-size: calc(12px + 16 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .nko-personal-account__user-applications .user-applications__title {
+    background-color: #156963;
+    color: #FFFFFF;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .nko-personal-account__user-applications .user-applications__title {
+    font-size: calc(20px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .nko-personal-account__user-applications .user-applications__title {
+    font-size: calc(20px + 4 * (100vw / 1440));
+  }
+}
+.nko-personal-account__user-applications .user-applications__info-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6em;
+}
+@media (max-width: 48rem) {
+  .nko-personal-account__user-applications .user-applications__info-line {
+    flex-wrap: wrap;
+  }
+}
+.nko-personal-account__user-applications .user-applications__info-line .info-line__border-text {
+  max-width: 12.2rem;
+  display: flex;
+  width: 100%;
+  max-height: 4.25rem;
+  border-radius: 0.625rem;
+  background-color: #ECEEF2;
+  align-items: center;
+  padding-left: 0.625rem;
+  font-size: 1.5em;
+}
+@media (max-width: 90rem) {
+  .nko-personal-account__user-applications .user-applications__info-line .info-line__border-text {
+    max-width: 10rem;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .nko-personal-account__user-applications .user-applications__info-line .info-line__border-text {
+    font-size: calc(16px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .nko-personal-account__user-applications .user-applications__info-line .info-line__border-text {
+    font-size: calc(16px + 4 * (100vw / 1440));
+  }
+}
+@media (max-width: 64rem) {
+  .nko-personal-account__user-applications .user-applications__info-line .info-line__border-text {
+    max-width: 8rem;
+    width: 100vw;
+    height: 3rem;
+  }
+}
+@media (max-width: 64rem) and (max-width: 767px) {
+  .nko-personal-account__user-applications .user-applications__info-line .info-line__border-text {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 64rem) and (min-width: 767px) {
+  .nko-personal-account__user-applications .user-applications__info-line .info-line__border-text {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  .nko-personal-account__user-applications .user-applications__info-line .info-line__border-text {
+    min-width: 18rem;
+    background-color: #FFFFFF;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .nko-personal-account__user-applications .user-applications__info-line .info-line__border-text {
+    font-size: calc(18px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .nko-personal-account__user-applications .user-applications__info-line .info-line__border-text {
+    font-size: calc(18px + 2 * (100vw / 1440));
+  }
+}
+.nko-personal-account__user-applications .user-applications__info-line .info-line__card-text {
+  width: 47.3rem;
+  border: 5px solid #ECEEF2;
+  border-radius: 0.625rem;
+}
+
+.info-line__card-text {
+  padding: 0.625rem;
+  font-size: 1.5em;
+  line-height: 1.6em;
+}
+@media (max-width: 90rem) {
+  .info-line__card-text {
+    line-height: 1.2em;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .info-line__card-text {
+    font-size: calc(12px + 17 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .info-line__card-text {
+    font-size: calc(12px + 10 * (100vw / 1440));
+  }
+}
+.info-line__card-text .card-text__user-details {
+  color: blue;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
+}
+
+.info-line__btn {
+  max-width: 14rem;
+  width: 100%;
+  padding: 5px;
+  max-height: 4.25rem;
+  border: none;
+  border-radius: 0.625rem;
+  font-size: 1.5em;
+  color: #000000;
+  cursor: pointer;
+  background-color: #83BFBC;
+  transition: 0.2s;
+}
+@media (max-width: 90rem) {
+  .info-line__btn {
+    max-height: 4rem;
+    height: 100vh;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .info-line__btn {
+    font-size: calc(20px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .info-line__btn {
+    font-size: calc(20px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 64rem) and (max-width: 767px) {
+  .info-line__btn {
+    font-size: calc(18px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 64rem) and (min-width: 767px) {
+  .info-line__btn {
+    font-size: calc(18px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .info-line__btn {
+    min-width: 10rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 48rem) and (max-width: 767px) {
+  .info-line__btn {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 48rem) and (min-width: 767px) {
+  .info-line__btn {
+    font-size: calc(16px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 35rem) {
+  .info-line__btn {
+    max-width: 5.5rem;
+    max-height: 3rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .info-line__btn {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .info-line__btn {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+.info-line__btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+.info-line__btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.nko-personal-account__user-questions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin-bottom: 4rem;
+}
+.nko-personal-account__user-questions .user-questions__title {
+  color: #156963;
+  font-size: 2.25em;
+  font-weight: 400;
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .nko-personal-account__user-questions .user-questions__title {
+    font-size: calc(12px + 27.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .nko-personal-account__user-questions .user-questions__title {
+    font-size: calc(12px + 16 * (100vw / 1440));
+  }
+}
+@media (max-width: 48rem) {
+  .nko-personal-account__user-questions .user-questions__title {
+    background-color: #156963;
+    color: #FFFFFF;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 35rem) and (max-width: 767px) {
+  .nko-personal-account__user-questions .user-questions__title {
+    font-size: calc(20px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 35rem) and (min-width: 767px) {
+  .nko-personal-account__user-questions .user-questions__title {
+    font-size: calc(20px + 4 * (100vw / 1440));
+  }
+}
+.nko-personal-account__user-questions .user-questions__info-line {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+@media (max-width: 48rem) {
+  .nko-personal-account__user-questions .user-questions__info-line {
+    flex-wrap: wrap;
+  }
+}
+
+.info-line__question-text, .info-line__answer-text {
+  max-width: 30rem;
+  width: 100%;
+  padding: 0.625rem;
+  border: 5px solid #ECEEF2;
+  border-radius: 0.625rem;
+  font-size: 1.5em;
+  outline: none;
+}
+@media (max-width: 64rem) {
+  .info-line__question-text, .info-line__answer-text {
+    width: 20rem;
+  }
+}
+@media (max-width: 48rem) {
+  .info-line__question-text, .info-line__answer-text {
+    width: 30rem;
+  }
+}
+.info-line__question-text .question-text__question, .info-line__answer-text .question-text__question {
+  width: 100vw;
+  border: none;
+  outline: none;
+  width: 100%;
+  overflow: hidden;
+  line-height: 1.6em;
+}
+@media (max-width: 90rem) {
+  .info-line__question-text .question-text__question, .info-line__answer-text .question-text__question {
+    line-height: 1.2em;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .info-line__question-text .question-text__question, .info-line__answer-text .question-text__question {
+    font-size: calc(12px + 17 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .info-line__question-text .question-text__question, .info-line__answer-text .question-text__question {
+    font-size: calc(12px + 10 * (100vw / 1440));
+  }
+}
+
+.question-text__user {
+  color: blue;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
+}
+@media (max-width: 90rem) {
+  .question-text__user {
+    line-height: 1.2em;
+  }
+}
+@media (max-width: 90rem) and (max-width: 767px) {
+  .question-text__user {
+    font-size: calc(12px + 17 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 90rem) and (min-width: 767px) {
+  .question-text__user {
+    font-size: calc(12px + 10 * (100vw / 1440));
+  }
 }/*# sourceMappingURL=nco-account.css.map */

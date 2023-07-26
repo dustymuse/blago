@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +12,127 @@
         content="Управляйте своими заявками на помощь, получайте поддержку от некоммерческих организаций в личном кабинете на центральном портале помощи «Хаер».">
 
 </head>
-
 <body>
-
+    <header class="header">
+        <!-- размеры контейнера -->
+        <div class="header__container container">
+            <!-- лого -->
+            <img src="./assets/images/icons/header__logo.png" alt="center logo" class="header__logo">
+            <div class="header__content">
+                <!-- навигация -->
+                <nav class="header__nav">
+                    <a href="./index.html" class="header__link link">Главная</a>
+                    <a href="./news.html" class="header__link link">Новости</a>
+                    <a href="./about-us.html" class="header__link link">О компании</a>
+                </nav>
+                <!-- кнопки -->
+                <img src="./assets/images/icons/header__search.png" alt="site search" class="header__search">
+                    <div class="header__btns">
+                    <img src="./assets/images/icons/header__account.png" alt="personal area" class="header__account">
+                    <button class="header__area">Выход</button>
+                </div>
+            </div>
+        </div>
+    </header>
+<main>
+    <div class="user-personal-account">
+        <div class="user-personal-account__container">
+        <div class="user-personal-account__name-container container">
+            <h1 class="name-container__fio">Иванов Иван Иванович</h1>
+            <button class="name-container__passw-button" type="submit">Изменить пароль</button>
+        </div> 
+        </div>
+        <div class="user-personal-account__user-data container">
+            <h3 class="user-data__title">Данные пользователя</h3>
+            <div class="user-data__info-line">
+                <p class="info-line__border-text">Фамилия Имя Отчество</p>
+                <input class="info-line__input-text" type="text" name="fio">
+                <button class="info-line__edit-btn" type="submit">Редактировать</button>
+            </div>
+            <div class="user-data__info-line">
+                <p class="info-line__border-text">Адрес электронной почты</p>
+                <input class="info-line__input-text" type="email" name="mail">
+                <button class="info-line__edit-btn" type="submit">Редактировать</button>
+            </div>
+            <div class="user-data__info-line">
+                <p class="info-line__border-text">Номер телефона</p>
+                <input class="info-line__input-text" type="tel" name="phone-number">
+                <button class="info-line__edit-btn" type="submit">Редактировать</button>
+            </div>
+        </div>
+        <div class="user-personal-account__help-btn container">
+            <button class="user-personal-account__help-button">Подать заявку на помощь</button>
+        </div>
+        <div class="user-personal-account__user-questions container">
+            <div class="user-questions__info-line">
+                <h3 class="info-line__title">Задать вопрос</h3>
+                <div class="info-line__selection-options">
+                    <select class="selections" name="nko">
+                        <option class="nko-option" selected value="">НКО</option>
+                        <option class="nko-option" value="1">НКО Название 1</option>
+                        <option class="nko-option" value="2">НКО Название 2</option>
+                        <option class="nko-option" value="3">НКО Название 3</option>
+                        <option class="nko-option" value="4">НКО Название 4</option>
+                    </select>
+                    <select class="selections" name="question-type">
+                        <option class="theme-option" selected value="">Тема вопроса</option>
+                        <option class="theme-option" value="1">Заявка на помощь</option>
+                        <option class="theme-option" value="2">Программы помощи</option>
+                        <option class="theme-option" value="3">Волонтерство</option>
+                        <option class="theme-option" value="4">Другое</option>
+                    </select>
+                </div>
+                <textarea class="info-line__answer-wrap" name="message" cols="30" rows="5"></textarea>
+                <div class="info-line__button">
+                    <button class="btn" type="submit">Ответить</button>
+                </div>
+            </div>
+            <div class="user-questions__info-line">
+                <h3 class="info-line__title">Оставить отзыв</h3>
+                <div class="info-line__selections">
+                    <select class="selections" name="nko">
+                        <option class="nko-option" selected value="">НКО</option>
+                        <option class="nko-option" value="1">НКО Название 1</option>
+                        <option class="nko-option" value="2">НКО Название 2</option>
+                        <option class="nko-option" value="3">НКО Название 3</option>
+                        <option class="nko-option" value="4">НКО Название 4</option>
+                    </select>
+                </div>
+                <textarea class="info-line__answer-wrap" name="message" cols="30" rows="5"></textarea>
+                <div class="info-line__button">
+                    <button class="btn" type="submit">Ответить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main> 
+<footer class="footer centering-center">
+    <!-- размер контейнера -->
+    <div class="footer__container">
+        <!-- лого -->
+        <img src="./assets/images/icons/footer__logo.png" alt="center logo" class="footer__logo">
+        <!-- основные колонки  -->
+        <div class="footer__column">
+            <p class="footer__title link">Контактная информация:</p>
+            <a href="#" class="footer__text link">+7 (927) 434-05-67</a>
+            <a href="#" class="footer__text link">добавить-почту@blago.ru</a>
+            <a href="#" class="footer__text link">г. Набережные Челны, <br>
+                пр. имени Мусы Джалия, д.47а</a>
+        </div>
+        <div class="footer__column">
+            <p class="footer__title">Оферта:</p>
+            <a href="#" class="footer__text link">Публичная оферта
+                о добровольном пожертвовани</a>
+            <a href="#" class="footer__text link">Договор пожертвования
+                (публичная оферта)</a>
+        </div>
+        <div class="footer__column nav-footer">
+            <a href="./index.html" class="nav-footer__link link">Главная</a>
+            <a href="./about-us.html" class="nav-footer__link link">О нас</a>
+            <a href="./" class="nav-footer__link link">Новости</a>
+            <a href="#" class="nav-footer__link link">Личный кабинет</a>
+        </div>
+    </div>
+</footer>
 </body>
-
 </html>
