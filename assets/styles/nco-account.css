@@ -1735,6 +1735,7 @@ body {
   .nko-personal-account__company-data .company-data__info-line .info-line__border-text {
     max-width: 14rem;
     width: 100vw;
+    padding-right: 0.625rem;
   }
 }
 @media (max-width: 64rem) and (max-width: 767px) {
@@ -1767,6 +1768,7 @@ body {
 @media (max-width: 35rem) {
   .nko-personal-account__company-data .company-data__info-line .info-line__border-text {
     min-width: 18rem;
+    width: 100vw;
     background-color: #FFFFFF;
   }
 }
@@ -1853,10 +1855,20 @@ body {
     font-size: calc(20px + 2 * (100vw / 1440));
   }
 }
+@media (max-width: 64rem) and (max-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
+    font-size: calc(18px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 64rem) and (min-width: 767px) {
+  .nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
+    font-size: calc(18px + 2 * (100vw / 1440));
+  }
+}
 @media (max-width: 48rem) {
   .nko-personal-account__company-data .company-data__info-line .info-line__edit-btn {
     min-width: 10rem;
-    max-height: 4rem;
+    max-height: 3.8rem;
   }
 }
 @media (max-width: 48rem) and (max-width: 767px) {
@@ -1895,7 +1907,7 @@ body {
 }
 
 input[type=file] {
-  max-width: 56rem;
+  max-width: 57rem;
   width: 100%;
   min-height: 4rem;
   border-radius: 0.625rem;
@@ -1909,7 +1921,7 @@ input[type=file] {
 }
 @media (max-width: 90rem) {
   input[type=file] {
-    width: 100%;
+    width: 100vw;
     max-height: 4rem;
     height: 100vh;
   }
@@ -2086,21 +2098,16 @@ input[type=file]::file-selector-button {
   justify-content: space-between;
   gap: 1.5rem;
 }
-@media (max-width: 35rem) {
+@media (max-width: 90rem) {
   .nko-personal-account__company-reports .company-reports__info-line {
     flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-}
-@media (max-width: 64rem) {
-  .nko-personal-account__company-reports .company-reports__info-line {
-    flex-wrap: wrap;
+    gap: 0.7rem;
   }
 }
 .nko-personal-account__company-reports .company-reports__info-line .info-line__add-text {
   min-width: 40rem;
   width: 100%;
-  height: 3.63rem;
+  height: 3.7rem;
   border: 5px solid #ECEEF2;
   outline: none;
   border-radius: 0.625rem;
@@ -2110,8 +2117,6 @@ input[type=file]::file-selector-button {
 @media (max-width: 90rem) {
   .nko-personal-account__company-reports .company-reports__info-line .info-line__add-text {
     min-width: 30rem;
-    max-height: 4rem;
-    height: 100vh;
   }
 }
 @media (max-width: 90rem) and (max-width: 767px) {
@@ -2183,6 +2188,16 @@ input[type=file]::file-selector-button {
 @media (max-width: 90rem) and (min-width: 767px) {
   .info-line__send-btn {
     font-size: calc(20px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 64rem) and (max-width: 767px) {
+  .info-line__send-btn {
+    font-size: calc(18px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 64rem) and (min-width: 767px) {
+  .info-line__send-btn {
+    font-size: calc(18px + 2 * (100vw / 1440));
   }
 }
 @media (max-width: 48rem) {
@@ -2392,6 +2407,16 @@ input[type=file]::file-selector-button {
 @media (max-width: 90rem) and (min-width: 767px) {
   .info-line__btn {
     font-size: calc(20px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 64rem) and (max-width: 767px) {
+  .info-line__btn {
+    font-size: calc(18px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (max-width: 64rem) and (min-width: 767px) {
+  .info-line__btn {
+    font-size: calc(18px + 2 * (100vw / 1440));
   }
 }
 @media (max-width: 48rem) {
