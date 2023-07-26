@@ -4,12 +4,16 @@
 
 //О компании//
 .about-company{
-    &__container{
-        background-color: $bg-primary-light;
+    background-color: $bg-primary-light;
         background-image: url(../../assets/images/design/about-us__bg-about-company.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        @media (max-width:$s) {
+            background-size: contain;
+            background: linear-gradient( $bg-primary-colored, $bg-primary-light);
+        }
+    &__container{
         height: 37rem;
         display: flex;
         justify-content: flex-end;
@@ -20,15 +24,14 @@
             height: 32rem;
         }
             @media (max-width:$m) {
-            height: 30rem;
+            height: 25rem;
         }
         @media (max-width:$s) {
-            height: 25rem;
-            background-position: left;
+            height: 17rem;
             justify-content: center;
         }
         @media (max-width:$xs) {
-            height: 20rem;
+            height: 15rem;
     }
     }
     &__title{
@@ -40,6 +43,7 @@
         }
     }
 }
+
 
 // О компании
 // Центр помощи
