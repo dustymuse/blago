@@ -35,24 +35,33 @@
     background-size: cover;
     width: 100vw;
     height: 38.31rem;
-    margin-bottom: 4.5rem;
     @include adaptive-font (16, 10);
 
     @media (max-width: $l) {
-        margin-bottom: 4.5em;
         height: 38.31em;
     }
 
     @media (max-width: $s) {
         background: url(../images/design/news__main-with-text.png) center / cover no-repeat;
         background-position-x: 60%;
-        margin-bottom: 3em;
     }
 
     &__title {
         color: $text-light;
         font-weight: 700;
         display: none;
+    }
+}
+
+.for-slider {
+    margin-bottom: 4.5rem;
+
+    @media (max-width: $l) {
+        margin-bottom: 4.5em;
+    }
+
+    @media (max-width: $s) {
+        margin-bottom: 3em;
     }
 }
 
