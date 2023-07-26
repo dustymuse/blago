@@ -98,11 +98,6 @@
         width: 12em;
 }
 }
-.help:hover {
-    background: $bg-tertiary-colored;
-    transition: 1s;
-    transform: scale(1.05);
-}
 }
 // <!-- Название НКО -->----------------------------------------------
 // <!-- Описание НКО -->----------------------------------------------
@@ -203,11 +198,6 @@
         width: 12em;
 }
 }
-&__item:hover {
-    background: $bg-tertiary-colored;
-    color: $text-light;
-    transition: all 800ms cubic-bezier(0.215, 0.610, 0.355, 1);
-}
 }
 // <!-- Отчеты о проделанной работе -->--------------------------------
 //Документы------------------------------------------------------------
@@ -247,11 +237,6 @@
         @media (max-width: 1230px) {
             width: 20rem;
             }
-}
-.doc-button-item:hover {
-    background: $bg-tertiary-colored;
-    transition: 1s;
-    transform: scale(1.05);
 }
 }
 //Документы-------------------------------------------------------------
