@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -1960,7 +1961,6 @@ body {
 @media (max-width: 64rem) {
   .reviews__screen {
     justify-content: center;
-    gap: 1.5rem;
   }
 }
 .reviews__block {
@@ -1975,7 +1975,11 @@ body {
 @media (max-width: 64rem) {
   .reviews__block {
     width: 28rem;
-    height: 18rem;
+  }
+}
+@media ((max-width: 470px)) {
+  .reviews__block {
+    height: 20rem;
   }
 }
 .reviews__text {

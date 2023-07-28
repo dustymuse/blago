@@ -1,5 +1,6 @@
 @import './vars';
 @import './templates';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
 // <!-- Название НКО -->---------------------------------------------
 .about-nko {
@@ -255,7 +256,6 @@
 
         @media (max-width: $m) {
             justify-content: center;
-            gap: 1.5rem;
         }
     }
 
@@ -270,7 +270,9 @@
 
         @media (max-width: $m) {
             width: 28rem;
-            height: 18rem;
+        }
+        @media ((max-width: 470px)) {
+            height: 20rem;
         }
     }
 
