@@ -1834,6 +1834,14 @@ body {
   }
 }
 
+.documents {
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
 .reports-nko {
   margin-bottom: 3.5rem;
 }
