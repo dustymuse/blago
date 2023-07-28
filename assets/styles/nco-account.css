@@ -1988,7 +1988,8 @@ input[type=file] {
   box-sizing: border-box;
   font-size: 1.5em;
   color: blue;
-  text-decoration: underline 1px blue;
+  -webkit-text-decoration: underline 1px blue;
+          text-decoration: underline 1px blue;
   vertical-align: middle;
 }
 @media (max-width: 90rem) {
@@ -2448,7 +2449,8 @@ input[type=file]::file-selector-button {
 }
 .info-line__card-text .card-text__user-details {
   color: blue;
-  text-decoration: underline blue;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
 }
 
 .info-line__btn {
@@ -2625,7 +2627,8 @@ input[type=file]::file-selector-button {
 
 .question-text__user {
   color: blue;
-  text-decoration: underline blue;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
 }
 @media (max-width: 90rem) {
   .question-text__user {

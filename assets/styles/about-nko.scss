@@ -243,6 +243,9 @@
     &__box {
         display: flex;
         justify-content: space-between;
+        @media (max-width: $m) {
+            justify-content: center;
+        }
     }
 
     &__screen {
@@ -252,6 +255,7 @@
 
         @media (max-width: $m) {
             justify-content: center;
+            gap: 1.5rem;
         }
     }
 
@@ -264,7 +268,7 @@
         justify-content: center;
         align-items: center;
 
-        @media (max-width: $s) {
+        @media (max-width: $m) {
             width: 28rem;
             height: 18rem;
         }
@@ -286,6 +290,9 @@
             width: 26rem;
             margin: 1rem;
         }
+        @media ((max-width: 470px)) {
+                width: 15rem;
+            }
     }
 
     // слайдер---------------------------------------------------------------

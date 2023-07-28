@@ -1947,6 +1947,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 64rem) {
+  .reviews__box {
+    justify-content: center;
+  }
+}
 .reviews__screen {
   display: flex;
   justify-content: space-between;
@@ -1955,6 +1960,7 @@ body {
 @media (max-width: 64rem) {
   .reviews__screen {
     justify-content: center;
+    gap: 1.5rem;
   }
 }
 .reviews__block {
@@ -1966,7 +1972,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 48rem) {
+@media (max-width: 64rem) {
   .reviews__block {
     width: 28rem;
     height: 18rem;
@@ -1994,6 +2000,11 @@ body {
   .reviews__text {
     width: 26rem;
     margin: 1rem;
+  }
+}
+@media ((max-width: 470px)) {
+  .reviews__text {
+    width: 15rem;
   }
 }
 .reviews #slides article {
