@@ -69,6 +69,27 @@ body {
     }
 }
 
+//контентные заголовки в страницах о нко
+.title {
+    font-size: 2.25rem;
+    color: $text-main;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+
+    @media (max-width: $l) {
+        @include adaptive-font (36, 20);
+        text-align: center;
+    }
+
+    @media (max-width:$m) {
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width:$s) {
+        margin-bottom: 1rem;
+    }
+}
+
 //шрифты----------------------------------------------------
 @mixin text-24 ($color, $line-height) {
     color: $color;
@@ -100,6 +121,16 @@ body {
     font-weight: 500;
     cursor: pointer;
     line-height: 1em;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    }
 }
 
 //кнопки заявка о помощи и входа для нко
@@ -145,6 +176,17 @@ body {
     border: none;
     font-weight: 500;
     cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+        transform: translateY(-2px);
+        box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    }
 }
 
 //белая кнопка из формы пожертвования
@@ -157,33 +199,47 @@ body {
     border: 0.5px black dashed;
     font-weight: 500;
     cursor: pointer;
-}
-
-// Анимация кнопок
-.animation-push{
     transition: 0.2s;
+
     &:hover {
         transform: translateY(-4px);
         box-shadow: 0 5px rgba(0, 0, 0, 0.1);
-        }
-    &:active{
+    }
+
+    &:active {
         transform: translateY(-2px);
         box-shadow: 0 2px rgba(0, 0, 0, 0.1);
-    }  
+    }
 }
 
-.animation-scale{
+// Анимация кнопок
+.animation-push {
+    transition: 0.2s;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+        transform: translateY(-2px);
+        box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.animation-scale {
     &:hover {
         transition: 0.2s;
         transform: scale(1.05);
     }
-    &:active{
+
+    &:active {
         transform: translateY(-2px);
         box-shadow: 0 2px rgba(0, 0, 0, 0.1);
     }
 }
 
-.animation-color-changing{
+.animation-color-changing {
     &:hover {
         background: $bg-tertiary-colored;
         color: $text-light;
@@ -533,27 +589,6 @@ body {
     }
 }
 
-// Заготовки блоков с адаптивом (class=".second-title")
-.title {
-    font-size: 2.25rem;
-    color: $text-main;
-    font-weight: 500;
-    margin-bottom: 3rem;
-
-    @media (max-width: $l) {
-        @include adaptive-font (36, 20);
-        text-align: center;
-    }
-
-    @media (max-width:$m) {
-        margin-bottom: 2rem;
-    }
-
-    @media (max-width:$s) {
-        margin-bottom: 1.5rem;
-    }
-}
-
 // Блок Документы с кнопками с адаптивом---------------------------
 
 .documents {
@@ -561,25 +596,22 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     row-gap: 2rem;
-    padding-bottom: 4rem;
+    margin-bottom: 3.5rem;
+
+    @media (max-width: $l) {
+        @include adaptive-font (28, 12);
+        margin-bottom: 2em;
+    }
 
     &__title {
         font-size: 2.25rem;
+        margin-bottom: 1.7rem;
         color: $text-main;
         font-weight: 500;
-        margin-bottom: 3rem;
 
         @media (max-width: $l) {
-            @include adaptive-font (36, 20);
-            text-align: center;
-        }
-
-        @media (max-width:$m) {
-            margin-bottom: 2rem;
-        }
-
-        @media (max-width:$s) {
-            margin-bottom: 1.5rem;
+            @include adaptive-font (36, 24);
+            margin-bottom: 1.2em;
         }
     }
 
@@ -593,26 +625,28 @@ body {
 
         @media (max-width:$s) {
             flex-direction: column;
+            align-items: center;
             gap: 1.5rem;
         }
     }
 
-    &__link {
+    .doc-button-item {
         font-size: 1.75rem;
+        text-decoration: none;
+        @include mint-btn (26rem, 8.5rem);
 
         @media (max-width: $l) {
-            @include adaptive-font (28, 14);
+            @include adaptive-font (28, 7);
+            @include mint-btn (28vw, 5em);
+            padding: 0.5em;
             text-align: center;
         }
-    }
 
-    .doc-button-item {
-        @include mint-btn (24rem, 8rem);
-
-        @media (max-width: $l) {
+        @media (max-width: $s) {
             @include adaptive-font (28, 14);
-            height: 4em;
-            width: 12em;
+            @include mint-btn (16em, 4.5em);
+            padding: 0.5em;
+            text-align: center;
         }
     }
 
