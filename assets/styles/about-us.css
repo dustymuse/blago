@@ -1379,11 +1379,13 @@ body {
 }
 
 .help-center__title {
+  margin-bottom: 1.25em;
+  text-align: center;
   font-weight: 600;
   line-height: 1.5em;
+}
+.help-center__title:first-child {
   padding-top: 2em;
-  padding-bottom: 1.25em;
-  text-align: center;
 }
 .help-center__text {
   color: #000000;
