@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -1947,6 +1948,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 64rem) {
+  .reviews__box {
+    justify-content: center;
+  }
+}
 .reviews__screen {
   display: flex;
   justify-content: space-between;
@@ -1966,10 +1972,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 48rem) {
+@media (max-width: 64rem) {
   .reviews__block {
     width: 28rem;
-    height: 18rem;
+  }
+}
+@media ((max-width: 470px)) {
+  .reviews__block {
+    height: 20rem;
   }
 }
 .reviews__text {
@@ -1994,6 +2004,11 @@ body {
   .reviews__text {
     width: 26rem;
     margin: 1rem;
+  }
+}
+@media ((max-width: 470px)) {
+  .reviews__text {
+    width: 15rem;
   }
 }
 .reviews #slides article {
