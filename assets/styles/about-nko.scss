@@ -1,5 +1,6 @@
 @import './vars';
 @import './templates';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
 // <!-- Название НКО -->---------------------------------------------
 .about-nko {
@@ -243,6 +244,9 @@
     &__box {
         display: flex;
         justify-content: space-between;
+        @media (max-width: $m) {
+            justify-content: center;
+        }
     }
 
     &__screen {
@@ -264,9 +268,11 @@
         justify-content: center;
         align-items: center;
 
-        @media (max-width: $s) {
+        @media (max-width: $m) {
             width: 28rem;
-            height: 18rem;
+        }
+        @media ((max-width: 470px)) {
+            height: 20rem;
         }
     }
 
@@ -286,6 +292,9 @@
             width: 26rem;
             margin: 1rem;
         }
+        @media ((max-width: 470px)) {
+                width: 15rem;
+            }
     }
 
     // слайдер---------------------------------------------------------------
